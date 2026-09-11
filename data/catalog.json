@@ -1,0 +1,389 @@
+{
+  "catalog_snapshot_date": "2026-04-01",
+  "products": [
+    {
+      "sku": "AP-XM-4C",
+      "category": "may_loc_khong_khi",
+      "brand": "Xiaomi",
+      "model_name": "Xiaomi Smart Air Purifier 4 Compact",
+      "room_size_m2_max": 20,
+      "price_vnd": 2490000,
+      "features": ["Loc HEPA H13", "Cam bien PM2.5", "Ket noi app dieu khien tu xa"],
+      "warranty_months": 12,
+      "stock": 60,
+      "promotions": []
+    },
+    {
+      "sku": "AP-XM-4",
+      "category": "may_loc_khong_khi",
+      "brand": "Xiaomi",
+      "model_name": "Xiaomi Smart Air Purifier 4",
+      "room_size_m2_max": 28,
+      "price_vnd": 3290000,
+      "features": ["Loc HEPA H13", "Cam bien PM2.5", "Van hanh sieu yen 33dB"],
+      "warranty_months": 12,
+      "stock": 45,
+      "promotions": [
+        { "promo_code": "GIFT-FILTER-XM4", "desc": "Tang loi loc thay the tri gia 450.000d", "expiry": "2026-04-20", "active": true }
+      ]
+    },
+    {
+      "sku": "AP-XM-4PRO",
+      "category": "may_loc_khong_khi",
+      "brand": "Xiaomi",
+      "model_name": "Xiaomi Smart Air Purifier 4 Pro",
+      "room_size_m2_max": 48,
+      "price_vnd": 4890000,
+      "features": ["Loc HEPA H13", "Khu mui than hoat tinh", "Cam bien kep PM2.5 + laser", "Phu hop phong co tre nho"],
+      "warranty_months": 18,
+      "stock": 35,
+      "promotions": [
+        { "promo_code": "GIFT-FILTER", "desc": "Tang bo loi loc thay the tri gia 590.000d", "expiry": "2026-03-16", "active": false }
+      ]
+    },
+    {
+      "sku": "AP-SHARP-FPJ30",
+      "category": "may_loc_khong_khi",
+      "brand": "Sharp",
+      "model_name": "Sharp FP-J30E-H",
+      "room_size_m2_max": 22,
+      "price_vnd": 3590000,
+      "features": ["Cong nghe Plasmacluster", "Loc HEPA", "Che do ngu"],
+      "warranty_months": 24,
+      "stock": 28,
+      "promotions": []
+    },
+    {
+      "sku": "AP-SHARP-FPJ40",
+      "category": "may_loc_khong_khi",
+      "brand": "Sharp",
+      "model_name": "Sharp FP-J40E-H Plasmacluster",
+      "room_size_m2_max": 38,
+      "price_vnd": 5990000,
+      "features": ["Cong nghe Plasmacluster 25000", "Loc HEPA", "Khu mui hieu qua cao"],
+      "warranty_months": 24,
+      "stock": 20,
+      "promotions": [
+        { "promo_code": "SHARP-APR", "desc": "Giam truc tiep 300.000d", "expiry": "2026-04-30", "active": true }
+      ]
+    },
+    {
+      "sku": "AP-DAIKIN-MCK55",
+      "category": "may_loc_khong_khi",
+      "brand": "Daikin",
+      "model_name": "Daikin MCK55TVM6",
+      "room_size_m2_max": 31,
+      "price_vnd": 7490000,
+      "features": ["Loc Streamer", "Tao am tich hop", "Cam bien bui min"],
+      "warranty_months": 24,
+      "stock": 15,
+      "promotions": []
+    },
+    {
+      "sku": "AP-DAIKIN-MCK70",
+      "category": "may_loc_khong_khi",
+      "brand": "Daikin",
+      "model_name": "Daikin MCK70TVM6",
+      "room_size_m2_max": 41,
+      "price_vnd": 9990000,
+      "features": ["Loc Streamer", "Tao am tich hop", "Cam bien mui"],
+      "warranty_months": 24,
+      "stock": 10,
+      "promotions": []
+    },
+    {
+      "sku": "AP-PANA-FVMJ",
+      "category": "may_loc_khong_khi",
+      "brand": "Panasonic",
+      "model_name": "Panasonic F-VXK70A",
+      "room_size_m2_max": 46,
+      "price_vnd": 8290000,
+      "features": ["Cong nghe nanoe X", "Loc HEPA", "Khu khuan, khu mui"],
+      "warranty_months": 24,
+      "stock": 18,
+      "promotions": [
+        { "promo_code": "PANA-NANOE", "desc": "Tang kem 500.000d qua vi dien tu", "expiry": "2026-04-10", "active": true }
+      ]
+    },
+    {
+      "sku": "AP-COWAY-AP1512",
+      "category": "may_loc_khong_khi",
+      "brand": "Coway",
+      "model_name": "Coway Airmega AP-1512HH",
+      "room_size_m2_max": 40,
+      "price_vnd": 6490000,
+      "features": ["Loc HEPA True", "Chi bao thay loi thong minh", "Van hanh yen"],
+      "warranty_months": 12,
+      "stock": 22,
+      "promotions": []
+    },
+    {
+      "sku": "AP-HITACHI-EPA",
+      "category": "may_loc_khong_khi",
+      "brand": "Hitachi",
+      "model_name": "Hitachi EP-A5000",
+      "room_size_m2_max": 48,
+      "price_vnd": 9890000,
+      "features": ["Loc HEPA kep", "Cam bien PM2.5 + PM10", "Tu dong dieu chinh cong suat"],
+      "warranty_months": 24,
+      "stock": 9,
+      "promotions": []
+    },
+    {
+      "sku": "AP-KANGAROO-KG150",
+      "category": "may_loc_khong_khi",
+      "brand": "Kangaroo",
+      "model_name": "Kangaroo KG150A6",
+      "room_size_m2_max": 25,
+      "price_vnd": 2190000,
+      "features": ["Loc HEPA co ban", "Gon nhe", "Gia tot cho phong nho"],
+      "warranty_months": 12,
+      "stock": 70,
+      "promotions": []
+    },
+    {
+      "sku": "AP-KAROFI-KAP450",
+      "category": "may_loc_khong_khi",
+      "brand": "Karofi",
+      "model_name": "Karofi KAP-450",
+      "room_size_m2_max": 25,
+      "price_vnd": 5200000,
+      "features": ["Loc HEPA H13", "Cam bien PM2.5", "Man hinh LED hien thi chi so"],
+      "warranty_months": 18,
+      "stock": 25,
+      "promotions": []
+    },
+    {
+      "sku": "AP-LEVOIT-CORE300",
+      "category": "may_loc_khong_khi",
+      "brand": "Levoit",
+      "model_name": "Levoit Core 300",
+      "room_size_m2_max": 20,
+      "price_vnd": 2890000,
+      "features": ["Loc HEPA H13 3 lop", "Van hanh sieu yen", "Thiet ke nho gon"],
+      "warranty_months": 12,
+      "stock": 40,
+      "promotions": [
+        { "promo_code": "LEVOIT-NEW", "desc": "Giam 10% cho khach hang moi", "expiry": "2026-04-15", "active": true }
+      ]
+    },
+    {
+      "sku": "AP-WINIX-AM90",
+      "category": "may_loc_khong_khi",
+      "brand": "Winix",
+      "model_name": "Winix AM90",
+      "room_size_m2_max": 35,
+      "price_vnd": 6890000,
+      "features": ["Cong nghe PlasmaWave", "Loc HEPA True", "Cam bien chat luong khong khi"],
+      "warranty_months": 24,
+      "stock": 14,
+      "promotions": []
+    },
+    {
+      "sku": "AP-PHILIPS-AC2887",
+      "category": "may_loc_khong_khi",
+      "brand": "Philips",
+      "model_name": "Philips AC2887/10",
+      "room_size_m2_max": 49,
+      "price_vnd": 8990000,
+      "features": ["Loc HEPA NanoProtect", "Cam bien AeraSense", "Man hinh cam ung"],
+      "warranty_months": 24,
+      "stock": 12,
+      "promotions": []
+    },
+    {
+      "sku": "AP-BLUEAIR-211",
+      "category": "may_loc_khong_khi",
+      "brand": "Blueair",
+      "model_name": "Blueair Blue Pure 211+",
+      "room_size_m2_max": 39,
+      "price_vnd": 7290000,
+      "features": ["Loc HEPASilent", "Vo vai co the thao rua", "Van hanh yen"],
+      "warranty_months": 12,
+      "stock": 16,
+      "promotions": []
+    },
+    {
+      "sku": "HM-XM-2",
+      "category": "may_tao_am",
+      "brand": "Xiaomi",
+      "model_name": "Xiaomi Smart Humidifier 2",
+      "room_size_m2_max": 25,
+      "price_vnd": 1290000,
+      "features": ["Dung tich 4.5L", "Phun suong sieu am", "Ket noi app"],
+      "warranty_months": 12,
+      "stock": 55,
+      "promotions": []
+    },
+    {
+      "sku": "HM-BONECO-U7146",
+      "category": "may_tao_am",
+      "brand": "Boneco",
+      "model_name": "Boneco U7146",
+      "room_size_m2_max": 40,
+      "price_vnd": 3490000,
+      "features": ["Dung tich 6L", "Man hinh dien tu", "Hen gio"],
+      "warranty_months": 24,
+      "stock": 18,
+      "promotions": []
+    },
+    {
+      "sku": "HM-PHILIPS-HU4816",
+      "category": "may_tao_am",
+      "brand": "Philips",
+      "model_name": "Philips HU4816/10",
+      "room_size_m2_max": 32,
+      "price_vnd": 1990000,
+      "features": ["Dung tich 3L", "Cong nghe NanoCloud", "Khong tao suong mu"],
+      "warranty_months": 12,
+      "stock": 30,
+      "promotions": []
+    },
+    {
+      "sku": "HM-DEERMA-DEM",
+      "category": "may_tao_am",
+      "brand": "Deerma",
+      "model_name": "Deerma DEM-F600",
+      "room_size_m2_max": 20,
+      "price_vnd": 890000,
+      "features": ["Dung tich 5L", "Phun suong 2 chieu", "Gia re"],
+      "warranty_months": 12,
+      "stock": 80,
+      "promotions": [
+        { "promo_code": "DEERMA-SALE", "desc": "Giam 15% don hang dau tien", "expiry": "2026-04-05", "active": true }
+      ]
+    },
+    {
+      "sku": "HM-DYSON-PH04",
+      "category": "may_tao_am",
+      "brand": "Dyson",
+      "model_name": "Dyson Purifier Humidify+Cool PH04",
+      "room_size_m2_max": 42,
+      "price_vnd": 18990000,
+      "features": ["Loc HEPA + tao am tich hop", "Diet khuan bang tia UV", "Dieu khien qua app"],
+      "warranty_months": 24,
+      "stock": 5,
+      "promotions": []
+    },
+    {
+      "sku": "MON-XM-2",
+      "category": "may_do_khong_khi",
+      "brand": "Xiaomi",
+      "model_name": "Xiaomi Air Quality Monitor 2",
+      "room_size_m2_max": null,
+      "price_vnd": 690000,
+      "features": ["Do PM2.5, nhiet do, do am", "Man hinh e-ink", "Ket noi app"],
+      "warranty_months": 12,
+      "stock": 65,
+      "promotions": []
+    },
+    {
+      "sku": "MON-TEMTOP-M2000",
+      "category": "may_do_khong_khi",
+      "brand": "Temtop",
+      "model_name": "Temtop M2000 2nd Gen",
+      "room_size_m2_max": null,
+      "price_vnd": 2490000,
+      "features": ["Do PM2.5, PM10, CO2, TVOC", "Man hinh mau"],
+      "warranty_months": 12,
+      "stock": 20,
+      "promotions": []
+    },
+    {
+      "sku": "MON-AIRVISUAL-PRO",
+      "category": "may_do_khong_khi",
+      "brand": "IQAir",
+      "model_name": "IQAir AirVisual Pro",
+      "room_size_m2_max": null,
+      "price_vnd": 8990000,
+      "features": ["Do PM2.5, CO2 chinh xac cao", "Ket noi WiFi", "Chuan quoc te"],
+      "warranty_months": 24,
+      "stock": 6,
+      "promotions": []
+    },
+    {
+      "sku": "MON-QINGPING",
+      "category": "may_do_khong_khi",
+      "brand": "Qingping",
+      "model_name": "Qingping Air Monitor Lite",
+      "room_size_m2_max": null,
+      "price_vnd": 990000,
+      "features": ["Do PM2.5, nhiet do, do am", "Thiet ke nho gon"],
+      "warranty_months": 12,
+      "stock": 40,
+      "promotions": []
+    },
+    {
+      "sku": "FIL-XM-4PRO-HEPA",
+      "category": "loi_loc_thay_the",
+      "brand": "Xiaomi",
+      "model_name": "Loi loc HEPA thay the cho Xiaomi Air Purifier 4 Pro",
+      "room_size_m2_max": null,
+      "price_vnd": 590000,
+      "features": ["Tuong thich Xiaomi 4 Pro", "Tuoi tho ~8 thang"],
+      "warranty_months": 0,
+      "stock": 100,
+      "promotions": []
+    },
+    {
+      "sku": "FIL-XM-4-HEPA",
+      "category": "loi_loc_thay_the",
+      "brand": "Xiaomi",
+      "model_name": "Loi loc HEPA thay the cho Xiaomi Air Purifier 4 / 4 Compact",
+      "room_size_m2_max": null,
+      "price_vnd": 450000,
+      "features": ["Tuong thich Xiaomi 4 / 4C", "Tuoi tho ~8 thang"],
+      "warranty_months": 0,
+      "stock": 120,
+      "promotions": []
+    },
+    {
+      "sku": "FIL-SHARP-FZ",
+      "category": "loi_loc_thay_the",
+      "brand": "Sharp",
+      "model_name": "Loi loc thay the dong FP-J",
+      "room_size_m2_max": null,
+      "price_vnd": 650000,
+      "features": ["Tuong thich FP-J30/FP-J40", "Tuoi tho ~10 thang"],
+      "warranty_months": 0,
+      "stock": 60,
+      "promotions": []
+    },
+    {
+      "sku": "FIL-DAIKIN-MC",
+      "category": "loi_loc_thay_the",
+      "brand": "Daikin",
+      "model_name": "Loi loc thay the dong MCK",
+      "room_size_m2_max": null,
+      "price_vnd": 890000,
+      "features": ["Tuong thich MCK55/MCK70", "Tuoi tho ~12 thang"],
+      "warranty_months": 0,
+      "stock": 35,
+      "promotions": []
+    },
+    {
+      "sku": "FIL-COWAY-AP1512",
+      "category": "loi_loc_thay_the",
+      "brand": "Coway",
+      "model_name": "Loi loc thay the Airmega AP-1512HH",
+      "room_size_m2_max": null,
+      "price_vnd": 790000,
+      "features": ["Tuong thich AP-1512HH", "Tuoi tho ~10 thang"],
+      "warranty_months": 0,
+      "stock": 45,
+      "promotions": []
+    },
+    {
+      "sku": "FIL-UNIVERSAL-CARBON",
+      "category": "loi_loc_thay_the",
+      "brand": "Generic",
+      "model_name": "Mang than hoat tinh khu mui da nang",
+      "room_size_m2_max": null,
+      "price_vnd": 190000,
+      "features": ["Tuong thich nhieu dong may", "Khu mui bo sung"],
+      "warranty_months": 0,
+      "stock": 200,
+      "promotions": []
+    }
+  ]
+}

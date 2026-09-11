@@ -1,0 +1,68 @@
+{
+  "customer_id": "CUS-007",
+  "phone_masked": "0938xxx406",
+  "region": "mien_nam",
+  "persona": "so_sanh_gia",
+  "channels_used": ["hotline"],
+  "case_tags": ["change_of_mind", "memory_carryover"],
+  "profile_facts": {
+    "room_area_m2": 25,
+    "has_children": true,
+    "has_pets": false,
+    "health_concern": null,
+    "budget_vnd": 5500000
+  },
+  "calls": [
+    {
+      "call_id": "CUS-007-C1",
+      "channel": "hotline",
+      "modality": "voice",
+      "date": "2026-03-05",
+      "days_since_previous_call": null,
+      "agent_id": "AG-02",
+      "turns": [
+        { "speaker": "agent", "text": "Dạ shop An Gia nghe ạ, chị cần tư vấn gì ạ?" },
+        { "speaker": "customer", "text": "Chị cần máy lọc không khí cho phòng 25m2, nhà có con nhỏ, tầm 5.5 triệu đổ lại." },
+        { "speaker": "agent", "text": "Dạ vâng, em đề xuất chị mẫu Karofi KAP-450, giá 5.200.000 đồng, lọc HEPA H13, hợp với phòng 25m2 nhà mình ạ." },
+        { "speaker": "customer", "text": "Ừ nghe cũng ổn, thôi chốt mẫu đó cho chị đi." },
+        { "speaker": "agent", "text": "Dạ vâng, em xác nhận đơn: Karofi KAP-450, giá 5.200.000 đồng. Chị cho em xin địa chỉ giao hàng ạ." },
+        { "speaker": "customer", "text": "Khoan... để chị nghĩ thêm chút đã, thôi chị gọi lại sau nhé." }
+      ],
+      "facts_established": {
+        "product_advised_sku": "AP-KAROFI-KAP450",
+        "price_quoted_vnd": 5200000,
+        "promo_code_quoted": null,
+        "blocker": "muon can nhac them truoc khi chot",
+        "decision_maker": "tu_quyet"
+      },
+      "outcome": "hen_goi_lai",
+      "notes": "Khách gần như chốt Karofi KAP-450 nhưng đổi ý dừng lại trước khi cung cấp địa chỉ."
+    },
+    {
+      "call_id": "CUS-007-C2",
+      "channel": "hotline",
+      "modality": "voice",
+      "date": "2026-03-08",
+      "days_since_previous_call": 3,
+      "agent_id": "AG-02",
+      "turns": [
+        { "speaker": "agent", "text": "Dạ em chào chị, hôm 5/3 bên em có tư vấn chị mẫu Karofi KAP-450 giá 5.200.000 đồng cho phòng 25m2. Chị quyết định tới đâu rồi ạ?" },
+        { "speaker": "customer", "text": "À thôi, chị đổi ý rồi em. Chị lên mạng đọc thấy khen mẫu Xiaomi 4 Pro dữ lắm, nghe nói có khử mùi than hoạt tính nữa, bên em giá bao nhiêu vậy em?" },
+        { "speaker": "agent", "text": "Dạ mẫu Xiaomi Smart Air Purifier 4 Pro giá 4.890.000 đồng ạ, cũng hợp với phòng 25m2 nhà có con nhỏ của chị, mà lại rẻ hơn Karofi 310.000 đồng nữa đó chị. Vậy chị muốn chốt mẫu này thay cho Karofi KAP-450 luôn đúng không ạ?" },
+        { "speaker": "customer", "text": "Ừ đúng rồi đó, chị lấy Xiaomi 4 Pro thôi, bỏ mẫu Karofi đi nha." },
+        { "speaker": "agent", "text": "Dạ vâng em cập nhật lại nha chị: chốt mẫu Xiaomi Smart Air Purifier 4 Pro, giá 4.890.000 đồng, hủy đề xuất Karofi KAP-450 trước đó. Chị cho em xin địa chỉ giao hàng ạ." },
+        { "speaker": "customer", "text": "56 Nguyễn Thị Thập, quận 7, Sài Gòn." },
+        { "speaker": "agent", "text": "Dạ em tạo đơn Xiaomi Smart Air Purifier 4 Pro xong rồi ạ, giao trong 2-3 ngày." }
+      ],
+      "facts_established": {
+        "product_advised_sku": "AP-XM-4PRO",
+        "price_quoted_vnd": 4890000,
+        "promo_code_quoted": null,
+        "blocker": null,
+        "decision_maker": null
+      },
+      "outcome": "chot_don",
+      "notes": "CHANGE OF MIND: product_advised_sku đổi từ AP-KAROFI-KAP450 (C1) sang AP-XM-4PRO (C2). Bộ nhớ PHẢI vô hiệu hóa giá trị Karofi cũ, không được giữ song song 2 SKU. must_not_ask: room_area_m2, has_children, budget_vnd (vẫn hợp lệ mang sang); product_advised_sku KHÔNG nằm trong must_not_ask vì đây là trường hợp thông tin thực sự thay đổi, hỏi xác nhận lại là đúng, không tính là hỏi thừa."
+    }
+  ]
+}

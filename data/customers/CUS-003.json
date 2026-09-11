@@ -1,0 +1,69 @@
+{
+  "customer_id": "CUS-003",
+  "phone_masked": "0912xxx661",
+  "region": "mien_bac",
+  "persona": "da_mua_doi_khieu_nai",
+  "channels_used": ["hotline"],
+  "case_tags": ["tool_action", "memory_carryover"],
+  "profile_facts": {
+    "room_area_m2": 15,
+    "has_children": false,
+    "has_pets": false,
+    "health_concern": null,
+    "budget_vnd": 2500000
+  },
+  "calls": [
+    {
+      "call_id": "CUS-003-C1",
+      "channel": "hotline",
+      "modality": "voice",
+      "date": "2026-02-20",
+      "days_since_previous_call": null,
+      "agent_id": "AG-04",
+      "turns": [
+        { "speaker": "agent", "text": "Dạ em chào anh, anh cần tư vấn sản phẩm gì ạ?" },
+        { "speaker": "customer", "text": "Anh cần mua cái máy lọc không khí cho phòng làm việc thôi, phòng nhỏ à, tầm 15 mét, giá rẻ rẻ thôi khoảng 2 triệu mấy là được." },
+        { "speaker": "agent", "text": "Dạ vâng, để em xem... với phòng 15m2 và ngân sách khoảng 2.5 triệu thì em đề xuất anh mẫu Kangaroo KG150A6, giá 2.190.000 đồng, lọc HEPA cơ bản, gọn nhẹ, hợp phòng nhỏ như của anh ạ." },
+        { "speaker": "customer", "text": "Ừ nghe được, thôi chốt luôn mẫu đó cho anh đi, anh không có nhiều thời gian đâu." },
+        { "speaker": "agent", "text": "Dạ vâng, em xác nhận đơn: Kangaroo KG150A6, giá 2.190.000 đồng. Anh cho em xin địa chỉ giao hàng ạ." },
+        { "speaker": "customer", "text": "123 Nguyễn Trãi, Hà Nội." },
+        { "speaker": "agent", "text": "Dạ em tạo đơn xong rồi ạ, dự kiến giao trong 2-3 ngày." }
+      ],
+      "facts_established": {
+        "product_advised_sku": "AP-KANGAROO-KG150",
+        "price_quoted_vnd": 2190000,
+        "promo_code_quoted": null,
+        "blocker": null,
+        "decision_maker": null
+      },
+      "outcome": "chot_don",
+      "notes": "tool_action: order.create(sku=AP-KANGAROO-KG150, price=2190000)."
+    },
+    {
+      "call_id": "CUS-003-C2",
+      "channel": "hotline",
+      "modality": "voice",
+      "date": "2026-03-05",
+      "days_since_previous_call": 13,
+      "agent_id": "AG-09",
+      "turns": [
+        { "speaker": "agent", "text": "Dạ em chào anh, em xin số điện thoại để kiểm tra thông tin ạ?" },
+        { "speaker": "customer", "text": "0912xxx661. Nay anh gọi là vì cái máy lọc không khí Kangaroo anh mua hôm 20/2 đó, xài được có 2 tuần mà tự nhiên kêu to bất thường, chắc bị lỗi gì rồi." },
+        { "speaker": "agent", "text": "Dạ để em tra đơn... em thấy rồi ạ, Kangaroo KG150A6, giá 2.190.000, đặt ngày 20/2. Anh cho em hỏi thêm chút, tiếng kêu đó nó kêu liên tục hay chỉ lúc bật mức cao thôi ạ?" },
+        { "speaker": "customer", "text": "Kêu liên tục luôn á, để mức thấp nhất cũng vậy." },
+        { "speaker": "agent", "text": "Dạ vậy chắc là lỗi rồi ạ. Máy còn trong bảo hành 12 tháng nên bên em hỗ trợ đổi máy mới miễn phí cho anh luôn. Anh còn giữ vỏ hộp không ạ, để bên em qua thu đổi?" },
+        { "speaker": "customer", "text": "Còn, anh vẫn giữ hộp đây." },
+        { "speaker": "agent", "text": "Dạ vậy em tạo yêu cầu đổi máy mới cùng mẫu Kangaroo KG150A6 cho anh nha, khoảng 2-3 ngày sẽ có nhân viên liên hệ qua thu đổi ạ." }
+      ],
+      "facts_established": {
+        "product_advised_sku": "AP-KANGAROO-KG150",
+        "price_quoted_vnd": 0,
+        "promo_code_quoted": null,
+        "blocker": "may bi loi cam bien/tieng on, doi bao hanh",
+        "decision_maker": null
+      },
+      "outcome": "khieu_nai",
+      "notes": "must_not_ask ở cuộc này: room_area_m2, product_advised (đã có từ đơn hàng C1). tool_action: crm.get_customer để tra lịch sử đơn, order.update để tạo yêu cầu đổi bảo hành (giá 0đ vì đổi trong bảo hành)."
+    }
+  ]
+}

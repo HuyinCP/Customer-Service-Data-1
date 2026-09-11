@@ -1,0 +1,90 @@
+{
+  "customer_id": "CUS-008",
+  "phone_masked": "0946xxx852",
+  "region": "mien_bac",
+  "persona": "da_mua_doi_khieu_nai",
+  "channels_used": ["hotline"],
+  "case_tags": ["tool_action", "session_continuity", "memory_carryover"],
+  "profile_facts": {
+    "room_area_m2": 35,
+    "has_children": false,
+    "has_pets": false,
+    "health_concern": null,
+    "budget_vnd": 6000000
+  },
+  "calls": [
+    {
+      "call_id": "CUS-008-C1",
+      "channel": "hotline",
+      "modality": "voice",
+      "date": "2026-03-20",
+      "days_since_previous_call": null,
+      "agent_id": "AG-05",
+      "turns": [
+        { "speaker": "agent", "text": "Dạ shop An Gia nghe ạ, anh cần tư vấn gì ạ?" },
+        { "speaker": "customer", "text": "Anh cần cái máy lọc không khí cho phòng khách, tầm 35 mét, ngân sách khoảng 6 triệu thôi." },
+        { "speaker": "agent", "text": "Dạ với phòng 35m2 ngân sách 6 triệu, em đề xuất anh mẫu Sharp FP-J40E-H Plasmacluster, giá gốc 5.990.000 đồng, đang giảm trực tiếp 300.000 nên còn 5.690.000 đồng, chạy tới hết 30/4, phủ được tới 38m2 luôn ạ." },
+        { "speaker": "customer", "text": "Nghe được đó, để anh suy nghĩ thêm vài hôm rồi gọi lại chốt nha." },
+        { "speaker": "agent", "text": "Dạ vâng anh cứ cân nhắc ạ, khi nào cần bên em hỗ trợ thêm anh cứ gọi lại." }
+      ],
+      "facts_established": {
+        "product_advised_sku": "AP-SHARP-FPJ40",
+        "price_quoted_vnd": 5690000,
+        "promo_code_quoted": "SHARP-APR",
+        "blocker": "can suy nghi them",
+        "decision_maker": "tu_quyet"
+      },
+      "outcome": "hen_goi_lai",
+      "notes": "Cuộc 1 trong kịch bản demo 3 cuộc theo mục C.6 của đề."
+    },
+    {
+      "call_id": "CUS-008-C2",
+      "channel": "hotline",
+      "modality": "voice",
+      "date": "2026-03-23",
+      "days_since_previous_call": 3,
+      "agent_id": "AG-05",
+      "turns": [
+        { "speaker": "agent", "text": "Dạ em chào anh, hôm 20/3 bên em có tư vấn anh mẫu Sharp FP-J40E-H giá 5.690.000 đồng, đã áp khuyến mãi giảm 300.000 rồi đó ạ. Anh suy nghĩ tới đâu rồi ạ?" },
+        { "speaker": "customer", "text": "Rồi em, chốt luôn cho anh, giá vẫn 5.690.000 đúng không?" },
+        { "speaker": "agent", "text": "Dạ đúng rồi ạ, khuyến mãi vẫn còn hạn tới 30/4. Anh cho em xin địa chỉ giao hàng ạ." },
+        { "speaker": "customer", "text": "22 Láng Hạ, Hà Nội nhé." },
+        { "speaker": "agent", "text": "Dạ em tạo đơn xong rồi ạ: Sharp FP-J40E-H, giá 5.690.000 đồng, giao 22 Láng Hạ, Hà Nội, dự kiến 2-3 ngày." }
+      ],
+      "facts_established": {
+        "product_advised_sku": "AP-SHARP-FPJ40",
+        "price_quoted_vnd": 5690000,
+        "promo_code_quoted": "SHARP-APR",
+        "blocker": null,
+        "decision_maker": null
+      },
+      "outcome": "chot_don",
+      "notes": "Cuộc 2 trong kịch bản demo. must_not_ask: room_area_m2, product_advised_sku, price_quoted_vnd. tool_action: order.create(sku=AP-SHARP-FPJ40, price=5690000, address='22 Láng Hạ, Hà Nội')."
+    },
+    {
+      "call_id": "CUS-008-C3",
+      "channel": "hotline",
+      "modality": "voice",
+      "date": "2026-03-30",
+      "days_since_previous_call": 7,
+      "agent_id": "AG-11",
+      "turns": [
+        { "speaker": "agent", "text": "Dạ em chào anh, em xin số điện thoại để kiểm tra đơn hàng ạ?" },
+        { "speaker": "customer", "text": "0946xxx852. Anh gọi hỏi đơn máy lọc không khí Sharp anh đặt hôm 23/3 đó, giờ tự nhiên anh phải đi công tác gấp, muốn đổi địa chỉ giao hàng." },
+        { "speaker": "agent", "text": "Dạ để em tra... đơn của anh: Sharp FP-J40E-H, giá 5.690.000 đồng, giao 22 Láng Hạ, Hà Nội, hiện đang trên đường vận chuyển ạ. Anh muốn đổi sang địa chỉ nào ạ?" },
+        { "speaker": "customer", "text": "Đổi giao tới công ty anh nha, 88 Trần Thái Tông, Cầu Giấy, Hà Nội, với lại giao trong giờ hành chính thôi, ngoài giờ không ai nhận đâu." },
+        { "speaker": "agent", "text": "Dạ em cập nhật rồi ạ: giao tới 88 Trần Thái Tông, Cầu Giấy, Hà Nội, trong giờ hành chính. Đơn vẫn dự kiến tới trong 1-2 ngày tới ạ." },
+        { "speaker": "customer", "text": "Ok cảm ơn em nha." }
+      ],
+      "facts_established": {
+        "product_advised_sku": "AP-SHARP-FPJ40",
+        "price_quoted_vnd": 5690000,
+        "promo_code_quoted": null,
+        "blocker": "doi dia chi giao hang do di cong tac",
+        "decision_maker": null
+      },
+      "outcome": "doi_size",
+      "notes": "Cuộc 3 trong kịch bản demo C.6 (khách gọi lại sau khi đặt hàng để hỏi vận đơn/cập nhật thông tin). Dùng outcome 'doi_size' theo nghĩa rộng 'thay đổi thông tin đơn hàng sau khi đặt'. tool_action: order.status (tra đơn) + order.update (đổi địa chỉ giao). must_not_ask: product_advised_sku, price_quoted_vnd (đã có từ đơn hàng)."
+    }
+  ]
+}

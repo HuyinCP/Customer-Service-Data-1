@@ -1,0 +1,69 @@
+{
+  "customer_id": "CUS-006",
+  "phone_masked": "0979xxx530",
+  "region": "mien_bac",
+  "persona": "so_sanh_gia",
+  "channels_used": ["zalo", "hotline"],
+  "case_tags": ["multi_channel", "session_continuity"],
+  "profile_facts": {
+    "room_area_m2": 18,
+    "has_children": false,
+    "has_pets": false,
+    "health_concern": "da kho vao mua dong",
+    "budget_vnd": 2000000
+  },
+  "calls": [
+    {
+      "call_id": "CUS-006-C1",
+      "channel": "zalo",
+      "modality": "text",
+      "date": "2026-02-25",
+      "days_since_previous_call": null,
+      "agent_id": "AG-ZL-02",
+      "turns": [
+        { "speaker": "customer", "text": "sh oi tu van m may tao am voi, phong ngu 18m2, mua dong da kho quá" },
+        { "speaker": "agent", "text": "Dạ em chào chị, với phòng 18m2 em đề xuất chị mẫu Xiaomi Smart Humidifier 2, dung tích 4.5L, phun sương siêu âm, giá 1.290.000 đồng ạ." },
+        { "speaker": "customer", "text": "gia do co trong ngan sach k ta, m dinh chi tam 2tr thoi" },
+        { "speaker": "agent", "text": "Dạ vẫn nằm trong ngân sách của chị ạ, còn dư để chị mua thêm bình nước dự phòng nếu cần." },
+        { "speaker": "customer", "text": "oke de m coi them, m goi hotline hoi ki hon sau" }
+      ],
+      "facts_established": {
+        "product_advised_sku": "HM-XM-2",
+        "price_quoted_vnd": 1290000,
+        "promo_code_quoted": null,
+        "blocker": "muon tim hieu ki hon",
+        "decision_maker": "tu_quyet"
+      },
+      "outcome": "hen_goi_lai",
+      "notes": "Kênh Zalo, khách nói rõ sẽ gọi hotline hỏi thêm — tạo tình huống multi-channel liền mạch."
+    },
+    {
+      "call_id": "CUS-006-C2",
+      "channel": "hotline",
+      "modality": "voice",
+      "date": "2026-02-27",
+      "days_since_previous_call": 2,
+      "agent_id": "AG-08",
+      "turns": [
+        { "speaker": "agent", "text": "Dạ em chào chị, em xin số điện thoại để kiểm tra thông tin trao đổi trước đó ạ?" },
+        { "speaker": "customer", "text": "0979xxx530. Chị hỏi bên Zalo hôm trước về cái máy tạo ẩm Xiaomi 1.290.000 đó em." },
+        { "speaker": "agent", "text": "Dạ em thấy rồi ạ, mẫu Xiaomi Smart Humidifier 2, dung tích 4.5L, giá 1.290.000 đồng, hợp với phòng 18m2 nhà chị. Chị còn băn khoăn gì nữa không ạ?" },
+        { "speaker": "customer", "text": "Máy chạy có ồn không em? Chị ngủ khó tính lắm, hơi động là dậy liền." },
+        { "speaker": "agent", "text": "Dạ mẫu này chạy khá êm, để phòng ngủ ban đêm là ổn ạ, chị yên tâm." },
+        { "speaker": "customer", "text": "Ok vậy chốt cho chị luôn đi em." },
+        { "speaker": "agent", "text": "Dạ vâng, em xác nhận đơn: Xiaomi Smart Humidifier 2, giá 1.290.000 đồng. Chị cho em xin địa chỉ giao hàng ạ." },
+        { "speaker": "customer", "text": "78 Kim Mã, Hà Nội nhé." },
+        { "speaker": "agent", "text": "Dạ em tạo đơn xong rồi ạ, giao trong 2-3 ngày." }
+      ],
+      "facts_established": {
+        "product_advised_sku": "HM-XM-2",
+        "price_quoted_vnd": 1290000,
+        "promo_code_quoted": null,
+        "blocker": null,
+        "decision_maker": null
+      },
+      "outcome": "chot_don",
+      "notes": "must_not_ask: room_area_m2, product_advised, price_quoted_vnd, budget_vnd (đã có từ C1 qua kênh Zalo — kiểm tra khả năng agent hợp nhất ngữ cảnh xuyên kênh, không chỉ xuyên phiên cùng kênh)."
+    }
+  ]
+}

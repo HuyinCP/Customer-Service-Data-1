@@ -1,0 +1,72 @@
+{
+  "customer_id": "CUS-001",
+  "phone_masked": "0982xxx045",
+  "region": "mien_bac",
+  "persona": "do_du_hoi_nguoi_nha",
+  "channels_used": ["hotline"],
+  "case_tags": ["session_continuity", "memory_carryover", "expired_promo"],
+  "profile_facts": {
+    "room_area_m2": 25,
+    "has_children": true,
+    "has_pets": false,
+    "health_concern": null,
+    "budget_vnd": 5000000
+  },
+  "calls": [
+    {
+      "call_id": "CUS-001-C1",
+      "channel": "hotline",
+      "modality": "voice",
+      "date": "2026-03-10",
+      "days_since_previous_call": null,
+      "agent_id": "AG-03",
+      "turns": [
+        { "speaker": "agent", "text": "Dạ em chào chị, em Linh bên An Gia đây ạ. Chị cần em hỗ trợ gì ạ?" },
+        { "speaker": "customer", "text": "Ừ chị chào em. Chị đang muốn mua cái máy lọc không khí á, nhà chị dạo này bụi quá, mà lại có bé con nữa nên chị hơi lo." },
+        { "speaker": "agent", "text": "Dạ em hiểu rồi ạ. Chị cho em hỏi phòng định đặt máy khoảng bao nhiêu mét vuông vậy chị?" },
+        { "speaker": "customer", "text": "Để chị coi... chắc tầm 25 mét đó em." },
+        { "speaker": "agent", "text": "Dạ 25m2 ạ. Vậy ngân sách bên chị dự tính khoảng bao nhiêu để em tư vấn mẫu phù hợp ạ?" },
+        { "speaker": "customer", "text": "Cỡ 5 triệu đổ lại thôi, chị mua cho phòng ngủ có bé nhỏ nên cũng đắn đo dữ lắm." },
+        { "speaker": "agent", "text": "Dạ vâng, để em xem... với phòng 25m2, có bé nhỏ, ngân sách 5 triệu thì em nghĩ hợp nhất là mẫu Xiaomi Smart Air Purifier 4 Pro. Cái này lọc HEPA H13, có khử mùi than hoạt tính, nhà có trẻ nhỏ dùng khá yên tâm, phủ được tới 48m2 luôn. Giá đang ưu đãi 4.890.000 đồng, với lại đang có chương trình tặng kèm lõi lọc thay thế trị giá 590.000, nhưng chỉ chạy tới hết 16/3 thôi chị." },
+        { "speaker": "customer", "text": "Ồ, nghe cũng được đó. Nhưng để chị hỏi ông xã cái đã, chị chưa quyết ngay được đâu." },
+        { "speaker": "agent", "text": "Dạ vâng chị cứ từ từ trao đổi ạ, không sao hết. Em xin phép lưu số điện thoại này lại, để lần sau chị gọi lại bên em nắm thông tin luôn, khỏi phải kể lại từ đầu. Chị còn hỏi gì thêm không ạ?" },
+        { "speaker": "customer", "text": "Không, cảm ơn em nha, để chị hỏi rồi gọi lại." }
+      ],
+      "facts_established": {
+        "product_advised_sku": "AP-XM-4PRO",
+        "price_quoted_vnd": 4890000,
+        "promo_code_quoted": "GIFT-FILTER",
+        "blocker": "can hoi chong",
+        "decision_maker": "chong"
+      },
+      "outcome": "hen_goi_lai",
+      "notes": "Cuộc gọi nền, khách chưa từng liên hệ trước đó nên toàn bộ câu hỏi đều hợp lệ (không tính vào Repeat-Question Rate)."
+    },
+    {
+      "call_id": "CUS-001-C2",
+      "channel": "hotline",
+      "modality": "voice",
+      "date": "2026-03-25",
+      "days_since_previous_call": 15,
+      "agent_id": "AG-07",
+      "turns": [
+        { "speaker": "agent", "text": "Dạ em chào chị Hoa, em Trang bên An Gia đây ạ. Hôm 10/3 bên em có tư vấn chị mẫu Xiaomi 4 Pro cho phòng 25m2, giá 4.890.000, có kèm quà lõi lọc đó chị. Chị trao đổi với anh nhà mình tới đâu rồi ạ?" },
+        { "speaker": "customer", "text": "À có, ông xã chị đồng ý rồi đó. Chị lấy luôn mẫu đó nha, mà... vẫn giá 4.890 với có quà lõi lọc đúng không em?" },
+        { "speaker": "agent", "text": "Dạ... chị thông cảm cho em xíu, cái chương trình tặng lõi lọc đó hết hạn từ 16/3 rồi ạ, nên bây giờ giá vẫn 4.890.000 nhưng không còn quà kèm nữa. Em xin lỗi chị vì chưa báo trước." },
+        { "speaker": "customer", "text": "Ơ vậy hả? Ừ thôi cũng được, giá không đổi là chị mừng rồi, khỏi lăn tăn. Vậy chốt cho chị đi em." },
+        { "speaker": "agent", "text": "Dạ vâng, em xác nhận lại nha chị: Xiaomi Smart Air Purifier 4 Pro, giá 4.890.000 đồng, giao tới địa chỉ chị đã đăng ký lần trước, đúng không ạ?" },
+        { "speaker": "customer", "text": "Đúng rồi đó, cảm ơn em nhiều nha." },
+        { "speaker": "agent", "text": "Dạ em cảm ơn chị, đơn hàng khoảng 2-3 ngày nữa là tới ạ." }
+      ],
+      "facts_established": {
+        "product_advised_sku": "AP-XM-4PRO",
+        "price_quoted_vnd": 4890000,
+        "promo_code_quoted": null,
+        "blocker": null,
+        "decision_maker": null
+      },
+      "outcome": "chot_don",
+      "notes": "Ca khó: khách đòi áp khuyến mãi đã hết hạn (GIFT-FILTER hết hạn 16/3, cuộc gọi này diễn ra 25/3). Agent xử lý đúng: báo hết hạn, không bịa, giữ nguyên giá gốc. must_not_ask ở cuộc này: room_area_m2, has_children, budget_vnd, product_advised (đã có ở profile/episodic từ C1)."
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "customer_id": "CUS-002",
+  "phone_masked": "0937xxx182",
+  "region": "mien_nam",
+  "persona": "so_sanh_gia",
+  "channels_used": ["facebook", "zalo", "hotline"],
+  "case_tags": ["multi_channel", "conflicting_information"],
+  "profile_facts": {
+    "room_area_m2": 20,
+    "has_children": false,
+    "has_pets": true,
+    "health_concern": "di ung long thu cung",
+    "budget_vnd": 3000000
+  },
+  "calls": [
+    {
+      "call_id": "CUS-002-C1",
+      "channel": "facebook",
+      "modality": "text",
+      "date": "2026-03-14",
+      "days_since_previous_call": null,
+      "agent_id": "AG-FB-02",
+      "turns": [
+        { "speaker": "customer", "text": "shop oi cho hoi may loc kk dang sale hong ta, nha minh nuoi meo bi di ung long" },
+        { "speaker": "agent", "text": "Dạ em chào anh, bên em đang có chương trình sale mẫu Levoit Core 300 còn 2.601.000đ (giảm 10% từ giá 2.890.000đ) áp dụng cho khách hàng mới ạ, mẫu này lọc HEPA H13 3 lớp rất hợp cho nhà có thú cưng anh nha." },
+        { "speaker": "customer", "text": "oke de a coi them, phong a co 20m2 a" },
+        { "speaker": "agent", "text": "Dạ 20m2 thì mẫu này phủ tối đa 20m2 là vừa đẹp luôn ạ. Anh cho em xin số điện thoại để bên em lưu thông tin hỗ trợ tốt hơn không ạ?" },
+        { "speaker": "customer", "text": "0937xxx182 nha, de a suy nghi them" }
+      ],
+      "facts_established": {
+        "product_advised_sku": "AP-LEVOIT-CORE300",
+        "price_quoted_vnd": 2601000,
+        "promo_code_quoted": "LEVOIT-NEW",
+        "blocker": "dang can nhac",
+        "decision_maker": "tu_quyet"
+      },
+      "outcome": "hen_goi_lai",
+      "notes": "Kênh Facebook báo giá đã áp dụng sẵn khuyến mãi 10% (2.601.000đ thay vì giá gốc 2.890.000đ)."
+    },
+    {
+      "call_id": "CUS-002-C2",
+      "channel": "zalo",
+      "modality": "text",
+      "date": "2026-03-16",
+      "days_since_previous_call": 2,
+      "agent_id": "AG-ZL-05",
+      "turns": [
+        { "speaker": "customer", "text": "e oi cho a hoi con model levoit core 300 ben m nhan tren fb do, gio a doi qua mau trang dc k, ma a thay ben m co model khac cung tam gia ko ta" },
+        { "speaker": "agent", "text": "Dạ anh Tuấn cho em xin số điện thoại để em kiểm tra thông tin bên em đã tư vấn ạ." },
+        { "speaker": "customer", "text": "0937xxx182" },
+        { "speaker": "agent", "text": "Dạ em thấy bên Facebook đã báo anh mẫu Levoit Core 300 giá 2.601.000đ rồi ạ. Về màu sắc thì mẫu này chỉ có 1 màu trắng thôi ạ nên không cần đổi màu đâu anh. Nếu anh muốn xem thêm, bên em cũng có mẫu Xiaomi Air Purifier 4 Compact giá 2.490.000đ, phủ tới 20m2, cũng phù hợp nhà có thú cưng ạ." },
+        { "speaker": "customer", "text": "a ok de a coi, chac a lay con levoit do, mai a goi hotline dat sau" }
+      ],
+      "facts_established": {
+        "product_advised_sku": "AP-LEVOIT-CORE300",
+        "price_quoted_vnd": 2601000,
+        "promo_code_quoted": "LEVOIT-NEW",
+        "blocker": null,
+        "decision_maker": "tu_quyet"
+      },
+      "outcome": "hen_goi_lai",
+      "notes": "Nhân viên Zalo xác nhận đúng thông tin từ Facebook (không mâu thuẫn) — đây là hành vi ĐÚNG cần agent làm được, đối lập với ca khó ở C3."
+    },
+    {
+      "call_id": "CUS-002-C3",
+      "channel": "hotline",
+      "modality": "voice",
+      "date": "2026-03-17",
+      "days_since_previous_call": 1,
+      "agent_id": "AG-11",
+      "turns": [
+        { "speaker": "agent", "text": "Dạ shop An Gia nghe ạ, anh cần hỗ trợ gì ạ?" },
+        { "speaker": "customer", "text": "Ừ anh muốn đặt cái máy lọc không khí Levoit Core 300 á, hôm qua bên Zalo báo anh giá 2.601.000 rồi đó." },
+        { "speaker": "agent", "text": "Dạ anh cho em xin số điện thoại để em kiểm tra thông tin ạ." },
+        { "speaker": "customer", "text": "0937xxx182 nè." },
+        { "speaker": "agent", "text": "Dạ để em coi chút... dạ hiện giá niêm yết bên em mẫu này là 2.890.000 đồng ạ, em không thấy có chương trình giảm giá nào cho mẫu này cả." },
+        { "speaker": "customer", "text": "Ủa gì kỳ vậy? Bên Facebook với Zalo nói 2.601.000 mà, sao qua hotline lại khác giá vậy em, mấy bên nói khác nhau vậy sao anh biết tin ai." },
+        { "speaker": "agent", "text": "Dạ anh cho em xin lỗi vì chuyện này ạ, để em kiểm tra lại hệ thống khuyến mãi một chút nha anh..." },
+        { "speaker": "agent", "text": "Dạ đúng rồi anh, em xem lại thấy đang có chương trình LEVOIT-NEW giảm 10% cho khách hàng mới, áp dụng tới 15/4, lúc nãy em tra chưa đúng hệ thống nên báo sai, em xin lỗi anh. Giá đúng cho anh là 2.601.000 đồng ạ." },
+        { "speaker": "customer", "text": "Ừ thôi, vậy chốt cho anh giá 2.601.000 đi, lần sau bên em coi lại hệ thống cho kỹ nha." },
+        { "speaker": "agent", "text": "Dạ em xin lỗi anh, em xác nhận đơn: Levoit Core 300, giá 2.601.000 đồng, giao tới địa chỉ anh đã đăng ký ạ." }
+      ],
+      "facts_established": {
+        "product_advised_sku": "AP-LEVOIT-CORE300",
+        "price_quoted_vnd": 2601000,
+        "promo_code_quoted": "LEVOIT-NEW",
+        "blocker": null,
+        "decision_maker": null
+      },
+      "outcome": "chot_don",
+      "notes": "Ca khó minh họa đúng Case 2 của đề: nhân viên hotline ban đầu không thấy ngữ cảnh/khuyến mãi đã báo ở kênh khác, báo giá sai (niêm yết) trước khi tự sửa lại. Dùng để test guardrail 'giá phải lấy từ tool + đối chiếu lịch sử đa kênh', không phải để agent thật sự báo sai — đây là hành vi baseline (không bộ nhớ) cần cải thiện."
+    }
+  ]
+}
