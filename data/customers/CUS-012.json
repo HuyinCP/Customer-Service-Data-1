@@ -1,0 +1,65 @@
+{
+  "customer_id": "CUS-012",
+  "phone_masked": "0909xxx662",
+  "region": "mien_nam",
+  "persona": "do_du_hoi_nguoi_nha",
+  "channels_used": ["facebook", "hotline"],
+  "case_tags": ["multi_channel", "session_continuity", "memory_carryover"],
+  "profile_facts": {
+    "room_area_m2": 35,
+    "has_children": false,
+    "has_pets": true,
+    "health_concern": "di ung long cho",
+    "budget_vnd": 7000000
+  },
+  "calls": [
+    {
+      "call_id": "CUS-012-C1",
+      "channel": "facebook",
+      "modality": "text",
+      "date": "2026-03-19",
+      "days_since_previous_call": null,
+      "agent_id": "AG-FB-03",
+      "turns": [
+        { "speaker": "customer", "text": "chao shop, cho hoi may loc kk nao tot cho nha nuoi cho, minh bi di ung long cho, phong 35m2" },
+        { "speaker": "agent", "text": "Dạ em chào chị, với phòng 35m2 và nhu cầu lọc lông thú cưng, em đề xuất chị mẫu Winix AM90, công nghệ PlasmaWave, lọc HEPA True, giá 6.890.000 đồng ạ, khá hiệu quả với lông và mùi thú cưng." },
+        { "speaker": "customer", "text": "oke de minh hoi chong minh xem sao roi phan hoi lai nha" }
+      ],
+      "facts_established": {
+        "product_advised_sku": "AP-WINIX-AM90",
+        "price_quoted_vnd": 6890000,
+        "promo_code_quoted": null,
+        "blocker": "can hoi chong",
+        "decision_maker": "chong"
+      },
+      "outcome": "hen_goi_lai",
+      "case_labels": ["Q1", "Q4"],
+      "notes": "Kênh Facebook."
+    },
+    {
+      "call_id": "CUS-012-C2",
+      "channel": "hotline",
+      "modality": "voice",
+      "date": "2026-03-22",
+      "days_since_previous_call": 3,
+      "agent_id": "AG-14",
+      "turns": [
+        { "speaker": "agent", "text": "Dạ shop nghe ạ, em xin số điện thoại kiểm tra thông tin trước ạ?" },
+        { "speaker": "customer", "text": "0909xxx662. Chị hỏi bên Facebook về máy Winix AM90 đó, chồng chị đồng ý rồi, đặt luôn cho chị." },
+        { "speaker": "agent", "text": "Dạ em thấy rồi ạ, Winix AM90, giá 6.890.000 đồng, hợp phòng 35m2 nhà chị. Chị cho em xin địa chỉ giao hàng ạ." },
+        { "speaker": "customer", "text": "12 Cách Mạng Tháng 8, Quận 3, TPHCM." },
+        { "speaker": "agent", "text": "Dạ em tạo đơn xong rồi ạ, giao trong 2-3 ngày." }
+      ],
+      "facts_established": {
+        "product_advised_sku": "AP-WINIX-AM90",
+        "price_quoted_vnd": 6890000,
+        "promo_code_quoted": null,
+        "blocker": null,
+        "decision_maker": null
+      },
+      "outcome": "chot_don",
+      "case_labels": ["Q2a", "Q2b", "Q3a", "Q4"],
+      "notes": "must_not_ask: room_area_m2, health_concern, product_advised_sku, price_quoted_vnd."
+    }
+  ]
+}

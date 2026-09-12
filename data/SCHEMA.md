@@ -57,6 +57,13 @@ của cùng khách mà không cần sửa catalog.
   "calls": ["array các call object — xem mục 4"]
 }
 ```
+
+**Quy ước file lead đơn phiên (filler):** khách đơn phiên (chỉ gọi 1 lần, chiếm đa số lưu
+lượng call center thật) được gộp nhiều khách/file thay vì 1 file/khách để tăng tốc sinh dữ
+liệu số lượng lớn. File khớp pattern `data/customers/filler_batch_*.json` chứa 1 **mảng JSON**
+các customer object (mỗi phần tử vẫn đúng schema ở trên, `customer_id` dùng tiền tố `FIL-`
+thay vì `CUS-` để phân biệt cohort). Code đọc dataset phải xử lý cả 2 dạng: object đơn
+(`data/customers/CUS-*.json`) và mảng object (`data/customers/filler_batch_*.json`).
 `profile_facts` = tầng **Profile** trong bộ nhớ 3 tầng — chỉ chứa sự thật bền vững, KHÔNG
 chứa thông tin của riêng 1 cuộc gọi (giá đã báo, sản phẩm đang tư vấn thuộc về `call.facts_established`,
 tầng **Episodic**).
@@ -81,6 +88,7 @@ tầng **Episodic**).
     "decision_maker": "string | null (vd: chong, vo, tu quyet)"
   },
   "outcome": "chot_don | hen_goi_lai | tu_choi | doi_size | khieu_nai | hoi_thong_tin",
+  "case_labels": ["mã Q theo data/TAXONOMY.md, multi-label, vd: [\"Q2a\", \"Q3d\", \"Q4\"]"],
   "notes": "string, optional — điểm đặc biệt của cuộc gọi (vd: nhân viên báo sai giá, ASR sẽ khó ở đoạn nào...)"
 }
 ```
@@ -101,22 +109,40 @@ tục). Field `notes` của call đó phải ghi rõ mốc chuyển giao và th�
 | `da_mua_doi_khieu_nai` | Khách đã mua, gọi lại đổi size/màu hoặc khiếu nại | Case 3 |
 
 Có thể bổ sung thêm persona khác ngoài 3 persona bắt buộc trên (không bị giới hạn), miễn 3
-persona bắt buộc đều có ≥1 khách minh họa. Ví dụ đã dùng: `cham_soc_nguoi_than_lon_tuoi`
-(mua hộ người thân lớn tuổi, quan tâm tiếng ồn/sức khỏe — dùng cho case handoff).
+persona bắt buộc đều có ≥1 khách minh họa. Đã dùng thêm: `cham_soc_nguoi_than_lon_tuoi`
+(mua hộ người thân lớn tuổi, quan tâm tiếng ồn/sức khỏe — dùng cho case handoff) và
+`hoi_nhieu_khong_mua` (khách hỏi kỹ thông tin/kỹ thuật nhưng chưa mua hoặc từ chối — dùng
+nhiều ở các khách đơn phiên `filler_batch_*.json` để đa dạng outcome `hoi_thong_tin`/`tu_choi`).
 
-## 6. Nhóm case bắt buộc bao phủ (đối chiếu mục 6 trong CLAUDE.md — tab "Thy")
-Mỗi customer đa phiên nên được gắn 1-2 tag case trong `notes` hoặc field riêng `case_tags`:
-`session_continuity`, `memory_carryover`, `multi_channel`, `change_of_mind`,
-`conflicting_information`, `handoff`, `knowledge_gap`, `tool_action`.
+## 6. Nhóm case bắt buộc bao phủ — xem [TAXONOMY.md](TAXONOMY.md)
+
+Taxonomy chính thức (thay thế danh sách tag rời rạc trước đây) là sơ đồ quyết định Q1–Q5 ở
+[data/TAXONOMY.md](TAXONOMY.md). Mỗi call gắn **2 loại nhãn song song**:
+- `case_tags`: tên tiếng Việt dễ đọc (giữ để tra nhanh) — `session_continuity`,
+  `memory_carryover`, `multi_channel`, `change_of_mind`, `conflicting_information`,
+  `handoff`, `knowledge_gap`, `tool_action`, `expired_promo`.
+- `case_labels`: mã Q chuẩn dùng khi chấm điểm/thống kê lỗi theo nhóm (multi-label), vd
+  `["Q2a", "Q3d", "Q4"]`. Bảng đối chiếu 2 loại nhãn + bảng gắn nhãn cho 8 khách đã sinh nằm
+  ở mục 9 của TAXONOMY.md, kèm danh sách case/nhánh còn thiếu cần bổ sung ở đợt sinh tiếp theo.
 
 ## 7. Chỉ tiêu số lượng cần đạt (M1) — theo dõi tiến độ ở đây
 | Hạng mục | Mục tiêu M1 | Tiến độ |
 |---|---|---|
-| Tổng số cuộc hội thoại (transcript) | ≥120 | 18 (đợt 1: CUS-001..008) |
-| Khách đa phiên (≥2 cuộc/khách) | ≥30 khách | 8 |
-| Khách đa kênh (cuộc gọi + chat) | ≥10 khách | 2 (CUS-002, CUS-006) |
-| SKU trong catalog | ≥30 | 31 |
-| Giọng vùng miền | 2 miền | 2 (mien_bac, mien_nam) |
-| Audio (≥1 giờ) | ≥40 cuộc | **hoãn — xử lý sau** |
+| Tổng số cuộc hội thoại (transcript) | ≥120 | **123 ✅** |
+| Khách đa phiên (≥2 cuộc/khách) | ≥30 khách | **30 ✅** (CUS-001..030) |
+| Khách đa kênh (cuộc gọi + chat) | ≥10 khách | **10 ✅** (CUS-002,006,009..016) |
+| SKU trong catalog | ≥30 | **31 ✅** |
+| Giọng vùng miền | 2 miền | **2 ✅** (mien_bac, mien_nam) |
+| Persona (≥3 bắt buộc) | ≥3 | **5** (3 bắt buộc + `cham_soc_nguoi_than_lon_tuoi`, `hoi_nhieu_khong_mua`) |
+| Audio (≥1 giờ) | ≥40 cuộc | **hoãn — xử lý sau** (mục 11, CLAUDE.md) |
+
+**Cấu trúc dataset sau khi hoàn thành phần transcript (2026, đợt 2):**
+- `CUS-001` .. `CUS-030`: 30 khách đa phiên được thiết kế thủ công, mỗi khách gắn `case_tags`
+  + `case_labels` (mã Q) rõ ràng theo [TAXONOMY.md](TAXONOMY.md) — dùng làm nguồn chính để
+  soạn bộ test (Phụ lục B) ở C.4. Bao phủ toàn bộ taxonomy Q1–Q5 trừ CASE-4 (gọi từ số lạ —
+  chủ động bỏ qua theo yêu cầu).
+- `filler_batch_01..06.json`: 60 khách đơn phiên (`FIL-001`..`FIL-060`, mỗi file 1 mảng 10
+  khách) mô phỏng lead thông thường (đa số chỉ chạm 1 lần) — dùng để đủ tổng số lượng ≥120
+  và để bộ test baseline (không bộ nhớ) có đủ dữ liệu đối chứng đa dạng persona/outcome/SKU.
 
 Cập nhật bảng này mỗi khi thêm một đợt dữ liệu mới (không cần đợi xong hết mới cập nhật).

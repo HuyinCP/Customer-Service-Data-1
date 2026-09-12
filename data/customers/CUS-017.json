@@ -1,0 +1,71 @@
+{
+  "customer_id": "CUS-017",
+  "phone_masked": "0967xxx291",
+  "region": "mien_bac",
+  "persona": "do_du_hoi_nguoi_nha",
+  "channels_used": ["hotline"],
+  "case_tags": ["session_continuity", "handoff"],
+  "profile_facts": {
+    "room_area_m2": 28,
+    "has_children": true,
+    "has_pets": false,
+    "health_concern": null,
+    "budget_vnd": 4000000
+  },
+  "calls": [
+    {
+      "call_id": "CUS-017-C1",
+      "channel": "hotline",
+      "modality": "voice",
+      "date": "2026-03-17",
+      "days_since_previous_call": null,
+      "agent_id": "AG-CA-SANG-01",
+      "turns": [
+        { "speaker": "agent", "text": "Dạ shop An Gia nghe ạ, chị cần tư vấn gì ạ?" },
+        { "speaker": "customer", "text": "Chị cần máy lọc không khí cho phòng 28m2, có con nhỏ, tầm 4 triệu thôi." },
+        { "speaker": "agent", "text": "Dạ em đề xuất chị mẫu Xiaomi Smart Air Purifier 4, giá 3.290.000 đồng, phủ tới 28m2, đang có khuyến mãi tặng lõi lọc tới 20/4 ạ." },
+        { "speaker": "customer", "text": "Ok nghe được đó, nhưng giờ chị đang bận họp, chiều chị gọi lại chốt nhé." },
+        { "speaker": "agent", "text": "Dạ vâng chị, chiều chị cứ gọi lại, bên em sẽ hỗ trợ tiếp ạ." }
+      ],
+      "facts_established": {
+        "product_advised_sku": "AP-XM-4",
+        "price_quoted_vnd": 3290000,
+        "promo_code_quoted": "GIFT-FILTER-XM4",
+        "blocker": "dang ban hop, hen chieu goi lai",
+        "decision_maker": "tu_quyet"
+      },
+      "outcome": "hen_goi_lai",
+      "case_labels": ["Q1", "Q4"],
+      "notes": "Ca sáng — hẹn 'chiều gọi lại' trong CÙNG NGÀY, không phải hẹn cách vài ngày."
+    },
+    {
+      "call_id": "CUS-017-C2",
+      "channel": "hotline",
+      "modality": "voice",
+      "date": "2026-03-17",
+      "days_since_previous_call": 0,
+      "agent_id": "AG-CA-CHIEU-02",
+      "turns": [
+        { "speaker": "agent", "text": "Dạ shop An Gia nghe ạ, chị cần hỗ trợ gì ạ?" },
+        { "speaker": "customer", "text": "Chị gọi lại theo hẹn lúc sáng đây, chốt máy lọc không khí Xiaomi 4 giá 3.290.000 đó em, mà em có lưu thông tin sáng nay không?" },
+        { "speaker": "agent", "text": "Dạ chị cho em xin số điện thoại để em kiểm tra ạ?" },
+        { "speaker": "customer", "text": "0967xxx291." },
+        { "speaker": "agent", "text": "Dạ để em tra... em không thấy ghi chú gì từ ca sáng cả ạ, chị cho em hỏi lại phòng nhà mình khoảng bao nhiêu mét vuông để em tư vấn đúng ạ?" },
+        { "speaker": "customer", "text": "Ơ, chị vừa nói với bạn ca sáng xong mà, sao giờ lại hỏi lại từ đầu vậy em? 28m2, có con nhỏ, ngân sách 4 triệu, chốt mẫu Xiaomi 4 luôn đi." },
+        { "speaker": "agent", "text": "Dạ em xin lỗi chị vì sự bất tiện này ạ, để em xác nhận lại: Xiaomi Smart Air Purifier 4, giá 3.290.000 đồng, có khuyến mãi tặng lõi lọc. Chị cho em xin địa chỉ giao hàng ạ." },
+        { "speaker": "customer", "text": "67 Nguyễn Chí Thanh, Hà Nội." },
+        { "speaker": "agent", "text": "Dạ em tạo đơn xong rồi ạ, giao trong 2-3 ngày." }
+      ],
+      "facts_established": {
+        "product_advised_sku": "AP-XM-4",
+        "price_quoted_vnd": 3290000,
+        "promo_code_quoted": "GIFT-FILTER-XM4",
+        "blocker": null,
+        "decision_maker": null
+      },
+      "outcome": "chot_don",
+      "case_labels": ["Q2a", "Q2c", "Q3a", "Q4"],
+      "notes": "CASE-9: ngắt ngữ cảnh KÉP — vừa khoảng cách thời gian (vài giờ, cùng ngày) vừa người trực khác nhau (ca sáng AG-CA-SANG-01 → ca chiều AG-CA-CHIEU-02), không có bàn giao brief nên ca chiều hỏi lại toàn bộ. Đây là hành vi BASELINE cần cải thiện, không phải hành vi đúng."
+    }
+  ]
+}

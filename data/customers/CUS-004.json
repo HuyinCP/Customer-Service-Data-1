@@ -3,8 +3,13 @@
   "phone_masked": "0968xxx719",
   "region": "mien_bac",
   "persona": "cham_soc_nguoi_than_lon_tuoi",
-  "channels_used": ["hotline"],
-  "case_tags": ["handoff", "session_continuity"],
+  "channels_used": [
+    "hotline"
+  ],
+  "case_tags": [
+    "handoff",
+    "session_continuity"
+  ],
   "profile_facts": {
     "room_area_m2": 30,
     "has_children": false,
@@ -21,19 +26,58 @@
       "days_since_previous_call": null,
       "agent_id": "BOT-01",
       "turns": [
-        { "speaker": "bot", "text": "Dạ em chào anh/chị, em là trợ lý ảo của An Gia, anh chị đang quan tâm sản phẩm nào để em hỗ trợ ạ?" },
-        { "speaker": "customer", "text": "À chị muốn mua máy lọc không khí cho mẹ chị, mẹ chị bị hen suyễn, phòng khoảng 30 mét." },
-        { "speaker": "bot", "text": "Dạ em ghi nhận: mua cho mẹ bị hen suyễn, phòng 30m2. Mẹ chị có nhạy cảm tiếng ồn khi ngủ không ạ, để em chọn mẫu chạy êm cho phù hợp?" },
-        { "speaker": "customer", "text": "Có, mẹ chị khó ngủ lắm, máy mà ồn tí là không dùng được đâu." },
-        { "speaker": "bot", "text": "Dạ em ghi nhận thêm yêu cầu vận hành êm rồi ạ. Ngân sách bên mình dự kiến khoảng bao nhiêu ạ?" },
-        { "speaker": "customer", "text": "Khoảng 7 triệu thôi. À mà chị hỏi cái này nữa nè: máy lọc không khí có ảnh hưởng gì tới máy trợ thở của mẹ chị không? Mẹ chị đang dùng máy thở ban đêm ấy." },
-        { "speaker": "bot", "text": "Dạ câu này em xin phép chuyển anh chị tới nhân viên tư vấn để được hỗ trợ chính xác hơn ạ, em chuyển máy liền nha." },
-        { "speaker": "agent", "text": "Dạ em chào chị, em Hương bên An Gia, chị cần hỗ trợ gì ạ?" },
-        { "speaker": "customer", "text": "Ơ... chị vừa nói chuyện với con bot xong mà, giờ lại phải nói lại à? Thôi được, chị hỏi lại nè: máy lọc không khí có ảnh hưởng gì tới máy trợ thở của mẹ chị không?" },
-        { "speaker": "agent", "text": "Dạ chị thông cảm cho em hỏi lại chút xíu: mẹ chị dùng máy trợ thở loại nào và đang gặp vấn đề hô hấp gì để em kiểm tra cho chính xác ạ?" },
-        { "speaker": "customer", "text": "Trời, mẹ chị bị hen suyễn, dùng máy CPAP ban đêm. Chị nói hết với bot rồi mà, sao giờ phải kể lại từ đầu vậy em?" },
-        { "speaker": "agent", "text": "Dạ em xin lỗi chị vì chuyện này ạ, để em kiểm tra hệ thống cho chị nha... Dạ máy lọc không khí không ảnh hưởng gì tới máy CPAP đâu chị, hai thiết bị hoạt động độc lập với nhau. Với phòng 30m2, mẹ nhạy tiếng ồn, ngân sách 7 triệu, em đề xuất chị mẫu Daikin MCK55TVM6, lọc Streamer, chạy khá êm, giá 7.490.000 đồng ạ." },
-        { "speaker": "customer", "text": "Ok để chị suy nghĩ thêm, cảm ơn em." }
+        {
+          "speaker": "bot",
+          "text": "Dạ em chào anh/chị, em là trợ lý ảo của An Gia, anh chị đang quan tâm sản phẩm nào để em hỗ trợ ạ?"
+        },
+        {
+          "speaker": "customer",
+          "text": "À chị muốn mua máy lọc không khí cho mẹ chị, mẹ chị bị hen suyễn, phòng khoảng 30 mét."
+        },
+        {
+          "speaker": "bot",
+          "text": "Dạ em ghi nhận: mua cho mẹ bị hen suyễn, phòng 30m2. Mẹ chị có nhạy cảm tiếng ồn khi ngủ không ạ, để em chọn mẫu chạy êm cho phù hợp?"
+        },
+        {
+          "speaker": "customer",
+          "text": "Có, mẹ chị khó ngủ lắm, máy mà ồn tí là không dùng được đâu."
+        },
+        {
+          "speaker": "bot",
+          "text": "Dạ em ghi nhận thêm yêu cầu vận hành êm rồi ạ. Ngân sách bên mình dự kiến khoảng bao nhiêu ạ?"
+        },
+        {
+          "speaker": "customer",
+          "text": "Khoảng 7 triệu thôi. À mà chị hỏi cái này nữa nè: máy lọc không khí có ảnh hưởng gì tới máy trợ thở của mẹ chị không? Mẹ chị đang dùng máy thở ban đêm ấy."
+        },
+        {
+          "speaker": "bot",
+          "text": "Dạ câu này em xin phép chuyển anh chị tới nhân viên tư vấn để được hỗ trợ chính xác hơn ạ, em chuyển máy liền nha."
+        },
+        {
+          "speaker": "agent",
+          "text": "Dạ em chào chị, em Hương bên An Gia, chị cần hỗ trợ gì ạ?"
+        },
+        {
+          "speaker": "customer",
+          "text": "Ơ... chị vừa nói chuyện với con bot xong mà, giờ lại phải nói lại à? Thôi được, chị hỏi lại nè: máy lọc không khí có ảnh hưởng gì tới máy trợ thở của mẹ chị không?"
+        },
+        {
+          "speaker": "agent",
+          "text": "Dạ chị thông cảm cho em hỏi lại chút xíu: mẹ chị dùng máy trợ thở loại nào và đang gặp vấn đề hô hấp gì để em kiểm tra cho chính xác ạ?"
+        },
+        {
+          "speaker": "customer",
+          "text": "Trời, mẹ chị bị hen suyễn, dùng máy CPAP ban đêm. Chị nói hết với bot rồi mà, sao giờ phải kể lại từ đầu vậy em?"
+        },
+        {
+          "speaker": "agent",
+          "text": "Dạ em xin lỗi chị vì chuyện này ạ, để em kiểm tra hệ thống cho chị nha... Dạ máy lọc không khí không ảnh hưởng gì tới máy CPAP đâu chị, hai thiết bị hoạt động độc lập với nhau. Với phòng 30m2, mẹ nhạy tiếng ồn, ngân sách 7 triệu, em đề xuất chị mẫu Daikin MCK55TVM6, lọc Streamer, chạy khá êm, giá 7.490.000 đồng ạ."
+        },
+        {
+          "speaker": "customer",
+          "text": "Ok để chị suy nghĩ thêm, cảm ơn em."
+        }
       ],
       "facts_established": {
         "product_advised_sku": "AP-DAIKIN-MCK55",
@@ -43,7 +87,12 @@
         "decision_maker": "tu_quyet"
       },
       "outcome": "hen_goi_lai",
-      "notes": "Minh họa đúng Case 3 (bàn giao mù): bot khai thác được health_concern + room_area + yêu cầu vận hành êm + ngân sách, nhưng khi chuyển máy nhân viên người KHÔNG có handoff brief nên hỏi lại toàn bộ. Đây là hành vi BASELINE cần cải thiện — hệ thống có bộ nhớ đúng phải tránh được đoạn nhân viên hỏi lại này."
+      "notes": "Minh họa đúng Case 3 (bàn giao mù): bot khai thác được health_concern + room_area + yêu cầu vận hành êm + ngân sách, nhưng khi chuyển máy nhân viên người KHÔNG có handoff brief nên hỏi lại toàn bộ. Đây là hành vi BASELINE cần cải thiện — hệ thống có bộ nhớ đúng phải tránh được đoạn nhân viên hỏi lại này.",
+      "case_labels": [
+        "Q1",
+        "Q2c",
+        "Q4"
+      ]
     },
     {
       "call_id": "CUS-004-C2",
@@ -53,11 +102,26 @@
       "days_since_previous_call": 5,
       "agent_id": "AG-07",
       "turns": [
-        { "speaker": "agent", "text": "Dạ em chào chị, hôm 8/3 bên em có tư vấn chị mẫu Daikin MCK55TVM6 cho mẹ chị, phòng 30m2, giá 7.490.000 đồng. Chị suy nghĩ tới đâu rồi ạ?" },
-        { "speaker": "customer", "text": "Rồi em, chị lấy luôn mẫu đó, giao giúp chị nhé." },
-        { "speaker": "agent", "text": "Dạ vâng, em xác nhận đơn: Daikin MCK55TVM6, giá 7.490.000 đồng. Chị cho em xin địa chỉ giao hàng ạ." },
-        { "speaker": "customer", "text": "45 Trần Duy Hưng, Hà Nội." },
-        { "speaker": "agent", "text": "Dạ em tạo đơn xong rồi ạ, dự kiến giao trong 3 ngày." }
+        {
+          "speaker": "agent",
+          "text": "Dạ em chào chị, hôm 8/3 bên em có tư vấn chị mẫu Daikin MCK55TVM6 cho mẹ chị, phòng 30m2, giá 7.490.000 đồng. Chị suy nghĩ tới đâu rồi ạ?"
+        },
+        {
+          "speaker": "customer",
+          "text": "Rồi em, chị lấy luôn mẫu đó, giao giúp chị nhé."
+        },
+        {
+          "speaker": "agent",
+          "text": "Dạ vâng, em xác nhận đơn: Daikin MCK55TVM6, giá 7.490.000 đồng. Chị cho em xin địa chỉ giao hàng ạ."
+        },
+        {
+          "speaker": "customer",
+          "text": "45 Trần Duy Hưng, Hà Nội."
+        },
+        {
+          "speaker": "agent",
+          "text": "Dạ em tạo đơn xong rồi ạ, dự kiến giao trong 3 ngày."
+        }
       ],
       "facts_established": {
         "product_advised_sku": "AP-DAIKIN-MCK55",
@@ -67,7 +131,13 @@
         "decision_maker": null
       },
       "outcome": "chot_don",
-      "notes": "must_not_ask: room_area_m2, product_advised, price_quoted_vnd (đã có từ C1). tool_action: order.create."
+      "notes": "must_not_ask: room_area_m2, product_advised, price_quoted_vnd (đã có từ C1). tool_action: order.create.",
+      "case_labels": [
+        "Q2a",
+        "Q2c",
+        "Q3a",
+        "Q4"
+      ]
     }
   ]
 }

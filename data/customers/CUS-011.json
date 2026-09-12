@@ -1,0 +1,68 @@
+{
+  "customer_id": "CUS-011",
+  "phone_masked": "0977xxx518",
+  "region": "mien_bac",
+  "persona": "da_mua_doi_khieu_nai",
+  "channels_used": ["zalo", "hotline"],
+  "case_tags": ["multi_channel", "tool_action"],
+  "profile_facts": {
+    "room_area_m2": 20,
+    "has_children": false,
+    "has_pets": false,
+    "health_concern": null,
+    "budget_vnd": 3500000
+  },
+  "calls": [
+    {
+      "call_id": "CUS-011-C1",
+      "channel": "zalo",
+      "modality": "text",
+      "date": "2026-02-10",
+      "days_since_previous_call": null,
+      "agent_id": "AG-ZL-04",
+      "turns": [
+        { "speaker": "customer", "text": "e oi may tao am boneco a moi mua tuan truoc, sao k thay den bao gi het, binh thuong co den ko e" },
+        { "speaker": "agent", "text": "Dạ anh cho em xin số điện thoại để em kiểm tra đơn hàng ạ?" },
+        { "speaker": "customer", "text": "0977xxx518" },
+        { "speaker": "agent", "text": "Dạ em thấy đơn của anh: Boneco U7146, đặt ngày 3/2 ạ. Mẫu này có màn hình điện tử hiển thị mực nước, không có đèn báo riêng như một số mẫu khác đâu anh, đây là thiết kế bình thường của máy ạ." },
+        { "speaker": "customer", "text": "a vay hen minh nham voi loai khac, thoi ok cam on e" }
+      ],
+      "facts_established": {
+        "product_advised_sku": "HM-BONECO-U7146",
+        "price_quoted_vnd": 3490000,
+        "promo_code_quoted": null,
+        "blocker": null,
+        "decision_maker": null
+      },
+      "outcome": "hoi_thong_tin",
+      "case_labels": ["Q1", "Q4"],
+      "notes": "Kênh Zalo, khách hỏi thông tin về sản phẩm đã mua trước đó (không có trong dataset lịch sử mua nhưng field facts_established ghi lại như đã tư vấn/mua)."
+    },
+    {
+      "call_id": "CUS-011-C2",
+      "channel": "hotline",
+      "modality": "voice",
+      "date": "2026-02-24",
+      "days_since_previous_call": 14,
+      "agent_id": "AG-13",
+      "turns": [
+        { "speaker": "agent", "text": "Dạ em chào anh, em xin số điện thoại kiểm tra thông tin ạ?" },
+        { "speaker": "customer", "text": "0977xxx518. Anh gọi hỏi tiếp về máy tạo ẩm Boneco, giờ máy tự nhiên không phun sương nữa, chắc hết nước hay sao ấy." },
+        { "speaker": "agent", "text": "Dạ em thấy đơn Boneco U7146 của anh rồi ạ. Anh kiểm tra giúp em xem mực nước trong bình còn không, với đèn báo trên máy có nhấp nháy màu gì không ạ?" },
+        { "speaker": "customer", "text": "À để anh coi... còn nước mà đèn nhấp nháy đỏ." },
+        { "speaker": "agent", "text": "Dạ đèn đỏ nhấp nháy là báo cần vệ sinh lõi lọc rồi ạ, anh dùng khăn ẩm lau nhẹ phần lõi rồi lắp lại thử xem. Nếu vẫn không được, bên em sẽ cử kỹ thuật qua kiểm tra trong bảo hành ạ." },
+        { "speaker": "customer", "text": "Ok để anh thử, không được thì gọi lại." }
+      ],
+      "facts_established": {
+        "product_advised_sku": "HM-BONECO-U7146",
+        "price_quoted_vnd": 0,
+        "promo_code_quoted": null,
+        "blocker": "may bao loi den do, can ho tro ky thuat",
+        "decision_maker": null
+      },
+      "outcome": "khieu_nai",
+      "case_labels": ["Q2a", "Q2b", "Q3a", "Q4"],
+      "notes": "must_not_ask: product_advised_sku (đã có từ đơn hàng)."
+    }
+  ]
+}

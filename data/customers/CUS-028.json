@@ -1,0 +1,68 @@
+{
+  "customer_id": "CUS-028",
+  "phone_masked": "0947xxx128",
+  "region": "mien_nam",
+  "persona": "da_mua_doi_khieu_nai",
+  "channels_used": ["hotline"],
+  "case_tags": ["tool_action", "memory_carryover"],
+  "profile_facts": {
+    "room_area_m2": null,
+    "has_children": false,
+    "has_pets": false,
+    "health_concern": null,
+    "budget_vnd": 1000000
+  },
+  "calls": [
+    {
+      "call_id": "CUS-028-C1",
+      "channel": "hotline",
+      "modality": "voice",
+      "date": "2026-03-05",
+      "days_since_previous_call": null,
+      "agent_id": "AG-36",
+      "turns": [
+        { "speaker": "agent", "text": "Dạ shop An Gia nghe ạ, anh cần hỗ trợ gì ạ?" },
+        { "speaker": "customer", "text": "Anh có máy lọc không khí Daikin MCK55 mua hồi năm ngoái, giờ tới hạn thay lõi lọc, bên em có bán không?" },
+        { "speaker": "agent", "text": "Dạ có ạ, lõi lọc thay thế cho dòng MCK giá 890.000 đồng, tương thích cả MCK55 và MCK70 ạ." },
+        { "speaker": "customer", "text": "Ok đặt cho anh 1 cái." },
+        { "speaker": "agent", "text": "Dạ vâng, anh cho em xin địa chỉ giao hàng ạ." },
+        { "speaker": "customer", "text": "33 Phạm Văn Đồng, Thủ Đức, TPHCM." },
+        { "speaker": "agent", "text": "Dạ em tạo đơn xong rồi ạ, giao trong 2 ngày." }
+      ],
+      "facts_established": {
+        "product_advised_sku": "FIL-DAIKIN-MC",
+        "price_quoted_vnd": 890000,
+        "promo_code_quoted": null,
+        "blocker": null,
+        "decision_maker": null
+      },
+      "outcome": "chot_don",
+      "case_labels": ["Q1", "Q4"],
+      "notes": "Cuộc mua phụ kiện đơn giản, ngắn gọn."
+    },
+    {
+      "call_id": "CUS-028-C2",
+      "channel": "hotline",
+      "modality": "voice",
+      "date": "2026-03-08",
+      "days_since_previous_call": 3,
+      "agent_id": "AG-37",
+      "turns": [
+        { "speaker": "agent", "text": "Dạ em chào anh, em xin số điện thoại kiểm tra thông tin ạ?" },
+        { "speaker": "customer", "text": "0947xxx128. Anh gọi hỏi đơn lõi lọc Daikin đặt hôm 5/3, sao chưa thấy giao vậy em?" },
+        { "speaker": "agent", "text": "Dạ để em tra đơn... em thấy đơn của anh đang ở kho vận chuyển, dự kiến giao trong hôm nay hoặc chậm nhất ngày mai ạ, em xin lỗi vì hơi trễ so với dự kiến ban đầu." },
+        { "speaker": "customer", "text": "Ok vậy anh chờ thêm, cảm ơn em." }
+      ],
+      "facts_established": {
+        "product_advised_sku": "FIL-DAIKIN-MC",
+        "price_quoted_vnd": 890000,
+        "promo_code_quoted": null,
+        "blocker": "cham giao hang",
+        "decision_maker": null
+      },
+      "outcome": "hoi_thong_tin",
+      "case_labels": ["Q2a", "Q3a", "Q4"],
+      "notes": "tool_action: order.status. must_not_ask: product_advised_sku."
+    }
+  ]
+}

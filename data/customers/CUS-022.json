@@ -1,0 +1,69 @@
+{
+  "customer_id": "CUS-022",
+  "phone_masked": "0939xxx472",
+  "region": "mien_nam",
+  "persona": "da_mua_doi_khieu_nai",
+  "channels_used": ["hotline"],
+  "case_tags": ["session_continuity", "memory_carryover"],
+  "profile_facts": {
+    "room_area_m2": 22,
+    "has_children": false,
+    "has_pets": false,
+    "health_concern": null,
+    "budget_vnd": 3000000
+  },
+  "calls": [
+    {
+      "call_id": "CUS-022-C1",
+      "channel": "hotline",
+      "modality": "voice",
+      "date": "2025-08-15",
+      "days_since_previous_call": null,
+      "agent_id": "AG-26",
+      "turns": [
+        { "speaker": "agent", "text": "Dạ shop An Gia nghe ạ, anh cần tư vấn gì ạ?" },
+        { "speaker": "customer", "text": "Anh cần máy lọc không khí phòng 22m2, khoảng 3 triệu thôi." },
+        { "speaker": "agent", "text": "Dạ em đề xuất anh mẫu Xiaomi Smart Air Purifier 4 Compact, giá 2.490.000 đồng ạ." },
+        { "speaker": "customer", "text": "Ok chốt luôn cho anh." },
+        { "speaker": "agent", "text": "Dạ vâng, anh cho em xin địa chỉ giao hàng ạ." },
+        { "speaker": "customer", "text": "10 Trần Hưng Đạo, Quận 5, TPHCM." },
+        { "speaker": "agent", "text": "Dạ em tạo đơn xong rồi ạ, giao trong 2-3 ngày." }
+      ],
+      "facts_established": {
+        "product_advised_sku": "AP-XM-4C",
+        "price_quoted_vnd": 2490000,
+        "promo_code_quoted": null,
+        "blocker": null,
+        "decision_maker": null
+      },
+      "outcome": "chot_don",
+      "case_labels": ["Q1", "Q4"],
+      "notes": "Đơn hàng cũ, cách cuộc gọi C2 tới hơn 7 tháng — địa chỉ giao hàng ghi nhận ở đây sẽ hết hạn TTL (ttl_rule address = 180 ngày, xem TAXONOMY.md mục 8) trước cuộc gọi sau."
+    },
+    {
+      "call_id": "CUS-022-C2",
+      "channel": "hotline",
+      "modality": "voice",
+      "date": "2026-03-20",
+      "days_since_previous_call": 217,
+      "agent_id": "AG-27",
+      "turns": [
+        { "speaker": "agent", "text": "Dạ em chào anh, em xin số điện thoại kiểm tra thông tin ạ?" },
+        { "speaker": "customer", "text": "0939xxx472. Anh muốn mua thêm 1 cái máy lọc không khí Xiaomi 4 Compact nữa, đặt y như đơn hồi tháng 8 năm ngoái." },
+        { "speaker": "agent", "text": "Dạ em thấy đơn cũ của anh rồi ạ, Xiaomi Air Purifier 4 Compact, giá vẫn 2.490.000 đồng. Đơn hồi tháng 8 bên em giao tới địa chỉ 10 Trần Hưng Đạo, Quận 5 — anh xác nhận giúp em lần này vẫn giao đúng địa chỉ đó, hay đã chuyển chỗ khác ạ? Đơn cũ cũng khá lâu rồi nên em muốn xác nhận lại cho chắc ạ." },
+        { "speaker": "customer", "text": "À anh chuyển nhà rồi, giờ giao tới 88 Nguyễn Tri Phương, Quận 10 nhé." },
+        { "speaker": "agent", "text": "Dạ em cập nhật địa chỉ mới: 88 Nguyễn Tri Phương, Quận 10, TPHCM. Em tạo đơn Xiaomi Air Purifier 4 Compact, giá 2.490.000 đồng, giao trong 2-3 ngày ạ." }
+      ],
+      "facts_established": {
+        "product_advised_sku": "AP-XM-4C",
+        "price_quoted_vnd": 2490000,
+        "promo_code_quoted": null,
+        "blocker": null,
+        "decision_maker": null
+      },
+      "outcome": "chot_don",
+      "case_labels": ["Q2a", "Q3d", "Q4"],
+      "notes": "CASE-19 (Expiry — TTL địa chỉ): cách nhau 217 ngày (>180 ngày TTL), agent ĐÚNG khi chủ động hỏi lại XÁC NHẬN địa chỉ (không phải câu hỏi mở, không dùng thẳng địa chỉ cũ) — và hóa ra khách đã chuyển nhà thật, xác nhận đúng hướng xử lý. must_not_ask (không đổi): product_advised_sku, price_quoted_vnd (thông tin sản phẩm không có TTL). address KHÔNG nằm trong must_not_ask vì đã quá hạn TTL."
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "customer_id": "CUS-019",
+  "phone_masked": "0913xxx528",
+  "region": "mien_bac",
+  "persona": "so_sanh_gia",
+  "channels_used": ["hotline"],
+  "case_tags": ["change_of_mind", "session_continuity", "memory_carryover"],
+  "profile_facts": {
+    "room_area_m2": 42,
+    "has_children": false,
+    "has_pets": false,
+    "health_concern": null,
+    "budget_vnd": 10000000
+  },
+  "calls": [
+    {
+      "call_id": "CUS-019-C1",
+      "channel": "hotline",
+      "modality": "voice",
+      "date": "2026-02-25",
+      "days_since_previous_call": null,
+      "agent_id": "AG-21",
+      "turns": [
+        { "speaker": "agent", "text": "Dạ shop An Gia nghe ạ, anh cần tư vấn gì ạ?" },
+        { "speaker": "customer", "text": "Anh cần máy lọc không khí cho phòng khách 42m2, ngân sách tầm 10 triệu, muốn loại tốt tốt chút." },
+        { "speaker": "agent", "text": "Dạ em đề xuất anh mẫu Daikin MCK70TVM6, công nghệ lọc Streamer, tạo ẩm tích hợp, giá 9.990.000 đồng, phủ tới 41m2 ạ." },
+        { "speaker": "customer", "text": "Ừ nghe cũng ổn, để anh xem thêm vài mẫu khác nữa rồi quyết." }
+      ],
+      "facts_established": {
+        "product_advised_sku": "AP-DAIKIN-MCK70",
+        "price_quoted_vnd": 9990000,
+        "promo_code_quoted": null,
+        "blocker": "dang so sanh nhieu mau",
+        "decision_maker": "tu_quyet"
+      },
+      "outcome": "hen_goi_lai",
+      "case_labels": ["Q1", "Q4"],
+      "notes": "Cuộc 1."
+    },
+    {
+      "call_id": "CUS-019-C2",
+      "channel": "hotline",
+      "modality": "voice",
+      "date": "2026-03-02",
+      "days_since_previous_call": 5,
+      "agent_id": "AG-22",
+      "turns": [
+        { "speaker": "agent", "text": "Dạ em chào anh, hôm 25/2 bên em có tư vấn anh mẫu Daikin MCK70TVM6 giá 9.990.000 đồng cho phòng 42m2. Anh xem thêm tới đâu rồi ạ?" },
+        { "speaker": "customer", "text": "Anh có coi thêm mấy mẫu Hitachi với Sharp, thấy Hitachi khen lọc HEPA kép ngon, giá bên em bao nhiêu?" },
+        { "speaker": "agent", "text": "Dạ mẫu Hitachi EP-A5000 giá 9.890.000 đồng ạ, lọc HEPA kép, cảm biến PM2.5 và PM10, cũng phủ tới 48m2, hơi nhỉnh hơn về diện tích so với Daikin." },
+        { "speaker": "customer", "text": "Ok để anh cân nhắc thêm, mai mốt gọi lại chốt." },
+        { "speaker": "agent", "text": "Dạ vâng anh cứ từ từ ạ." }
+      ],
+      "facts_established": {
+        "product_advised_sku": "AP-DAIKIN-MCK70",
+        "price_quoted_vnd": 9990000,
+        "promo_code_quoted": null,
+        "blocker": "dang can nhac Daikin vs Hitachi",
+        "decision_maker": "tu_quyet"
+      },
+      "outcome": "hen_goi_lai",
+      "case_labels": ["Q2a", "Q3a", "Q4"],
+      "notes": "Cuộc 2 — chưa chốt, vẫn giữ product_advised_sku là Daikin (đề xuất ban đầu) nhưng đã ghi nhận thêm blocker mới (đang cân nhắc Hitachi). Đây là tình huống Q3a bình thường, CHƯA phải Change of Mind vì khách chưa thực sự đổi lựa chọn, chỉ đang tìm hiểu thêm."
+    },
+    {
+      "call_id": "CUS-019-C3",
+      "channel": "hotline",
+      "modality": "voice",
+      "date": "2026-03-06",
+      "days_since_previous_call": 4,
+      "agent_id": "AG-21",
+      "turns": [
+        { "speaker": "agent", "text": "Dạ em chào anh, hôm trước mình đang cân nhắc giữa Daikin MCK70TVM6 và Hitachi EP-A5000 cho phòng 42m2. Anh đã quyết định chưa ạ?" },
+        { "speaker": "customer", "text": "Rồi, anh chốt Hitachi luôn, bỏ Daikin đi, đọc review thấy Hitachi hợp hơn." },
+        { "speaker": "agent", "text": "Dạ vâng em cập nhật lại: chốt mẫu Hitachi EP-A5000, giá 9.890.000 đồng, hủy đề xuất Daikin MCK70TVM6 trước đó. Anh cho em xin địa chỉ giao hàng ạ." },
+        { "speaker": "customer", "text": "88 Xã Đàn, Đống Đa, Hà Nội." },
+        { "speaker": "agent", "text": "Dạ em tạo đơn Hitachi EP-A5000 xong rồi ạ, giao trong 3 ngày." }
+      ],
+      "facts_established": {
+        "product_advised_sku": "AP-HITACHI-EPA",
+        "price_quoted_vnd": 9890000,
+        "promo_code_quoted": null,
+        "blocker": null,
+        "decision_maker": null
+      },
+      "outcome": "chot_don",
+      "case_labels": ["Q2a", "Q3b", "Q4"],
+      "notes": "CASE-13 (khó, xảy ra ở phiên thứ 3): product_advised_sku đổi hẳn từ AP-DAIKIN-MCK70 (đã mang qua 2 phiên) sang AP-HITACHI-EPA. Giá trị Daikin phải bị vô hiệu hóa hoàn toàn trong bộ nhớ, order.create phải dùng đúng SKU Hitachi. Đây là bài test cho CASE-14 luôn: nếu hệ thống vô tình vẫn nhắc/dùng Daikin ở phiên sau case này thì fail."
+    }
+  ]
+}

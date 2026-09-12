@@ -1,0 +1,70 @@
+{
+  "customer_id": "CUS-029",
+  "phone_masked": "0936xxx453",
+  "region": "mien_bac",
+  "persona": "so_sanh_gia",
+  "channels_used": ["hotline"],
+  "case_tags": ["knowledge_gap", "session_continuity"],
+  "profile_facts": {
+    "room_area_m2": 25,
+    "has_children": false,
+    "has_pets": false,
+    "health_concern": null,
+    "budget_vnd": 5000000
+  },
+  "calls": [
+    {
+      "call_id": "CUS-029-C1",
+      "channel": "hotline",
+      "modality": "voice",
+      "date": "2026-03-16",
+      "days_since_previous_call": null,
+      "agent_id": "AG-38",
+      "turns": [
+        { "speaker": "agent", "text": "Dạ shop An Gia nghe ạ, anh cần tư vấn gì ạ?" },
+        { "speaker": "customer", "text": "Anh đang tìm máy lọc không khí hãng LG ấy, bên em có bán không?" },
+        { "speaker": "agent", "text": "Dạ để em kiểm tra hệ thống catalog một chút ạ... dạ hiện bên em không có hàng của hãng LG ạ, em chỉ có các hãng Xiaomi, Sharp, Daikin, Panasonic, Coway, Hitachi, Kangaroo, Karofi, Levoit, Winix, Philips, Blueair thôi ạ." },
+        { "speaker": "customer", "text": "Ồ vậy à, không có LG hả, thôi vậy có mẫu nào tương đương LG mà bên em có không?" },
+        { "speaker": "agent", "text": "Dạ với phòng 25m2, ngân sách khoảng bao nhiêu để em đề xuất mẫu phù hợp ạ?" },
+        { "speaker": "customer", "text": "Khoảng 5 triệu thôi." },
+        { "speaker": "agent", "text": "Dạ em đề xuất anh mẫu Xiaomi Smart Air Purifier 4 Pro, giá 4.890.000 đồng, phù hợp phòng 25m2 ạ." },
+        { "speaker": "customer", "text": "Ok để anh xem thêm rồi gọi lại." }
+      ],
+      "facts_established": {
+        "product_advised_sku": "AP-XM-4PRO",
+        "price_quoted_vnd": 4890000,
+        "promo_code_quoted": null,
+        "blocker": "can xem them",
+        "decision_maker": "tu_quyet"
+      },
+      "outcome": "hoi_thong_tin",
+      "case_labels": ["Q1", "Q4", "Q5"],
+      "notes": "CASE-24: khách hỏi thương hiệu KHÔNG có trong catalog (LG) — agent gọi catalog.search, nhận kết quả rỗng cho hãng LG, trả lời trung thực về danh sách hãng THỰC SỰ có, không bịa ra sản phẩm LG không tồn tại, rồi mới đề xuất thay thế."
+    },
+    {
+      "call_id": "CUS-029-C2",
+      "channel": "hotline",
+      "modality": "voice",
+      "date": "2026-03-19",
+      "days_since_previous_call": 3,
+      "agent_id": "AG-38",
+      "turns": [
+        { "speaker": "agent", "text": "Dạ em chào anh, hôm 16/3 bên em có tư vấn anh mẫu Xiaomi Air Purifier 4 Pro giá 4.890.000 đồng cho phòng 25m2. Anh quyết định chưa ạ?" },
+        { "speaker": "customer", "text": "Rồi, chốt mẫu đó cho anh." },
+        { "speaker": "agent", "text": "Dạ vâng, anh cho em xin địa chỉ giao hàng ạ." },
+        { "speaker": "customer", "text": "29 Trần Phú, Hà Đông, Hà Nội." },
+        { "speaker": "agent", "text": "Dạ em tạo đơn xong rồi ạ, giao trong 2-3 ngày." }
+      ],
+      "facts_established": {
+        "product_advised_sku": "AP-XM-4PRO",
+        "price_quoted_vnd": 4890000,
+        "promo_code_quoted": null,
+        "blocker": null,
+        "decision_maker": null
+      },
+      "outcome": "chot_don",
+      "case_labels": ["Q2a", "Q3a", "Q4"],
+      "notes": "must_not_ask: room_area_m2, product_advised_sku, price_quoted_vnd."
+    }
+  ]
+}

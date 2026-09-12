@@ -1,0 +1,68 @@
+{
+  "customer_id": "CUS-026",
+  "phone_masked": "0908xxx351",
+  "region": "mien_bac",
+  "persona": "so_sanh_gia",
+  "channels_used": ["hotline"],
+  "case_tags": ["handoff", "session_continuity", "memory_carryover"],
+  "profile_facts": {
+    "room_area_m2": 30,
+    "has_children": false,
+    "has_pets": true,
+    "health_concern": "di ung long thu cung",
+    "budget_vnd": 6000000
+  },
+  "calls": [
+    {
+      "call_id": "CUS-026-C1",
+      "channel": "hotline",
+      "modality": "voice",
+      "date": "2026-02-18",
+      "days_since_previous_call": null,
+      "agent_id": "AG-NGHIVIEC-08",
+      "turns": [
+        { "speaker": "agent", "text": "Dạ shop An Gia nghe ạ, chị cần tư vấn gì ạ?" },
+        { "speaker": "customer", "text": "Chị cần máy lọc không khí phòng 30m2, nhà nuôi mèo, chị bị dị ứng lông." },
+        { "speaker": "agent", "text": "Dạ em đề xuất chị mẫu Winix AM90, công nghệ PlasmaWave, giá 6.890.000 đồng, hợp nhà nuôi thú cưng ạ." },
+        { "speaker": "customer", "text": "Ok nghe được, để chị cân nhắc thêm ít hôm." }
+      ],
+      "facts_established": {
+        "product_advised_sku": "AP-WINIX-AM90",
+        "price_quoted_vnd": 6890000,
+        "promo_code_quoted": null,
+        "blocker": "can can nhac them",
+        "decision_maker": "tu_quyet"
+      },
+      "outcome": "hen_goi_lai",
+      "case_labels": ["Q1", "Q4"],
+      "notes": "Agent AG-NGHIVIEC-08 phụ trách cuộc này SAU ĐÓ đã nghỉ việc trước khi khách gọi lại (xem C2)."
+    },
+    {
+      "call_id": "CUS-026-C2",
+      "channel": "hotline",
+      "modality": "voice",
+      "date": "2026-03-04",
+      "days_since_previous_call": 14,
+      "agent_id": "AG-33",
+      "turns": [
+        { "speaker": "agent", "text": "Dạ em chào chị, em xin số điện thoại kiểm tra thông tin ạ?" },
+        { "speaker": "customer", "text": "0908xxx351. Chị hỏi bên bạn nhân viên tên gì đó hôm 18/2 về máy lọc không khí Winix, giờ chị muốn chốt." },
+        { "speaker": "agent", "text": "Dạ để em tra hệ thống... bạn nhân viên đó hiện không còn làm ở bên em nữa, nhưng thông tin tư vấn vẫn lưu đầy đủ trong hệ thống ạ: mẫu Winix AM90, giá 6.890.000 đồng, cho phòng 30m2 nhà nuôi mèo. Chị chốt mẫu này đúng không ạ?" },
+        { "speaker": "customer", "text": "Đúng rồi đó, hay quá, tưởng phải kể lại từ đầu." },
+        { "speaker": "agent", "text": "Dạ không cần đâu ạ, chị cho em xin địa chỉ giao hàng ạ." },
+        { "speaker": "customer", "text": "22 Hoàng Hoa Thám, Ba Đình, Hà Nội." },
+        { "speaker": "agent", "text": "Dạ em tạo đơn xong rồi ạ, giao trong 2-3 ngày." }
+      ],
+      "facts_established": {
+        "product_advised_sku": "AP-WINIX-AM90",
+        "price_quoted_vnd": 6890000,
+        "promo_code_quoted": null,
+        "blocker": null,
+        "decision_maker": null
+      },
+      "outcome": "chot_don",
+      "case_labels": ["Q2a", "Q2c", "Q3a", "Q4"],
+      "notes": "CASE-8: nhân viên phụ trách ban đầu đã nghỉ việc — dữ liệu vẫn phải truy xuất được bởi bất kỳ ai tiếp nhận (không gắn với trí nhớ cá nhân của 1 nhân viên cụ thể). Hành vi ĐÚNG, đối lập với CASE-9/CASE-17 (baseline sai) đã làm ở các khách trước."
+    }
+  ]
+}

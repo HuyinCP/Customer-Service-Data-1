@@ -1,0 +1,68 @@
+{
+  "customer_id": "CUS-027",
+  "phone_masked": "0925xxx590",
+  "region": "mien_nam",
+  "persona": "so_sanh_gia",
+  "channels_used": ["hotline"],
+  "case_tags": ["change_of_mind", "session_continuity"],
+  "profile_facts": {
+    "room_area_m2": 30,
+    "has_children": false,
+    "has_pets": false,
+    "health_concern": null,
+    "budget_vnd": 3000000
+  },
+  "calls": [
+    {
+      "call_id": "CUS-027-C1",
+      "channel": "hotline",
+      "modality": "voice",
+      "date": "2026-03-13",
+      "days_since_previous_call": null,
+      "agent_id": "AG-34",
+      "turns": [
+        { "speaker": "agent", "text": "Dạ shop An Gia nghe ạ, chị cần tư vấn gì ạ?" },
+        { "speaker": "customer", "text": "Chị cần máy tạo ẩm cho phòng khách 30m2, tầm 3 triệu." },
+        { "speaker": "agent", "text": "Dạ em đề xuất chị mẫu Boneco U7146, dung tích 6L, màn hình điện tử, giá 3.490.000 đồng ạ." },
+        { "speaker": "customer", "text": "Ok lấy mẫu đó cho chị... à khoan, hơi mắc hơn ngân sách chị rồi, có mẫu nào rẻ hơn không em, gọn gọn cũng được." },
+        { "speaker": "agent", "text": "Dạ vậy em đề xuất chị mẫu Philips HU4816/10, dung tích 3L, công nghệ NanoCloud không tạo sương mù, giá 1.990.000 đồng, gọn nhẹ hơn ạ." },
+        { "speaker": "customer", "text": "Ừ vậy lấy mẫu Philips cho chị đi, bỏ mẫu Boneco đi nhé, để chị nghĩ thêm về giao hàng rồi gọi lại." }
+      ],
+      "facts_established": {
+        "product_advised_sku": "HM-PHILIPS-HU4816",
+        "price_quoted_vnd": 1990000,
+        "promo_code_quoted": null,
+        "blocker": "can sap xep thoi gian nhan hang",
+        "decision_maker": "tu_quyet"
+      },
+      "outcome": "hen_goi_lai",
+      "case_labels": ["Q1", "Q3b", "Q4"],
+      "notes": "CASE-12 (Change of Mind TRONG CÙNG LƯỢT): khách chọn Boneco rồi đổi ngay sang Philips chỉ trong vài giây, chưa kịp qua phiên khác. facts_established chỉ lưu giá trị CUỐI CÙNG (Philips) — giá trị Boneco không được lưu vào Episodic memory vì đã bị vô hiệu ngay trong lượt, không phải là 'sản phẩm đã tư vấn' của cuộc gọi này."
+    },
+    {
+      "call_id": "CUS-027-C2",
+      "channel": "hotline",
+      "modality": "voice",
+      "date": "2026-03-15",
+      "days_since_previous_call": 2,
+      "agent_id": "AG-35",
+      "turns": [
+        { "speaker": "agent", "text": "Dạ em chào chị, hôm 13/3 bên em có tư vấn chị mẫu Philips HU4816 giá 1.990.000 đồng. Chị sắp xếp nhận hàng được chưa ạ?" },
+        { "speaker": "customer", "text": "Rồi em, chốt cho chị đi." },
+        { "speaker": "agent", "text": "Dạ vâng, chị cho em xin địa chỉ giao hàng ạ." },
+        { "speaker": "customer", "text": "14 Nguyễn Đình Chiểu, Quận 3, TPHCM." },
+        { "speaker": "agent", "text": "Dạ em tạo đơn xong rồi ạ, giao trong 2-3 ngày." }
+      ],
+      "facts_established": {
+        "product_advised_sku": "HM-PHILIPS-HU4816",
+        "price_quoted_vnd": 1990000,
+        "promo_code_quoted": null,
+        "blocker": null,
+        "decision_maker": null
+      },
+      "outcome": "chot_don",
+      "case_labels": ["Q2a", "Q3a", "Q4"],
+      "notes": "must_not_ask: product_advised_sku, price_quoted_vnd — quan trọng: phải là Philips, KHÔNG được lẫn về Boneco (case CASE-14 fail nếu agent nhầm)."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "customer_id": "CUS-014",
+  "phone_masked": "0932xxx855",
+  "region": "mien_nam",
+  "persona": "do_du_hoi_nguoi_nha",
+  "channels_used": ["facebook", "hotline"],
+  "case_tags": ["multi_channel", "session_continuity", "memory_carryover"],
+  "profile_facts": {
+    "room_area_m2": null,
+    "has_children": false,
+    "has_pets": false,
+    "health_concern": null,
+    "budget_vnd": 1000000
+  },
+  "calls": [
+    {
+      "call_id": "CUS-014-C1",
+      "channel": "facebook",
+      "modality": "text",
+      "date": "2026-03-21",
+      "days_since_previous_call": null,
+      "agent_id": "AG-FB-04",
+      "turns": [
+        { "speaker": "customer", "text": "shop oi may do chat luong khong khi gia bnhieu a, minh muon theo doi may lc kk nha minh co hieu qua khong" },
+        { "speaker": "agent", "text": "Dạ em chào anh, bên em có mẫu Xiaomi Air Quality Monitor 2, đo PM2.5, nhiệt độ, độ ẩm, giá 690.000 đồng, kết nối app tiện theo dõi ạ." },
+        { "speaker": "customer", "text": "oke gia on do, de minh hoi ba xa coi co can k roi nhan tin lai" }
+      ],
+      "facts_established": {
+        "product_advised_sku": "MON-XM-2",
+        "price_quoted_vnd": 690000,
+        "promo_code_quoted": null,
+        "blocker": "can hoi vo",
+        "decision_maker": "vo"
+      },
+      "outcome": "hen_goi_lai",
+      "case_labels": ["Q1", "Q4"],
+      "notes": "Kênh Facebook, sản phẩm phụ kiện giá thấp."
+    },
+    {
+      "call_id": "CUS-014-C2",
+      "channel": "hotline",
+      "modality": "voice",
+      "date": "2026-03-23",
+      "days_since_previous_call": 2,
+      "agent_id": "AG-16",
+      "turns": [
+        { "speaker": "agent", "text": "Dạ shop nghe ạ, em xin số điện thoại kiểm tra thông tin ạ?" },
+        { "speaker": "customer", "text": "0932xxx855. Anh hỏi bên Facebook về máy đo chất lượng không khí Xiaomi 690.000 đó, vợ anh ok rồi, đặt cho anh." },
+        { "speaker": "agent", "text": "Dạ vâng em xác nhận đơn: Xiaomi Air Quality Monitor 2, giá 690.000 đồng. Anh cho em xin địa chỉ giao hàng ạ." },
+        { "speaker": "customer", "text": "23 Phan Xích Long, Phú Nhuận, TPHCM." },
+        { "speaker": "agent", "text": "Dạ em tạo đơn xong rồi ạ, giao trong 2 ngày." }
+      ],
+      "facts_established": {
+        "product_advised_sku": "MON-XM-2",
+        "price_quoted_vnd": 690000,
+        "promo_code_quoted": null,
+        "blocker": null,
+        "decision_maker": null
+      },
+      "outcome": "chot_don",
+      "case_labels": ["Q2a", "Q2b", "Q3a", "Q4"],
+      "notes": "must_not_ask: product_advised_sku, price_quoted_vnd."
+    }
+  ]
+}

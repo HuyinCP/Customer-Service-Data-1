@@ -1,0 +1,290 @@
+[
+  {
+    "customer_id": "FIL-011",
+    "phone_masked": "0972xxx398",
+    "region": "mien_bac",
+    "persona": "so_sanh_gia",
+    "channels_used": ["hotline"],
+    "case_tags": [],
+    "profile_facts": { "room_area_m2": 40, "has_children": true, "has_pets": false, "health_concern": null, "budget_vnd": 7000000 },
+    "calls": [{
+      "call_id": "FIL-011-C1",
+      "channel": "hotline",
+      "modality": "voice",
+      "date": "2026-03-16",
+      "days_since_previous_call": null,
+      "agent_id": "AG-51",
+      "turns": [
+        { "speaker": "agent", "text": "Dạ shop An Gia nghe ạ, anh cần tư vấn gì ạ?" },
+        { "speaker": "customer", "text": "Anh hỏi máy lọc không khí cho phòng khách 40m2, có con nhỏ, tầm 7 triệu." },
+        { "speaker": "agent", "text": "Dạ em đề xuất anh mẫu Blueair Blue Pure 211+, giá 7.290.000 đồng, vỏ vải tháo rửa được, vận hành êm ạ." },
+        { "speaker": "customer", "text": "Ok nghe ổn, chốt cho anh luôn." },
+        { "speaker": "agent", "text": "Dạ vâng, anh cho em xin địa chỉ giao hàng ạ." },
+        { "speaker": "customer", "text": "15 Tôn Đức Thắng, Hai Bà Trưng, Hà Nội." },
+        { "speaker": "agent", "text": "Dạ em tạo đơn xong rồi ạ, giao trong 3 ngày." }
+      ],
+      "facts_established": { "product_advised_sku": "AP-BLUEAIR-211", "price_quoted_vnd": 7290000, "promo_code_quoted": null, "blocker": null, "decision_maker": null },
+      "outcome": "chot_don",
+      "case_labels": ["Q1", "Q4"],
+      "notes": "Lead đơn phiên, chốt nhanh."
+    }]
+  },
+  {
+    "customer_id": "FIL-012",
+    "phone_masked": "0930xxx462",
+    "region": "mien_nam",
+    "persona": "do_du_hoi_nguoi_nha",
+    "channels_used": ["hotline"],
+    "case_tags": [],
+    "profile_facts": { "room_area_m2": 28, "has_children": false, "has_pets": false, "health_concern": "hen suyen", "budget_vnd": 6000000 },
+    "calls": [{
+      "call_id": "FIL-012-C1",
+      "channel": "hotline",
+      "modality": "voice",
+      "date": "2026-03-17",
+      "days_since_previous_call": null,
+      "agent_id": "AG-52",
+      "turns": [
+        { "speaker": "agent", "text": "Dạ shop An Gia nghe ạ, chị cần tư vấn gì ạ?" },
+        { "speaker": "customer", "text": "Chị bị hen suyễn, cần máy lọc không khí tốt cho phòng 28m2, tầm 6 triệu." },
+        { "speaker": "agent", "text": "Dạ em đề xuất chị mẫu Sharp FP-J40E-H Plasmacluster, giá 5.990.000 đồng, khử mùi và bụi mịn hiệu quả ạ." },
+        { "speaker": "customer", "text": "Để chị hỏi con gái chị xem có ý kiến gì không, tí nữa gọi lại." }
+      ],
+      "facts_established": { "product_advised_sku": "AP-SHARP-FPJ40", "price_quoted_vnd": 5990000, "promo_code_quoted": null, "blocker": "can hoi con gai", "decision_maker": "con_gai" },
+      "outcome": "hen_goi_lai",
+      "case_labels": ["Q1", "Q4"],
+      "notes": "Lead hẹn gọi lại, không có phiên 2 trong dataset."
+    }]
+  },
+  {
+    "customer_id": "FIL-013",
+    "phone_masked": "0916xxx573",
+    "region": "mien_bac",
+    "persona": "so_sanh_gia",
+    "channels_used": ["hotline"],
+    "case_tags": [],
+    "profile_facts": { "room_area_m2": null, "has_children": false, "has_pets": false, "health_concern": null, "budget_vnd": 3000000 },
+    "calls": [{
+      "call_id": "FIL-013-C1",
+      "channel": "hotline",
+      "modality": "voice",
+      "date": "2026-03-18",
+      "days_since_previous_call": null,
+      "agent_id": "AG-53",
+      "turns": [
+        { "speaker": "agent", "text": "Dạ shop An Gia nghe ạ, anh cần hỗ trợ gì ạ?" },
+        { "speaker": "customer", "text": "Anh hỏi máy đo chất lượng không khí Temtop M2000 giá bao nhiêu?" },
+        { "speaker": "agent", "text": "Dạ giá 2.490.000 đồng ạ, đo được PM2.5, PM10, CO2, TVOC, màn hình màu hiển thị trực quan." },
+        { "speaker": "customer", "text": "Ok vậy chốt cho anh." },
+        { "speaker": "agent", "text": "Dạ vâng, anh cho em xin địa chỉ giao hàng ạ." },
+        { "speaker": "customer", "text": "26 Trường Chinh, Hà Nội." },
+        { "speaker": "agent", "text": "Dạ em tạo đơn xong rồi ạ, giao trong 2 ngày." }
+      ],
+      "facts_established": { "product_advised_sku": "MON-TEMTOP-M2000", "price_quoted_vnd": 2490000, "promo_code_quoted": null, "blocker": null, "decision_maker": null },
+      "outcome": "chot_don",
+      "case_labels": ["Q1", "Q4"],
+      "notes": "Lead đơn phiên, chốt nhanh."
+    }]
+  },
+  {
+    "customer_id": "FIL-014",
+    "phone_masked": "0987xxx689",
+    "region": "mien_nam",
+    "persona": "hoi_nhieu_khong_mua",
+    "channels_used": ["hotline"],
+    "case_tags": [],
+    "profile_facts": { "room_area_m2": 25, "has_children": false, "has_pets": false, "health_concern": null, "budget_vnd": 4000000 },
+    "calls": [{
+      "call_id": "FIL-014-C1",
+      "channel": "hotline",
+      "modality": "voice",
+      "date": "2026-03-19",
+      "days_since_previous_call": null,
+      "agent_id": "AG-54",
+      "turns": [
+        { "speaker": "agent", "text": "Dạ shop An Gia nghe ạ, em cần tư vấn gì ạ?" },
+        { "speaker": "customer", "text": "Em hỏi máy lọc không khí Xiaomi 4 Pro có tiếng Việt trên app không anh?" },
+        { "speaker": "agent", "text": "Dạ app Xiaomi Home có hỗ trợ tiếng Việt đầy đủ ạ, giá máy 4.890.000 đồng." },
+        { "speaker": "customer", "text": "App có báo lỗi gì không, có hay bị mất kết nối không anh?" },
+        { "speaker": "agent", "text": "Dạ app khá ổn định, wifi 2.4GHz kết nối bình thường ạ, ít khi bị lỗi." },
+        { "speaker": "customer", "text": "Ok để em tìm hiểu thêm rồi tính, cảm ơn anh." }
+      ],
+      "facts_established": { "product_advised_sku": "AP-XM-4PRO", "price_quoted_vnd": 4890000, "promo_code_quoted": null, "blocker": "dang tim hieu them", "decision_maker": "tu_quyet" },
+      "outcome": "hoi_thong_tin",
+      "case_labels": ["Q1", "Q4"],
+      "notes": "Khách hỏi nhiều về app/kỹ thuật, chưa quyết định."
+    }]
+  },
+  {
+    "customer_id": "FIL-015",
+    "phone_masked": "0941xxx715",
+    "region": "mien_bac",
+    "persona": "do_du_hoi_nguoi_nha",
+    "channels_used": ["hotline"],
+    "case_tags": [],
+    "profile_facts": { "room_area_m2": 33, "has_children": true, "has_pets": false, "health_concern": null, "budget_vnd": 8000000 },
+    "calls": [{
+      "call_id": "FIL-015-C1",
+      "channel": "hotline",
+      "modality": "voice",
+      "date": "2026-03-20",
+      "days_since_previous_call": null,
+      "agent_id": "AG-55",
+      "turns": [
+        { "speaker": "agent", "text": "Dạ shop An Gia nghe ạ, chị cần tư vấn gì ạ?" },
+        { "speaker": "customer", "text": "Chị cần máy lọc không khí phòng 33m2, có con nhỏ, tầm 8 triệu." },
+        { "speaker": "agent", "text": "Dạ em đề xuất chị mẫu Hitachi EP-A5000, giá 9.890.000 đồng... à hơi vượt ngân sách chị chút, hoặc mẫu Panasonic F-VXK70A giá 8.290.000 đồng cũng rất tốt ạ." },
+        { "speaker": "customer", "text": "Panasonic nghe ổn đó, để chị hỏi chồng rồi gọi lại chốt." }
+      ],
+      "facts_established": { "product_advised_sku": "AP-PANA-FVMJ", "price_quoted_vnd": 8290000, "promo_code_quoted": null, "blocker": "can hoi chong", "decision_maker": "chong" },
+      "outcome": "hen_goi_lai",
+      "case_labels": ["Q1", "Q4"],
+      "notes": "Lead hẹn gọi lại, không có phiên 2."
+    }]
+  },
+  {
+    "customer_id": "FIL-016",
+    "phone_masked": "0908xxx827",
+    "region": "mien_nam",
+    "persona": "da_mua_doi_khieu_nai",
+    "channels_used": ["hotline"],
+    "case_tags": ["tool_action"],
+    "profile_facts": { "room_area_m2": null, "has_children": false, "has_pets": false, "health_concern": null, "budget_vnd": 700000 },
+    "calls": [{
+      "call_id": "FIL-016-C1",
+      "channel": "hotline",
+      "modality": "voice",
+      "date": "2026-03-21",
+      "days_since_previous_call": null,
+      "agent_id": "AG-56",
+      "turns": [
+        { "speaker": "agent", "text": "Dạ shop An Gia nghe ạ, chị cần hỗ trợ gì ạ?" },
+        { "speaker": "customer", "text": "Chị có máy Sharp FP-J series, giờ cần mua lõi lọc thay thế." },
+        { "speaker": "agent", "text": "Dạ lõi lọc thay thế dòng FP-J giá 650.000 đồng ạ, tương thích cả FP-J30 và FP-J40." },
+        { "speaker": "customer", "text": "Ok đặt cho chị 1 cái." },
+        { "speaker": "agent", "text": "Dạ vâng, chị cho em xin địa chỉ giao hàng ạ." },
+        { "speaker": "customer", "text": "9 Nguyễn Oanh, Gò Vấp, TPHCM." },
+        { "speaker": "agent", "text": "Dạ em tạo đơn xong rồi ạ, giao trong 2 ngày." }
+      ],
+      "facts_established": { "product_advised_sku": "FIL-SHARP-FZ", "price_quoted_vnd": 650000, "promo_code_quoted": null, "blocker": null, "decision_maker": null },
+      "outcome": "chot_don",
+      "case_labels": ["Q1", "Q4"],
+      "notes": "Mua phụ kiện đơn giản."
+    }]
+  },
+  {
+    "customer_id": "FIL-017",
+    "phone_masked": "0963xxx954",
+    "region": "mien_bac",
+    "persona": "so_sanh_gia",
+    "channels_used": ["hotline"],
+    "case_tags": [],
+    "profile_facts": { "room_area_m2": 41, "has_children": false, "has_pets": false, "health_concern": null, "budget_vnd": 10000000 },
+    "calls": [{
+      "call_id": "FIL-017-C1",
+      "channel": "hotline",
+      "modality": "voice",
+      "date": "2026-03-22",
+      "days_since_previous_call": null,
+      "agent_id": "AG-57",
+      "turns": [
+        { "speaker": "agent", "text": "Dạ shop An Gia nghe ạ, anh cần tư vấn gì ạ?" },
+        { "speaker": "customer", "text": "Anh cần máy lọc không khí cho văn phòng nhỏ, 41m2, ngân sách 10 triệu, cần loại bền." },
+        { "speaker": "agent", "text": "Dạ em đề xuất anh mẫu Daikin MCK70TVM6, giá 9.990.000 đồng, bảo hành 24 tháng, rất bền ạ." },
+        { "speaker": "customer", "text": "Ok chốt luôn cho anh." },
+        { "speaker": "agent", "text": "Dạ vâng, anh cho em xin địa chỉ giao hàng ạ." },
+        { "speaker": "customer", "text": "Số 5 Duy Tân, Cầu Giấy, Hà Nội." },
+        { "speaker": "agent", "text": "Dạ em tạo đơn xong rồi ạ, giao trong 3 ngày." }
+      ],
+      "facts_established": { "product_advised_sku": "AP-DAIKIN-MCK70", "price_quoted_vnd": 9990000, "promo_code_quoted": null, "blocker": null, "decision_maker": null },
+      "outcome": "chot_don",
+      "case_labels": ["Q1", "Q4"],
+      "notes": "Lead đơn phiên, chốt nhanh, khách hàng doanh nghiệp nhỏ."
+    }]
+  },
+  {
+    "customer_id": "FIL-018",
+    "phone_masked": "0929xxx136",
+    "region": "mien_nam",
+    "persona": "so_sanh_gia",
+    "channels_used": ["hotline"],
+    "case_tags": [],
+    "profile_facts": { "room_area_m2": 31, "has_children": false, "has_pets": false, "health_concern": null, "budget_vnd": 7500000 },
+    "calls": [{
+      "call_id": "FIL-018-C1",
+      "channel": "hotline",
+      "modality": "voice",
+      "date": "2026-03-23",
+      "days_since_previous_call": null,
+      "agent_id": "AG-58",
+      "turns": [
+        { "speaker": "agent", "text": "Dạ shop An Gia nghe ạ, chị cần tư vấn gì ạ?" },
+        { "speaker": "customer", "text": "Chị hỏi máy Daikin MCK55 giá nhiêu vậy em?" },
+        { "speaker": "agent", "text": "Dạ giá 7.490.000 đồng ạ, có tạo ẩm tích hợp, phủ tới 31m2." },
+        { "speaker": "customer", "text": "Nghe hay đó, nhưng chị thấy Sharp cũng có mẫu tương tự rẻ hơn, em có so sánh được không?" },
+        { "speaker": "agent", "text": "Dạ Sharp FP-J40E-H giá 5.990.000 đồng nhưng không có tạo ẩm tích hợp như Daikin ạ, mỗi mẫu có điểm mạnh riêng." },
+        { "speaker": "customer", "text": "Ok để chị cân nhắc thêm, cảm ơn em." }
+      ],
+      "facts_established": { "product_advised_sku": "AP-DAIKIN-MCK55", "price_quoted_vnd": 7490000, "promo_code_quoted": null, "blocker": "dang can nhac 2 mau", "decision_maker": "tu_quyet" },
+      "outcome": "hoi_thong_tin",
+      "case_labels": ["Q1", "Q4"],
+      "notes": "Khách so sánh 2 mẫu, chưa quyết."
+    }]
+  },
+  {
+    "customer_id": "FIL-019",
+    "phone_masked": "0951xxx247",
+    "region": "mien_bac",
+    "persona": "do_du_hoi_nguoi_nha",
+    "channels_used": ["hotline"],
+    "case_tags": [],
+    "profile_facts": { "room_area_m2": 17, "has_children": false, "has_pets": true, "health_concern": null, "budget_vnd": 2500000 },
+    "calls": [{
+      "call_id": "FIL-019-C1",
+      "channel": "hotline",
+      "modality": "voice",
+      "date": "2026-03-24",
+      "days_since_previous_call": null,
+      "agent_id": "AG-59",
+      "turns": [
+        { "speaker": "agent", "text": "Dạ shop An Gia nghe ạ, em cần tư vấn gì ạ?" },
+        { "speaker": "customer", "text": "Em nuôi 1 bé mèo, phòng 17m2, cần máy lọc không khí giá mềm mềm." },
+        { "speaker": "agent", "text": "Dạ chị đề xuất em mẫu Xiaomi Air Purifier 4 Compact, giá 2.490.000 đồng, phủ tới 20m2, ổn cho nhà nuôi thú cưng ạ." },
+        { "speaker": "customer", "text": "Để em hỏi mẹ em coi có đồng ý không đã, mẹ em hay tiếc tiền lắm." },
+        { "speaker": "agent", "text": "Dạ vâng em cứ trao đổi thêm ạ." }
+      ],
+      "facts_established": { "product_advised_sku": "AP-XM-4C", "price_quoted_vnd": 2490000, "promo_code_quoted": null, "blocker": "can hoi me", "decision_maker": "me" },
+      "outcome": "hen_goi_lai",
+      "case_labels": ["Q1", "Q4"],
+      "notes": "Lead hẹn gọi lại, không có phiên 2."
+    }]
+  },
+  {
+    "customer_id": "FIL-020",
+    "phone_masked": "0977xxx358",
+    "region": "mien_nam",
+    "persona": "so_sanh_gia",
+    "channels_used": ["hotline"],
+    "case_tags": [],
+    "profile_facts": { "room_area_m2": 22, "has_children": false, "has_pets": false, "health_concern": null, "budget_vnd": 3500000 },
+    "calls": [{
+      "call_id": "FIL-020-C1",
+      "channel": "hotline",
+      "modality": "voice",
+      "date": "2026-03-25",
+      "days_since_previous_call": null,
+      "agent_id": "AG-60",
+      "turns": [
+        { "speaker": "agent", "text": "Dạ shop An Gia nghe ạ, anh cần tư vấn gì ạ?" },
+        { "speaker": "customer", "text": "Anh hỏi máy lọc không khí Sharp FP-J30 còn khuyến mãi gì không em?" },
+        { "speaker": "agent", "text": "Dạ hiện mẫu này không có khuyến mãi nào đang chạy ạ, giá niêm yết 3.590.000 đồng." },
+        { "speaker": "customer", "text": "À không có khuyến mãi thì thôi, để anh coi lúc khác có đợt sale rồi mua." },
+        { "speaker": "agent", "text": "Dạ vâng, khi có chương trình mới bên em sẽ thông báo cho anh ạ." }
+      ],
+      "facts_established": { "product_advised_sku": "AP-SHARP-FPJ30", "price_quoted_vnd": 3590000, "promo_code_quoted": null, "blocker": "cho co khuyen mai", "decision_maker": "tu_quyet" },
+      "outcome": "tu_choi",
+      "case_labels": ["Q1", "Q4"],
+      "notes": "Từ chối vì đang chờ đợt khuyến mãi."
+    }]
+  }
+]

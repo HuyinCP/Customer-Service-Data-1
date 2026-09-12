@@ -1,0 +1,66 @@
+{
+  "customer_id": "CUS-030",
+  "phone_masked": "0914xxx699",
+  "region": "mien_nam",
+  "persona": "do_du_hoi_nguoi_nha",
+  "channels_used": ["hotline"],
+  "case_tags": ["tool_action", "session_continuity"],
+  "profile_facts": {
+    "room_area_m2": 33,
+    "has_children": true,
+    "has_pets": false,
+    "health_concern": null,
+    "budget_vnd": 7000000
+  },
+  "calls": [
+    {
+      "call_id": "CUS-030-C1",
+      "channel": "hotline",
+      "modality": "voice",
+      "date": "2026-03-21",
+      "days_since_previous_call": null,
+      "agent_id": "AG-39",
+      "turns": [
+        { "speaker": "agent", "text": "Dạ shop An Gia nghe ạ, chị cần tư vấn gì ạ?" },
+        { "speaker": "customer", "text": "Chị cần máy lọc không khí phòng 33m2, có con nhỏ, tầm 7 triệu." },
+        { "speaker": "agent", "text": "Dạ để em kiểm tra catalog... em đề xuất chị mẫu Coway Airmega AP-1512HH, giá 6.490.000 đồng, phù hợp phòng 33m2, có con nhỏ ạ. Để em kiểm tra tồn kho luôn cho chị... dạ còn hàng ạ." },
+        { "speaker": "customer", "text": "Ok để chị hỏi chồng rồi chốt sau." }
+      ],
+      "facts_established": {
+        "product_advised_sku": "AP-COWAY-AP1512",
+        "price_quoted_vnd": 6490000,
+        "promo_code_quoted": null,
+        "blocker": "can hoi chong",
+        "decision_maker": "chong"
+      },
+      "outcome": "hen_goi_lai",
+      "case_labels": ["Q1", "Q4"],
+      "notes": "tool_action: catalog.search + inventory.check trước khi báo giá."
+    },
+    {
+      "call_id": "CUS-030-C2",
+      "channel": "hotline",
+      "modality": "voice",
+      "date": "2026-03-24",
+      "days_since_previous_call": 3,
+      "agent_id": "AG-40",
+      "turns": [
+        { "speaker": "agent", "text": "Dạ em chào chị, em xin số điện thoại kiểm tra thông tin ạ?" },
+        { "speaker": "customer", "text": "0914xxx699. Chị trao đổi với chồng rồi, chốt mẫu Coway 6.490.000 đó em." },
+        { "speaker": "agent", "text": "Dạ em tra lại hệ thống cho chắc... dạ vẫn còn hàng và giá vẫn 6.490.000 đồng ạ. Chị cho em xin địa chỉ giao hàng ạ." },
+        { "speaker": "customer", "text": "18 Nguyễn Thị Minh Khai, Quận 1, TPHCM." },
+        { "speaker": "agent", "text": "Dạ em tạo đơn xong rồi ạ, giao trong 2-3 ngày." }
+      ],
+      "facts_established": {
+        "product_advised_sku": "AP-COWAY-AP1512",
+        "price_quoted_vnd": 6490000,
+        "promo_code_quoted": null,
+        "blocker": null,
+        "decision_maker": null
+      },
+      "outcome": "chot_don",
+      "case_labels": ["Q2a", "Q3a", "Q4"],
+      "notes": "CASE-20 (chuỗi tool ĐÚNG, không lỗi, dùng làm baseline đối chiếu với CASE-21/22 ở CUS-023/CUS-024): crm.get_customer (nhận diện qua SĐT) → catalog.search + inventory.check (verify lại giá/tồn kho dù đã báo ở C1, không tin vào trí nhớ) → order.create. must_not_ask: room_area_m2, has_children, product_advised_sku, price_quoted_vnd."
+    }
+  ]
+}

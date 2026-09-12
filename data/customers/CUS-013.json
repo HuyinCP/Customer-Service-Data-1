@@ -1,0 +1,69 @@
+{
+  "customer_id": "CUS-013",
+  "phone_masked": "0983xxx740",
+  "region": "mien_bac",
+  "persona": "so_sanh_gia",
+  "channels_used": ["zalo", "hotline"],
+  "case_tags": ["multi_channel", "session_continuity", "memory_carryover"],
+  "profile_facts": {
+    "room_area_m2": 45,
+    "has_children": true,
+    "has_pets": false,
+    "health_concern": null,
+    "budget_vnd": 9000000
+  },
+  "calls": [
+    {
+      "call_id": "CUS-013-C1",
+      "channel": "zalo",
+      "modality": "text",
+      "date": "2026-03-13",
+      "days_since_previous_call": null,
+      "agent_id": "AG-ZL-06",
+      "turns": [
+        { "speaker": "customer", "text": "shop oi tu van m may loc kk cho phong 45m2, nha co con nho, tam 9tr thoi" },
+        { "speaker": "agent", "text": "Dạ chị chào, với phòng 45m2 ngân sách 9 triệu, em đề xuất mẫu Philips AC2887/10, lọc HEPA NanoProtect, cảm biến AeraSense, giá 8.990.000 đồng ạ." },
+        { "speaker": "customer", "text": "gia hoi cao ha, co mau nao re hon ma van tot k e" },
+        { "speaker": "agent", "text": "Dạ nếu muốn giá mềm hơn thì bên em có Panasonic F-VXK70A, công nghệ nanoe X, giá 8.290.000 đồng, phủ tới 46m2, cũng rất tốt ạ." },
+        { "speaker": "customer", "text": "de xem, minh nhan tin lai sau" }
+      ],
+      "facts_established": {
+        "product_advised_sku": "AP-PHILIPS-AC2887",
+        "price_quoted_vnd": 8990000,
+        "promo_code_quoted": null,
+        "blocker": "dang can nhac giua 2 mau",
+        "decision_maker": "tu_quyet"
+      },
+      "outcome": "hen_goi_lai",
+      "case_labels": ["Q1", "Q4"],
+      "notes": "Kênh Zalo, agent đưa ra 2 lựa chọn (Philips và Panasonic) để khách so sánh."
+    },
+    {
+      "call_id": "CUS-013-C2",
+      "channel": "hotline",
+      "modality": "voice",
+      "date": "2026-03-15",
+      "days_since_previous_call": 2,
+      "agent_id": "AG-15",
+      "turns": [
+        { "speaker": "agent", "text": "Dạ shop nghe ạ, em xin số điện thoại kiểm tra thông tin ạ?" },
+        { "speaker": "customer", "text": "0983xxx740. Chị hỏi bên Zalo hôm trước, đang phân vân giữa Philips 8.990.000 với Panasonic 8.290.000." },
+        { "speaker": "agent", "text": "Dạ em thấy rồi ạ. Cả hai đều tốt, nhưng Panasonic nanoe X thiên về khử khuẩn khử mùi, còn Philips AeraSense đo chỉ số không khí trực quan hơn ạ. Chị ưu tiên điểm nào hơn ạ?" },
+        { "speaker": "customer", "text": "Thôi chị lấy Panasonic cho rẻ hơn chút, chốt cho chị đi." },
+        { "speaker": "agent", "text": "Dạ vâng em xác nhận đơn: Panasonic F-VXK70A, giá 8.290.000 đồng. Chị cho em xin địa chỉ giao hàng ạ." },
+        { "speaker": "customer", "text": "56 Hoàng Quốc Việt, Hà Nội." },
+        { "speaker": "agent", "text": "Dạ em tạo đơn xong rồi ạ, giao trong 3 ngày." }
+      ],
+      "facts_established": {
+        "product_advised_sku": "AP-PANA-FVMJ",
+        "price_quoted_vnd": 8290000,
+        "promo_code_quoted": null,
+        "blocker": null,
+        "decision_maker": null
+      },
+      "outcome": "chot_don",
+      "case_labels": ["Q2a", "Q2b", "Q3b", "Q4"],
+      "notes": "Q3b nhẹ: khách chốt mẫu Panasonic thay vì Philips đã tư vấn ban đầu — đây là lựa chọn giữa 2 phương án đã đưa ra từ C1, không phải đổi ý ngoài dự kiến, nhưng vẫn cần bộ nhớ xử lý đúng field product_advised_sku bị thay đổi."
+    }
+  ]
+}

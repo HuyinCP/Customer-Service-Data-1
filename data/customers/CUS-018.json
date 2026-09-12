@@ -1,0 +1,66 @@
+{
+  "customer_id": "CUS-018",
+  "phone_masked": "0928xxx406",
+  "region": "mien_nam",
+  "persona": "so_sanh_gia",
+  "channels_used": ["hotline"],
+  "case_tags": ["session_continuity", "memory_carryover"],
+  "profile_facts": {
+    "room_area_m2": 24,
+    "has_children": true,
+    "has_pets": false,
+    "health_concern": null,
+    "budget_vnd": 6000000
+  },
+  "calls": [
+    {
+      "call_id": "CUS-018-C1",
+      "channel": "hotline",
+      "modality": "voice",
+      "date": "2026-03-04",
+      "days_since_previous_call": null,
+      "agent_id": "AG-19",
+      "turns": [
+        { "speaker": "agent", "text": "Dạ shop An Gia nghe ạ, anh cần tư vấn gì ạ?" },
+        { "speaker": "customer", "text": "Anh cần máy lọc không khí phòng 24m2, nhà có con nhỏ, ngân sách khoảng 6 triệu." },
+        { "speaker": "agent", "text": "Dạ em đề xuất anh mẫu Karofi KAP-450, giá 5.200.000 đồng, phù hợp phòng 24m2, có màn hình LED hiển thị chỉ số ạ." },
+        { "speaker": "customer", "text": "Ok để anh xem thêm rồi gọi lại." }
+      ],
+      "facts_established": {
+        "product_advised_sku": "AP-KAROFI-KAP450",
+        "price_quoted_vnd": 5200000,
+        "promo_code_quoted": null,
+        "blocker": "can xem them",
+        "decision_maker": "tu_quyet"
+      },
+      "outcome": "hen_goi_lai",
+      "case_labels": ["Q1", "Q4"],
+      "notes": "Cuộc nền."
+    },
+    {
+      "call_id": "CUS-018-C2",
+      "channel": "hotline",
+      "modality": "voice",
+      "date": "2026-03-06",
+      "days_since_previous_call": 2,
+      "agent_id": "AG-20",
+      "turns": [
+        { "speaker": "agent", "text": "Dạ em chào anh Khôi, phòng nhà mình 24 mét vuông, nhà mình có con nhỏ, ngân sách 6 triệu, hôm 4/3 bên em có tư vấn anh mẫu Karofi KAP-450 giá 5.200.000 đồng rồi ạ, hôm nay anh gọi lại để chốt đơn đúng không ạ?" },
+        { "speaker": "customer", "text": "Ơ... em đọc một hơi hết thông tin của anh vậy luôn hả, anh hơi bất ngờ đó. Nhưng ừ đúng rồi, anh chốt mẫu đó luôn." },
+        { "speaker": "agent", "text": "Dạ vâng, em xác nhận đơn: Karofi KAP-450, giá 5.200.000 đồng. Anh cho em xin địa chỉ giao hàng ạ." },
+        { "speaker": "customer", "text": "45 Điện Biên Phủ, Quận 1, TPHCM." },
+        { "speaker": "agent", "text": "Dạ em tạo đơn xong rồi ạ, giao trong 2-3 ngày." }
+      ],
+      "facts_established": {
+        "product_advised_sku": "AP-KAROFI-KAP450",
+        "price_quoted_vnd": 5200000,
+        "promo_code_quoted": null,
+        "blocker": null,
+        "decision_maker": null
+      },
+      "outcome": "chot_don",
+      "case_labels": ["Q2a", "Q3a", "Q4"],
+      "notes": "CASE-11 (hành vi SAI cần bắt được bởi script đánh giá): agent đọc dồn 4 fact (room_area_m2, has_children, budget_vnd, product_advised_sku+price) liền một câu chào mở đầu — không phải để phục vụ mục đích cụ thể ở lượt thoại đó (không phải xác nhận tiếp nối tự nhiên), mà là kiểu 'đọc vẹt' để trông như nhớ khách. Theo quy tắc CCR ở TAXONOMY.md/SCHEMA.md, hành vi này KHÔNG được tính điểm Context Carryover Rate dù có nhắc đúng fact, vì không phục vụ đúng mục đích lượt thoại — ngược lại nên bị gắn cờ trong phần phân tích lỗi ở báo cáo (C.6, mục 'phân tích ≥10 case sai')."
+    }
+  ]
+}

@@ -1,0 +1,293 @@
+[
+  {
+    "customer_id": "FIL-021",
+    "phone_masked": "0918xxx472",
+    "region": "mien_bac",
+    "persona": "so_sanh_gia",
+    "channels_used": ["hotline"],
+    "case_tags": [],
+    "profile_facts": { "room_area_m2": 20, "has_children": false, "has_pets": false, "health_concern": null, "budget_vnd": 3000000 },
+    "calls": [{
+      "call_id": "FIL-021-C1",
+      "channel": "hotline",
+      "modality": "voice",
+      "date": "2026-03-26",
+      "days_since_previous_call": null,
+      "agent_id": "AG-61",
+      "turns": [
+        { "speaker": "agent", "text": "Dạ shop An Gia nghe ạ, chị cần tư vấn gì ạ?" },
+        { "speaker": "customer", "text": "Chị hỏi máy lọc không khí Xiaomi 4 Compact còn hàng không em?" },
+        { "speaker": "agent", "text": "Dạ còn hàng ạ, giá 2.490.000 đồng." },
+        { "speaker": "customer", "text": "Ok chốt cho chị luôn." },
+        { "speaker": "agent", "text": "Dạ vâng, chị cho em xin địa chỉ giao hàng ạ." },
+        { "speaker": "customer", "text": "31 Nguyễn Văn Cừ, Long Biên, Hà Nội." },
+        { "speaker": "agent", "text": "Dạ em tạo đơn xong rồi ạ, giao trong 2-3 ngày." }
+      ],
+      "facts_established": { "product_advised_sku": "AP-XM-4C", "price_quoted_vnd": 2490000, "promo_code_quoted": null, "blocker": null, "decision_maker": null },
+      "outcome": "chot_don",
+      "case_labels": ["Q1", "Q4"],
+      "notes": "Lead đơn phiên, chốt nhanh."
+    }]
+  },
+  {
+    "customer_id": "FIL-022",
+    "phone_masked": "0933xxx589",
+    "region": "mien_nam",
+    "persona": "do_du_hoi_nguoi_nha",
+    "channels_used": ["hotline"],
+    "case_tags": [],
+    "profile_facts": { "room_area_m2": 27, "has_children": true, "has_pets": false, "health_concern": null, "budget_vnd": 6500000 },
+    "calls": [{
+      "call_id": "FIL-022-C1",
+      "channel": "hotline",
+      "modality": "voice",
+      "date": "2026-03-01",
+      "days_since_previous_call": null,
+      "agent_id": "AG-62",
+      "turns": [
+        { "speaker": "agent", "text": "Dạ shop An Gia nghe ạ, chị cần tư vấn gì ạ?" },
+        { "speaker": "customer", "text": "Chị cần máy lọc không khí phòng 27m2, có con nhỏ, tầm 6.5 triệu." },
+        { "speaker": "agent", "text": "Dạ em đề xuất chị mẫu Coway Airmega AP-1512HH, giá 6.490.000 đồng ạ." },
+        { "speaker": "customer", "text": "Để chị hỏi chồng chị coi sao đã." }
+      ],
+      "facts_established": { "product_advised_sku": "AP-COWAY-AP1512", "price_quoted_vnd": 6490000, "promo_code_quoted": null, "blocker": "can hoi chong", "decision_maker": "chong" },
+      "outcome": "hen_goi_lai",
+      "case_labels": ["Q1", "Q4"],
+      "notes": "Lead hẹn gọi lại, không có phiên 2."
+    }]
+  },
+  {
+    "customer_id": "FIL-023",
+    "phone_masked": "0906xxx614",
+    "region": "mien_bac",
+    "persona": "so_sanh_gia",
+    "channels_used": ["hotline"],
+    "case_tags": [],
+    "profile_facts": { "room_area_m2": 22, "has_children": false, "has_pets": false, "health_concern": null, "budget_vnd": 3600000 },
+    "calls": [{
+      "call_id": "FIL-023-C1",
+      "channel": "hotline",
+      "modality": "voice",
+      "date": "2026-03-02",
+      "days_since_previous_call": null,
+      "agent_id": "AG-63",
+      "turns": [
+        { "speaker": "agent", "text": "Dạ shop An Gia nghe ạ, anh cần tư vấn gì ạ?" },
+        { "speaker": "customer", "text": "Anh hỏi máy Sharp FP-J30 giá bao nhiêu, với có ship ra đảo không em?" },
+        { "speaker": "agent", "text": "Dạ giá 3.590.000 đồng ạ, về ship đảo thì em cần kiểm tra thêm khu vực cụ thể, anh ở đảo nào ạ?" },
+        { "speaker": "customer", "text": "Anh ở Phú Quốc." },
+        { "speaker": "agent", "text": "Dạ Phú Quốc bên em vẫn ship được nhưng thời gian lâu hơn, khoảng 5-7 ngày và có thể phụ phí vận chuyển ạ." },
+        { "speaker": "customer", "text": "Ok để anh cân nhắc thêm vì phí ship hơi cao, cảm ơn em." }
+      ],
+      "facts_established": { "product_advised_sku": "AP-SHARP-FPJ30", "price_quoted_vnd": 3590000, "promo_code_quoted": null, "blocker": "phi ship dao cao", "decision_maker": "tu_quyet" },
+      "outcome": "hoi_thong_tin",
+      "case_labels": ["Q1", "Q4"],
+      "notes": "Case vận chuyển đặc thù (đảo xa)."
+    }]
+  },
+  {
+    "customer_id": "FIL-024",
+    "phone_masked": "0944xxx725",
+    "region": "mien_nam",
+    "persona": "da_mua_doi_khieu_nai",
+    "channels_used": ["hotline"],
+    "case_tags": ["tool_action"],
+    "profile_facts": { "room_area_m2": null, "has_children": false, "has_pets": false, "health_concern": null, "budget_vnd": 600000 },
+    "calls": [{
+      "call_id": "FIL-024-C1",
+      "channel": "hotline",
+      "modality": "voice",
+      "date": "2026-03-03",
+      "days_since_previous_call": null,
+      "agent_id": "AG-64",
+      "turns": [
+        { "speaker": "agent", "text": "Dạ shop An Gia nghe ạ, chị cần hỗ trợ gì ạ?" },
+        { "speaker": "customer", "text": "Chị có máy Coway AP-1512HH, cần mua lõi lọc thay thế." },
+        { "speaker": "agent", "text": "Dạ lõi lọc thay thế Coway AP-1512HH giá 790.000 đồng ạ." },
+        { "speaker": "customer", "text": "Ok đặt cho chị." },
+        { "speaker": "agent", "text": "Dạ vâng, chị cho em xin địa chỉ giao hàng ạ." },
+        { "speaker": "customer", "text": "61 Điện Biên Phủ, Bình Thạnh, TPHCM." },
+        { "speaker": "agent", "text": "Dạ em tạo đơn xong rồi ạ, giao trong 2 ngày." }
+      ],
+      "facts_established": { "product_advised_sku": "FIL-COWAY-AP1512", "price_quoted_vnd": 790000, "promo_code_quoted": null, "blocker": null, "decision_maker": null },
+      "outcome": "chot_don",
+      "case_labels": ["Q1", "Q4"],
+      "notes": "Mua phụ kiện đơn giản."
+    }]
+  },
+  {
+    "customer_id": "FIL-025",
+    "phone_masked": "0922xxx837",
+    "region": "mien_bac",
+    "persona": "so_sanh_gia",
+    "channels_used": ["hotline"],
+    "case_tags": [],
+    "profile_facts": { "room_area_m2": 46, "has_children": false, "has_pets": false, "health_concern": null, "budget_vnd": 9500000 },
+    "calls": [{
+      "call_id": "FIL-025-C1",
+      "channel": "hotline",
+      "modality": "voice",
+      "date": "2026-03-04",
+      "days_since_previous_call": null,
+      "agent_id": "AG-65",
+      "turns": [
+        { "speaker": "agent", "text": "Dạ shop An Gia nghe ạ, anh cần tư vấn gì ạ?" },
+        { "speaker": "customer", "text": "Anh cần máy lọc không khí phòng lớn, 46m2, ngân sách gần 10 triệu." },
+        { "speaker": "agent", "text": "Dạ em đề xuất anh mẫu Philips AC2887/10, giá 8.990.000 đồng, phủ tới 49m2, cảm biến AeraSense đo chỉ số trực quan ạ." },
+        { "speaker": "customer", "text": "Ok chốt cho anh." },
+        { "speaker": "agent", "text": "Dạ vâng, anh cho em xin địa chỉ giao hàng ạ." },
+        { "speaker": "customer", "text": "18 Kim Liên, Đống Đa, Hà Nội." },
+        { "speaker": "agent", "text": "Dạ em tạo đơn xong rồi ạ, giao trong 3 ngày." }
+      ],
+      "facts_established": { "product_advised_sku": "AP-PHILIPS-AC2887", "price_quoted_vnd": 8990000, "promo_code_quoted": null, "blocker": null, "decision_maker": null },
+      "outcome": "chot_don",
+      "case_labels": ["Q1", "Q4"],
+      "notes": "Lead đơn phiên, chốt nhanh."
+    }]
+  },
+  {
+    "customer_id": "FIL-026",
+    "phone_masked": "0958xxx291",
+    "region": "mien_nam",
+    "persona": "hoi_nhieu_khong_mua",
+    "channels_used": ["hotline"],
+    "case_tags": [],
+    "profile_facts": { "room_area_m2": 18, "has_children": false, "has_pets": false, "health_concern": null, "budget_vnd": 2000000 },
+    "calls": [{
+      "call_id": "FIL-026-C1",
+      "channel": "hotline",
+      "modality": "voice",
+      "date": "2026-03-05",
+      "days_since_previous_call": null,
+      "agent_id": "AG-66",
+      "turns": [
+        { "speaker": "agent", "text": "Dạ shop An Gia nghe ạ, em cần tư vấn gì ạ?" },
+        { "speaker": "customer", "text": "Em hỏi máy lọc không khí Levoit Core 300 bảo hành mấy tháng vậy chị?" },
+        { "speaker": "agent", "text": "Dạ bảo hành 12 tháng ạ, giá 2.890.000 đồng." },
+        { "speaker": "customer", "text": "Đổi trả trong bao lâu nếu không ưng vậy chị?" },
+        { "speaker": "agent", "text": "Dạ đổi trả trong 7 ngày nếu lỗi do nhà sản xuất ạ, không áp dụng đổi trả do không ưng ý." },
+        { "speaker": "customer", "text": "À vậy à, để em suy nghĩ thêm, cảm ơn chị." }
+      ],
+      "facts_established": { "product_advised_sku": "AP-LEVOIT-CORE300", "price_quoted_vnd": 2890000, "promo_code_quoted": null, "blocker": "chinh sach doi tra chua ung y", "decision_maker": "tu_quyet" },
+      "outcome": "hoi_thong_tin",
+      "case_labels": ["Q1", "Q4"],
+      "notes": "Khách hỏi kỹ chính sách đổi trả/bảo hành."
+    }]
+  },
+  {
+    "customer_id": "FIL-027",
+    "phone_masked": "0913xxx462",
+    "region": "mien_bac",
+    "persona": "do_du_hoi_nguoi_nha",
+    "channels_used": ["hotline"],
+    "case_tags": [],
+    "profile_facts": { "room_area_m2": 30, "has_children": true, "has_pets": false, "health_concern": null, "budget_vnd": 5500000 },
+    "calls": [{
+      "call_id": "FIL-027-C1",
+      "channel": "hotline",
+      "modality": "voice",
+      "date": "2026-03-27",
+      "days_since_previous_call": null,
+      "agent_id": "AG-67",
+      "turns": [
+        { "speaker": "agent", "text": "Dạ shop An Gia nghe ạ, chị cần tư vấn gì ạ?" },
+        { "speaker": "customer", "text": "Chị cần máy lọc không khí phòng ngủ 30m2, có con nhỏ, tầm 5.5 triệu." },
+        { "speaker": "agent", "text": "Dạ em đề xuất chị mẫu Karofi KAP-450, giá 5.200.000 đồng ạ." },
+        { "speaker": "customer", "text": "Để chị hỏi ông xã thêm chút." }
+      ],
+      "facts_established": { "product_advised_sku": "AP-KAROFI-KAP450", "price_quoted_vnd": 5200000, "promo_code_quoted": null, "blocker": "can hoi chong", "decision_maker": "chong" },
+      "outcome": "hen_goi_lai",
+      "case_labels": ["Q1", "Q4"],
+      "notes": "Lead hẹn gọi lại, không có phiên 2."
+    }]
+  },
+  {
+    "customer_id": "FIL-028",
+    "phone_masked": "0970xxx185",
+    "region": "mien_nam",
+    "persona": "so_sanh_gia",
+    "channels_used": ["hotline"],
+    "case_tags": [],
+    "profile_facts": { "room_area_m2": 21, "has_children": false, "has_pets": false, "health_concern": null, "budget_vnd": 2800000 },
+    "calls": [{
+      "call_id": "FIL-028-C1",
+      "channel": "hotline",
+      "modality": "voice",
+      "date": "2026-03-28",
+      "days_since_previous_call": null,
+      "agent_id": "AG-68",
+      "turns": [
+        { "speaker": "agent", "text": "Dạ shop An Gia nghe ạ, anh cần tư vấn gì ạ?" },
+        { "speaker": "customer", "text": "Anh hỏi máy lọc không khí Levoit Core 300 giá nhiêu vậy em, còn khuyến mãi không?" },
+        { "speaker": "agent", "text": "Dạ giá 2.890.000 đồng ạ, hiện đang có giảm 10% cho khách hàng mới nên còn 2.601.000 đồng, chạy tới 15/4 ạ." },
+        { "speaker": "customer", "text": "Ok vậy chốt cho anh luôn." },
+        { "speaker": "agent", "text": "Dạ vâng, anh cho em xin địa chỉ giao hàng ạ." },
+        { "speaker": "customer", "text": "12 Nguyễn Trãi, Quận 5, TPHCM." },
+        { "speaker": "agent", "text": "Dạ em tạo đơn xong rồi ạ, giao trong 2-3 ngày." }
+      ],
+      "facts_established": { "product_advised_sku": "AP-LEVOIT-CORE300", "price_quoted_vnd": 2601000, "promo_code_quoted": "LEVOIT-NEW", "blocker": null, "decision_maker": null },
+      "outcome": "chot_don",
+      "case_labels": ["Q1", "Q4"],
+      "notes": "Lead đơn phiên, chốt nhanh, có áp dụng khuyến mãi LEVOIT-NEW."
+    }]
+  },
+  {
+    "customer_id": "FIL-029",
+    "phone_masked": "0985xxx947",
+    "region": "mien_bac",
+    "persona": "so_sanh_gia",
+    "channels_used": ["hotline"],
+    "case_tags": [],
+    "profile_facts": { "room_area_m2": 25, "has_children": false, "has_pets": false, "health_concern": null, "budget_vnd": 3200000 },
+    "calls": [{
+      "call_id": "FIL-029-C1",
+      "channel": "hotline",
+      "modality": "voice",
+      "date": "2026-03-29",
+      "days_since_previous_call": null,
+      "agent_id": "AG-69",
+      "turns": [
+        { "speaker": "agent", "text": "Dạ shop An Gia nghe ạ, chị cần tư vấn gì ạ?" },
+        { "speaker": "customer", "text": "Chị hỏi máy Xiaomi Air Purifier 4 giá bao nhiêu?" },
+        { "speaker": "agent", "text": "Dạ giá 3.290.000 đồng ạ, đang có tặng kèm lõi lọc thay thế trị giá 450.000, chạy tới 20/4." },
+        { "speaker": "customer", "text": "Ồ được đó, chốt cho chị." },
+        { "speaker": "agent", "text": "Dạ vâng, chị cho em xin địa chỉ giao hàng ạ." },
+        { "speaker": "customer", "text": "40 Giảng Võ, Ba Đình, Hà Nội." },
+        { "speaker": "agent", "text": "Dạ em tạo đơn xong rồi ạ, giao trong 2-3 ngày." }
+      ],
+      "facts_established": { "product_advised_sku": "AP-XM-4", "price_quoted_vnd": 3290000, "promo_code_quoted": "GIFT-FILTER-XM4", "blocker": null, "decision_maker": null },
+      "outcome": "chot_don",
+      "case_labels": ["Q1", "Q4"],
+      "notes": "Lead đơn phiên, chốt nhanh, có khuyến mãi."
+    }]
+  },
+  {
+    "customer_id": "FIL-030",
+    "phone_masked": "0967xxx518",
+    "region": "mien_nam",
+    "persona": "hoi_nhieu_khong_mua",
+    "channels_used": ["hotline"],
+    "case_tags": [],
+    "profile_facts": { "room_area_m2": 34, "has_children": false, "has_pets": false, "health_concern": null, "budget_vnd": 6800000 },
+    "calls": [{
+      "call_id": "FIL-030-C1",
+      "channel": "hotline",
+      "modality": "voice",
+      "date": "2026-03-30",
+      "days_since_previous_call": null,
+      "agent_id": "AG-70",
+      "turns": [
+        { "speaker": "agent", "text": "Dạ shop An Gia nghe ạ, anh cần tư vấn gì ạ?" },
+        { "speaker": "customer", "text": "Anh hỏi máy Winix AM90 chạy có tốn điện không em?" },
+        { "speaker": "agent", "text": "Dạ máy tiêu thụ điện khá tiết kiệm, giá 6.890.000 đồng ạ, tương đương một quạt điện công suất trung bình khi chạy mức thường." },
+        { "speaker": "customer", "text": "Vậy tháng chạy suốt tốn khoảng bao nhiêu tiền điện em tính được không?" },
+        { "speaker": "agent", "text": "Dạ để em ước tính chính xác thì cần biết công suất cụ thể theo mức chạy, nhưng nhìn chung khoảng vài chục nghìn đồng một tháng nếu chạy mức thường ạ." },
+        { "speaker": "customer", "text": "Ok để anh cân nhắc thêm, cảm ơn em." }
+      ],
+      "facts_established": { "product_advised_sku": "AP-WINIX-AM90", "price_quoted_vnd": 6890000, "promo_code_quoted": null, "blocker": "quan tam chi phi dien", "decision_maker": "tu_quyet" },
+      "outcome": "hoi_thong_tin",
+      "case_labels": ["Q1", "Q4"],
+      "notes": "Khách quan tâm chi phí vận hành."
+    }]
+  }
+]

@@ -3,8 +3,13 @@
   "phone_masked": "0903xxx274",
   "region": "mien_nam",
   "persona": "so_sanh_gia",
-  "channels_used": ["hotline"],
-  "case_tags": ["knowledge_gap", "session_continuity"],
+  "channels_used": [
+    "hotline"
+  ],
+  "case_tags": [
+    "knowledge_gap",
+    "session_continuity"
+  ],
   "profile_facts": {
     "room_area_m2": 22,
     "has_children": false,
@@ -21,21 +26,66 @@
       "days_since_previous_call": null,
       "agent_id": "AG-06",
       "turns": [
-        { "speaker": "agent", "text": "Dạ em chào chị, shop An Gia đây ạ, chị cần hỗ trợ gì để em tư vấn cho mình ạ?" },
-        { "speaker": "customer", "text": "À dạ, chị chào em. Chị... chị đang tính mua cái máy lọc không khí ấy, mà chị không rành lắm, em tư vấn giúp chị với." },
-        { "speaker": "agent", "text": "Dạ được chị ơi. Chị cho em hỏi mình định đặt ở phòng nào, diện tích khoảng bao nhiêu để em chọn công suất phù hợp ạ?" },
-        { "speaker": "customer", "text": "Phòng ngủ của chị á. Để chị nhớ coi... hình như 22 mét vuông đó em." },
-        { "speaker": "agent", "text": "Dạ 22m2 ạ. Chị cho em hỏi thêm, nhà mình có ai bị dị ứng hay hô hấp nhạy cảm gì không, để em tư vấn dòng máy phù hợp hơn ạ?" },
-        { "speaker": "customer", "text": "Có, là chị nè. Chị đang bầu, dạo này nhạy mùi kinh khủng, ngửi cái gì cũng khó chịu, với lại chị cũng hơi lo không khí trong nhà nữa." },
-        { "speaker": "agent", "text": "Dạ em hiểu rồi ạ, chúc mừng chị nha. Vậy để em tư vấn cho đúng, ngân sách bên chị dự kiến khoảng bao nhiêu ạ?" },
-        { "speaker": "customer", "text": "Ừm... khoảng 4 triệu đổ lại thôi em, chị cũng không muốn chi nhiều quá." },
-        { "speaker": "agent", "text": "Dạ vâng, với phòng 22m2 và ngân sách 4 triệu, em đề xuất chị mẫu Sharp FP-J30E-H, giá 3.590.000 đồng, dùng công nghệ Plasmacluster khử mùi khá tốt, hợp với chị đang nhạy mùi luôn ạ." },
-        { "speaker": "customer", "text": "À Sharp hả, chị cũng nghe qua rồi. Mà... em ơi cho chị hỏi cái này quan trọng nè: máy chạy có ra ozone gì không á? Chị nghe nói mấy máy lọc không khí đôi khi thải ra chất gì đó không tốt cho bà bầu, có đúng không em?" },
-        { "speaker": "agent", "text": "Dạ... câu này thật ra hơi chuyên sâu về kỹ thuật với y tế, em sợ trả lời không chính xác thì ảnh hưởng tới chị, nên em xin phép chưa trả lời liền được ạ." },
-        { "speaker": "customer", "text": "Ừ thôi không sao, nhưng em kiểm tra kỹ giúp chị nha, vì chị bầu bí nên cẩn thận chút, chị không muốn mua về rồi cứ lo lắng hoài." },
-        { "speaker": "agent", "text": "Dạ em hiểu, chị yên tâm, em hỏi lại bộ phận kỹ thuật rồi gọi lại báo chị chính xác trong vài ngày tới ạ, chị thấy vậy được không ạ?" },
-        { "speaker": "customer", "text": "Ok được đó em, cảm ơn em nha." },
-        { "speaker": "agent", "text": "Dạ không có gì ạ, em ghi chú lại rồi liên hệ chị sớm nhất có thể ạ." }
+        {
+          "speaker": "agent",
+          "text": "Dạ em chào chị, shop An Gia đây ạ, chị cần hỗ trợ gì để em tư vấn cho mình ạ?"
+        },
+        {
+          "speaker": "customer",
+          "text": "À dạ, chị chào em. Chị... chị đang tính mua cái máy lọc không khí ấy, mà chị không rành lắm, em tư vấn giúp chị với."
+        },
+        {
+          "speaker": "agent",
+          "text": "Dạ được chị ơi. Chị cho em hỏi mình định đặt ở phòng nào, diện tích khoảng bao nhiêu để em chọn công suất phù hợp ạ?"
+        },
+        {
+          "speaker": "customer",
+          "text": "Phòng ngủ của chị á. Để chị nhớ coi... hình như 22 mét vuông đó em."
+        },
+        {
+          "speaker": "agent",
+          "text": "Dạ 22m2 ạ. Chị cho em hỏi thêm, nhà mình có ai bị dị ứng hay hô hấp nhạy cảm gì không, để em tư vấn dòng máy phù hợp hơn ạ?"
+        },
+        {
+          "speaker": "customer",
+          "text": "Có, là chị nè. Chị đang bầu, dạo này nhạy mùi kinh khủng, ngửi cái gì cũng khó chịu, với lại chị cũng hơi lo không khí trong nhà nữa."
+        },
+        {
+          "speaker": "agent",
+          "text": "Dạ em hiểu rồi ạ, chúc mừng chị nha. Vậy để em tư vấn cho đúng, ngân sách bên chị dự kiến khoảng bao nhiêu ạ?"
+        },
+        {
+          "speaker": "customer",
+          "text": "Ừm... khoảng 4 triệu đổ lại thôi em, chị cũng không muốn chi nhiều quá."
+        },
+        {
+          "speaker": "agent",
+          "text": "Dạ vâng, với phòng 22m2 và ngân sách 4 triệu, em đề xuất chị mẫu Sharp FP-J30E-H, giá 3.590.000 đồng, dùng công nghệ Plasmacluster khử mùi khá tốt, hợp với chị đang nhạy mùi luôn ạ."
+        },
+        {
+          "speaker": "customer",
+          "text": "À Sharp hả, chị cũng nghe qua rồi. Mà... em ơi cho chị hỏi cái này quan trọng nè: máy chạy có ra ozone gì không á? Chị nghe nói mấy máy lọc không khí đôi khi thải ra chất gì đó không tốt cho bà bầu, có đúng không em?"
+        },
+        {
+          "speaker": "agent",
+          "text": "Dạ... câu này thật ra hơi chuyên sâu về kỹ thuật với y tế, em sợ trả lời không chính xác thì ảnh hưởng tới chị, nên em xin phép chưa trả lời liền được ạ."
+        },
+        {
+          "speaker": "customer",
+          "text": "Ừ thôi không sao, nhưng em kiểm tra kỹ giúp chị nha, vì chị bầu bí nên cẩn thận chút, chị không muốn mua về rồi cứ lo lắng hoài."
+        },
+        {
+          "speaker": "agent",
+          "text": "Dạ em hiểu, chị yên tâm, em hỏi lại bộ phận kỹ thuật rồi gọi lại báo chị chính xác trong vài ngày tới ạ, chị thấy vậy được không ạ?"
+        },
+        {
+          "speaker": "customer",
+          "text": "Ok được đó em, cảm ơn em nha."
+        },
+        {
+          "speaker": "agent",
+          "text": "Dạ không có gì ạ, em ghi chú lại rồi liên hệ chị sớm nhất có thể ạ."
+        }
       ],
       "facts_established": {
         "product_advised_sku": "AP-SHARP-FPJ30",
@@ -45,7 +95,11 @@
         "decision_maker": "tu_quyet"
       },
       "outcome": "hoi_thong_tin",
-      "notes": "KNOWLEDGE GAP: câu hỏi 'máy có phát ozone ảnh hưởng thai nhi không' không có trong tài liệu catalog — agent xử lý ĐÚNG bằng cách nói chưa biết, không bịa, hẹn phản hồi sau. Đây là input cho Knowledge Gap Loop (C.5): câu hỏi này cần được ghi lại và bổ sung vào tài liệu trước cuộc gọi 2."
+      "notes": "KNOWLEDGE GAP: câu hỏi 'máy có phát ozone ảnh hưởng thai nhi không' không có trong tài liệu catalog — agent xử lý ĐÚNG bằng cách nói chưa biết, không bịa, hẹn phản hồi sau. Đây là input cho Knowledge Gap Loop (C.5): câu hỏi này cần được ghi lại và bổ sung vào tài liệu trước cuộc gọi 2.",
+      "case_labels": [
+        "Q1",
+        "Q5"
+      ]
     },
     {
       "call_id": "CUS-005-C2",
@@ -55,16 +109,46 @@
       "days_since_previous_call": 3,
       "agent_id": "AG-06",
       "turns": [
-        { "speaker": "agent", "text": "Dạ em chào chị Ngọc, em Minh bên An Gia gọi lại theo đúng hẹn hôm trước nè chị." },
-        { "speaker": "customer", "text": "À ừ chị nhớ. Có thông tin gì rồi hả em?" },
-        { "speaker": "agent", "text": "Dạ có rồi ạ. Về câu chị hỏi hôm trước, máy Sharp FP-J30E-H dùng công nghệ Plasmacluster tạo ra ion nồng độ rất thấp thôi, bên hãng đã kiểm định an toàn, không phát sinh ozone ở mức gây hại đâu chị, chị dùng bình thường được ạ." },
-        { "speaker": "customer", "text": "Ồ vậy à, thế thì chị yên tâm rồi đó. Mà giá vẫn như hôm trước hả em, 3.590 gì đó phải không?" },
-        { "speaker": "agent", "text": "Dạ đúng rồi ạ, 3.590.000 đồng, không đổi. Chị chốt lấy mẫu này luôn không ạ?" },
-        { "speaker": "customer", "text": "Ừ lấy luôn đi em, chị tin tưởng em rồi đó." },
-        { "speaker": "agent", "text": "Dạ em cảm ơn chị, chị cho em xin địa chỉ để bên em giao hàng ạ." },
-        { "speaker": "customer", "text": "12 Lê Văn Sỹ, quận 3, Sài Gòn nha em." },
-        { "speaker": "agent", "text": "Dạ em ghi nhận rồi ạ, đơn của chị bên em giao trong khoảng 2 tới 3 ngày, có gì chị cứ liên hệ lại ạ." },
-        { "speaker": "customer", "text": "Ok, cảm ơn em nhiều." }
+        {
+          "speaker": "agent",
+          "text": "Dạ em chào chị Ngọc, em Minh bên An Gia gọi lại theo đúng hẹn hôm trước nè chị."
+        },
+        {
+          "speaker": "customer",
+          "text": "À ừ chị nhớ. Có thông tin gì rồi hả em?"
+        },
+        {
+          "speaker": "agent",
+          "text": "Dạ có rồi ạ. Về câu chị hỏi hôm trước, máy Sharp FP-J30E-H dùng công nghệ Plasmacluster tạo ra ion nồng độ rất thấp thôi, bên hãng đã kiểm định an toàn, không phát sinh ozone ở mức gây hại đâu chị, chị dùng bình thường được ạ."
+        },
+        {
+          "speaker": "customer",
+          "text": "Ồ vậy à, thế thì chị yên tâm rồi đó. Mà giá vẫn như hôm trước hả em, 3.590 gì đó phải không?"
+        },
+        {
+          "speaker": "agent",
+          "text": "Dạ đúng rồi ạ, 3.590.000 đồng, không đổi. Chị chốt lấy mẫu này luôn không ạ?"
+        },
+        {
+          "speaker": "customer",
+          "text": "Ừ lấy luôn đi em, chị tin tưởng em rồi đó."
+        },
+        {
+          "speaker": "agent",
+          "text": "Dạ em cảm ơn chị, chị cho em xin địa chỉ để bên em giao hàng ạ."
+        },
+        {
+          "speaker": "customer",
+          "text": "12 Lê Văn Sỹ, quận 3, Sài Gòn nha em."
+        },
+        {
+          "speaker": "agent",
+          "text": "Dạ em ghi nhận rồi ạ, đơn của chị bên em giao trong khoảng 2 tới 3 ngày, có gì chị cứ liên hệ lại ạ."
+        },
+        {
+          "speaker": "customer",
+          "text": "Ok, cảm ơn em nhiều."
+        }
       ],
       "facts_established": {
         "product_advised_sku": "AP-SHARP-FPJ30",
@@ -74,7 +158,13 @@
         "decision_maker": null
       },
       "outcome": "chot_don",
-      "notes": "must_not_ask: room_area_m2, product_advised, price_quoted_vnd. Đây là vòng sau khi Knowledge Gap Loop đã bổ sung tài liệu — dùng để đo hiệu quả cơ chế cải tiến ở C.5 (vòng 0 vs vòng 1)."
+      "notes": "must_not_ask: room_area_m2, product_advised, price_quoted_vnd. Đây là vòng sau khi Knowledge Gap Loop đã bổ sung tài liệu — dùng để đo hiệu quả cơ chế cải tiến ở C.5 (vòng 0 vs vòng 1).",
+      "case_labels": [
+        "Q2a",
+        "Q3a",
+        "Q4",
+        "Q5"
+      ]
     }
   ]
 }

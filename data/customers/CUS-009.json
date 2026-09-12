@@ -1,0 +1,68 @@
+{
+  "customer_id": "CUS-009",
+  "phone_masked": "0966xxx204",
+  "region": "mien_bac",
+  "persona": "do_du_hoi_nguoi_nha",
+  "channels_used": ["zalo", "hotline"],
+  "case_tags": ["multi_channel", "session_continuity", "memory_carryover"],
+  "profile_facts": {
+    "room_area_m2": 18,
+    "has_children": false,
+    "has_pets": false,
+    "health_concern": null,
+    "budget_vnd": 2500000
+  },
+  "calls": [
+    {
+      "call_id": "CUS-009-C1",
+      "channel": "zalo",
+      "modality": "text",
+      "date": "2026-03-09",
+      "days_since_previous_call": null,
+      "agent_id": "AG-ZL-03",
+      "turns": [
+        { "speaker": "customer", "text": "shop oi may loc kk nao hop phong nho 18m2 v em, gia mem mem thoi" },
+        { "speaker": "agent", "text": "Dạ chị chào anh/chị ạ, với phòng 18m2 em đề xuất mẫu Xiaomi Smart Air Purifier 4 Compact, giá 2.490.000 đồng, lọc HEPA H13, gọn nhẹ ạ." },
+        { "speaker": "customer", "text": "oke de coi, gia do vua tui roi, ma de hoi vo minh cai da ha" },
+        { "speaker": "agent", "text": "Dạ vâng ạ, anh cứ trao đổi thoải mái, cần gì cứ nhắn lại bên em nha." }
+      ],
+      "facts_established": {
+        "product_advised_sku": "AP-XM-4C",
+        "price_quoted_vnd": 2490000,
+        "promo_code_quoted": null,
+        "blocker": "can hoi vo",
+        "decision_maker": "vo"
+      },
+      "outcome": "hen_goi_lai",
+      "case_labels": ["Q1", "Q4"],
+      "notes": "Kênh Zalo, chat teencode."
+    },
+    {
+      "call_id": "CUS-009-C2",
+      "channel": "hotline",
+      "modality": "voice",
+      "date": "2026-03-12",
+      "days_since_previous_call": 3,
+      "agent_id": "AG-10",
+      "turns": [
+        { "speaker": "agent", "text": "Dạ em chào anh, em xin số điện thoại kiểm tra thông tin ạ?" },
+        { "speaker": "customer", "text": "0966xxx204. Hôm trước anh nhắn Zalo hỏi cái máy lọc không khí Xiaomi 2.490.000 đó." },
+        { "speaker": "agent", "text": "Dạ em thấy rồi ạ, Xiaomi Air Purifier 4 Compact, 2.490.000 đồng, hợp phòng 18m2 nhà anh. Anh trao đổi với chị nhà tới đâu rồi ạ?" },
+        { "speaker": "customer", "text": "Rồi, vợ anh đồng ý rồi, đặt luôn cho anh đi em." },
+        { "speaker": "agent", "text": "Dạ vâng, em xác nhận đơn: Xiaomi Air Purifier 4 Compact, giá 2.490.000 đồng. Anh cho em xin địa chỉ giao hàng ạ." },
+        { "speaker": "customer", "text": "34 Cầu Giấy, Hà Nội." },
+        { "speaker": "agent", "text": "Dạ em tạo đơn xong rồi ạ, giao trong 2-3 ngày." }
+      ],
+      "facts_established": {
+        "product_advised_sku": "AP-XM-4C",
+        "price_quoted_vnd": 2490000,
+        "promo_code_quoted": null,
+        "blocker": null,
+        "decision_maker": null
+      },
+      "outcome": "chot_don",
+      "case_labels": ["Q2a", "Q2b", "Q3a", "Q4"],
+      "notes": "must_not_ask: room_area_m2, product_advised_sku, price_quoted_vnd (đã có từ Zalo)."
+    }
+  ]
+}

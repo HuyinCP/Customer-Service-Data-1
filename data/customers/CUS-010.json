@@ -1,0 +1,73 @@
+{
+  "customer_id": "CUS-010",
+  "phone_masked": "0918xxx377",
+  "region": "mien_nam",
+  "persona": "so_sanh_gia",
+  "channels_used": ["facebook", "hotline"],
+  "case_tags": ["multi_channel", "session_continuity", "memory_carryover"],
+  "profile_facts": {
+    "room_area_m2": 38,
+    "has_children": true,
+    "has_pets": false,
+    "health_concern": null,
+    "budget_vnd": 7000000
+  },
+  "calls": [
+    {
+      "call_id": "CUS-010-C1",
+      "channel": "facebook",
+      "modality": "text",
+      "date": "2026-03-16",
+      "days_since_previous_call": null,
+      "agent_id": "AG-FB-01",
+      "turns": [
+        { "speaker": "customer", "text": "shop cho hoi may loc kk cho phong khach 38m2, nha co con nho, gia tam 7tr thoi a" },
+        { "speaker": "agent", "text": "Dạ em chào chị, với phòng 38m2, ngân sách 7 triệu, em đề xuất chị mẫu Coway Airmega AP-1512HH, giá 6.490.000 đồng, lọc HEPA True, chỉ báo thay lõi thông minh ạ, rất hợp gia đình có trẻ nhỏ." },
+        { "speaker": "customer", "text": "gia nay so voi ben khac thi sao ta, chi thay quang cao ben khac re hon" },
+        { "speaker": "agent", "text": "Dạ giá bên em đã là giá tốt cho mẫu chính hãng full box rồi ạ, chị có thể so sánh thêm nhưng bên em cam kết chính hãng, bảo hành đầy đủ ạ." },
+        { "speaker": "customer", "text": "de chi coi them roi goi hotline hoi ki hon" }
+      ],
+      "facts_established": {
+        "product_advised_sku": "AP-COWAY-AP1512",
+        "price_quoted_vnd": 6490000,
+        "promo_code_quoted": null,
+        "blocker": "dang so sanh gia noi khac",
+        "decision_maker": "tu_quyet"
+      },
+      "outcome": "hen_goi_lai",
+      "case_labels": ["Q1", "Q4"],
+      "notes": "Kênh Facebook."
+    },
+    {
+      "call_id": "CUS-010-C2",
+      "channel": "hotline",
+      "modality": "voice",
+      "date": "2026-03-18",
+      "days_since_previous_call": 2,
+      "agent_id": "AG-12",
+      "turns": [
+        { "speaker": "agent", "text": "Dạ shop An Gia nghe ạ, chị cần hỗ trợ gì ạ?" },
+        { "speaker": "customer", "text": "Chị hỏi bên Facebook hôm trước về máy lọc không khí Coway 6.490.000 đó em, chị gọi hỏi kỹ thêm chút." },
+        { "speaker": "agent", "text": "Dạ chị cho em xin số điện thoại để em kiểm tra ạ?" },
+        { "speaker": "customer", "text": "0918xxx377." },
+        { "speaker": "agent", "text": "Dạ em thấy rồi ạ, Coway Airmega AP-1512HH, 6.490.000 đồng, hợp phòng 38m2 nhà có con nhỏ của chị. Chị còn băn khoăn gì thêm không ạ?" },
+        { "speaker": "customer", "text": "Máy chạy có ồn không, với bảo hành mấy năm em?" },
+        { "speaker": "agent", "text": "Dạ máy chạy khá êm ạ, bảo hành 12 tháng chính hãng." },
+        { "speaker": "customer", "text": "Ok vậy chốt cho chị luôn đi." },
+        { "speaker": "agent", "text": "Dạ vâng, chị cho em xin địa chỉ giao hàng ạ." },
+        { "speaker": "customer", "text": "90 Nguyễn Văn Trỗi, Phú Nhuận, TPHCM." },
+        { "speaker": "agent", "text": "Dạ em tạo đơn xong rồi ạ, giao trong 2-3 ngày." }
+      ],
+      "facts_established": {
+        "product_advised_sku": "AP-COWAY-AP1512",
+        "price_quoted_vnd": 6490000,
+        "promo_code_quoted": null,
+        "blocker": null,
+        "decision_maker": null
+      },
+      "outcome": "chot_don",
+      "case_labels": ["Q2a", "Q2b", "Q3a", "Q4"],
+      "notes": "must_not_ask: room_area_m2, has_children, product_advised_sku, price_quoted_vnd."
+    }
+  ]
+}

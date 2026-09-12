@@ -1,0 +1,72 @@
+{
+  "customer_id": "CUS-021",
+  "phone_masked": "0971xxx635",
+  "region": "mien_bac",
+  "persona": "do_du_hoi_nguoi_nha",
+  "channels_used": ["hotline"],
+  "case_tags": ["conflicting_information", "session_continuity"],
+  "profile_facts": {
+    "room_area_m2": 20,
+    "has_children": true,
+    "has_pets": false,
+    "health_concern": null,
+    "budget_vnd": 3000000
+  },
+  "calls": [
+    {
+      "call_id": "CUS-021-C1",
+      "channel": "hotline",
+      "modality": "voice",
+      "date": "2026-03-11",
+      "days_since_previous_call": null,
+      "agent_id": "AG-25",
+      "turns": [
+        { "speaker": "agent", "text": "Dạ shop An Gia nghe ạ, chị cần tư vấn gì ạ?" },
+        { "speaker": "customer", "text": "Chị cần máy lọc không khí cho phòng ngủ, khoảng 30 mét vuông, có bé nhỏ." },
+        { "speaker": "agent", "text": "Dạ vâng, để em xem mẫu phù hợp cho phòng 30m2..." },
+        { "speaker": "customer", "text": "À khoan, để chị coi lại, hình như phòng chỉ có 20 mét thôi, chị nhớ nhầm với phòng khách." },
+        { "speaker": "agent", "text": "Dạ chị cho em xác nhận lại cho chắc ạ: mình đặt máy ở phòng 20m2 hay 30m2 để em tư vấn đúng công suất, tránh chọn nhầm ạ?" },
+        { "speaker": "customer", "text": "20m2 thôi em, phòng ngủ nhỏ à." },
+        { "speaker": "agent", "text": "Dạ em ghi nhận phòng 20m2 ạ. Với diện tích này, ngân sách khoảng bao nhiêu để em đề xuất mẫu phù hợp?" },
+        { "speaker": "customer", "text": "Khoảng 3 triệu thôi em." },
+        { "speaker": "agent", "text": "Dạ em đề xuất chị mẫu Xiaomi Smart Air Purifier 4 Compact, giá 2.490.000 đồng, phù hợp phòng 20m2 và có bé nhỏ nhà mình ạ." },
+        { "speaker": "customer", "text": "Ok để chị nghĩ thêm." }
+      ],
+      "facts_established": {
+        "product_advised_sku": "AP-XM-4C",
+        "price_quoted_vnd": 2490000,
+        "promo_code_quoted": null,
+        "blocker": "can nghi them",
+        "decision_maker": "tu_quyet"
+      },
+      "outcome": "hen_goi_lai",
+      "case_labels": ["Q1", "Q3c", "Q4"],
+      "notes": "CASE-17 (khó): khách TỰ MÂU THUẪN trong cùng cuộc (nói 30m2 rồi đổi lại 20m2 chỉ vài giây sau). Hành vi ĐÚNG: agent hỏi lại xác nhận rõ ràng (20 hay 30?), không tự chọn đại 1 trong 2 giá trị. profile_facts.room_area_m2 chốt là 20 (giá trị khách xác nhận cuối cùng)."
+    },
+    {
+      "call_id": "CUS-021-C2",
+      "channel": "hotline",
+      "modality": "voice",
+      "date": "2026-03-14",
+      "days_since_previous_call": 3,
+      "agent_id": "AG-25",
+      "turns": [
+        { "speaker": "agent", "text": "Dạ em chào chị, hôm 11/3 bên em tư vấn chị mẫu Xiaomi Air Purifier 4 Compact cho phòng 20m2, giá 2.490.000 đồng. Chị quyết định chưa ạ?" },
+        { "speaker": "customer", "text": "Rồi em, chốt luôn cho chị." },
+        { "speaker": "agent", "text": "Dạ vâng, chị cho em xin địa chỉ giao hàng ạ." },
+        { "speaker": "customer", "text": "19 Kim Đồng, Hoàng Mai, Hà Nội." },
+        { "speaker": "agent", "text": "Dạ em tạo đơn xong rồi ạ, giao trong 2-3 ngày." }
+      ],
+      "facts_established": {
+        "product_advised_sku": "AP-XM-4C",
+        "price_quoted_vnd": 2490000,
+        "promo_code_quoted": null,
+        "blocker": null,
+        "decision_maker": null
+      },
+      "outcome": "chot_don",
+      "case_labels": ["Q2a", "Q3a", "Q4"],
+      "notes": "must_not_ask: room_area_m2 (phải dùng đúng giá trị đã xác nhận cuối cùng ở C1 là 20m2, không phải 30m2)."
+    }
+  ]
+}

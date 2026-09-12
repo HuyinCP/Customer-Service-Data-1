@@ -1,0 +1,291 @@
+[
+  {
+    "customer_id": "FIL-001",
+    "phone_masked": "0981xxx204",
+    "region": "mien_bac",
+    "persona": "so_sanh_gia",
+    "channels_used": ["hotline"],
+    "case_tags": [],
+    "profile_facts": { "room_area_m2": 19, "has_children": false, "has_pets": false, "health_concern": null, "budget_vnd": 2500000 },
+    "calls": [{
+      "call_id": "FIL-001-C1",
+      "channel": "hotline",
+      "modality": "voice",
+      "date": "2026-03-04",
+      "days_since_previous_call": null,
+      "agent_id": "AG-41",
+      "turns": [
+        { "speaker": "agent", "text": "Dạ shop An Gia nghe ạ, anh cần tư vấn gì ạ?" },
+        { "speaker": "customer", "text": "Anh cần máy lọc không khí phòng nhỏ, 19m2, tầm 2.5 triệu." },
+        { "speaker": "agent", "text": "Dạ em đề xuất anh mẫu Xiaomi Smart Air Purifier 4 Compact, giá 2.490.000 đồng ạ." },
+        { "speaker": "customer", "text": "Ok nghe được, chốt cho anh luôn." },
+        { "speaker": "agent", "text": "Dạ vâng, anh cho em xin địa chỉ giao hàng ạ." },
+        { "speaker": "customer", "text": "8 Lạc Long Quân, Tây Hồ, Hà Nội." },
+        { "speaker": "agent", "text": "Dạ em tạo đơn xong rồi ạ, giao trong 2-3 ngày." }
+      ],
+      "facts_established": { "product_advised_sku": "AP-XM-4C", "price_quoted_vnd": 2490000, "promo_code_quoted": null, "blocker": null, "decision_maker": null },
+      "outcome": "chot_don",
+      "case_labels": ["Q1", "Q4"],
+      "notes": "Lead đơn phiên, chốt nhanh."
+    }]
+  },
+  {
+    "customer_id": "FIL-002",
+    "phone_masked": "0973xxx318",
+    "region": "mien_nam",
+    "persona": "do_du_hoi_nguoi_nha",
+    "channels_used": ["hotline"],
+    "case_tags": [],
+    "profile_facts": { "room_area_m2": 24, "has_children": true, "has_pets": false, "health_concern": null, "budget_vnd": 1500000 },
+    "calls": [{
+      "call_id": "FIL-002-C1",
+      "channel": "hotline",
+      "modality": "voice",
+      "date": "2026-03-06",
+      "days_since_previous_call": null,
+      "agent_id": "AG-42",
+      "turns": [
+        { "speaker": "agent", "text": "Dạ shop An Gia nghe ạ, chị cần tư vấn gì ạ?" },
+        { "speaker": "customer", "text": "Chị hỏi máy tạo ẩm cho phòng bé, 24m2, tầm 1.5 triệu thôi." },
+        { "speaker": "agent", "text": "Dạ em đề xuất chị mẫu Xiaomi Smart Humidifier 2, dung tích 4.5L, giá 1.290.000 đồng ạ." },
+        { "speaker": "customer", "text": "Để chị hỏi ông xã xem sao đã, cảm ơn em." },
+        { "speaker": "agent", "text": "Dạ vâng chị cứ trao đổi, cần gì bên em hỗ trợ tiếp ạ." }
+      ],
+      "facts_established": { "product_advised_sku": "HM-XM-2", "price_quoted_vnd": 1290000, "promo_code_quoted": null, "blocker": "can hoi chong", "decision_maker": "chong" },
+      "outcome": "hen_goi_lai",
+      "case_labels": ["Q1", "Q4"],
+      "notes": "Lead hẹn gọi lại nhưng KHÔNG có cuộc gọi lại trong dataset — mô phỏng lead rơi rụng thực tế (không phải mọi hẹn đều thành phiên 2)."
+    }]
+  },
+  {
+    "customer_id": "FIL-003",
+    "phone_masked": "0988xxx427",
+    "region": "mien_bac",
+    "persona": "hoi_nhieu_khong_mua",
+    "channels_used": ["hotline"],
+    "case_tags": [],
+    "profile_facts": { "room_area_m2": 22, "has_children": false, "has_pets": false, "health_concern": null, "budget_vnd": 3000000 },
+    "calls": [{
+      "call_id": "FIL-003-C1",
+      "channel": "hotline",
+      "modality": "voice",
+      "date": "2026-03-07",
+      "days_since_previous_call": null,
+      "agent_id": "AG-43",
+      "turns": [
+        { "speaker": "agent", "text": "Dạ shop An Gia nghe ạ, anh cần tư vấn gì ạ?" },
+        { "speaker": "customer", "text": "Anh hỏi máy lọc không khí Sharp FP-J30 giá bao nhiêu vậy em?" },
+        { "speaker": "agent", "text": "Dạ mẫu đó giá 3.590.000 đồng ạ, công nghệ Plasmacluster, phù hợp phòng tới 22m2." },
+        { "speaker": "customer", "text": "Có bảo hành mấy năm? Có ship COD không? Có trả góp không em?" },
+        { "speaker": "agent", "text": "Dạ bảo hành 24 tháng, có ship COD toàn quốc, hiện chưa hỗ trợ trả góp ạ." },
+        { "speaker": "customer", "text": "À không có trả góp thì thôi, để anh coi chỗ khác vậy, cảm ơn em." }
+      ],
+      "facts_established": { "product_advised_sku": "AP-SHARP-FPJ30", "price_quoted_vnd": 3590000, "promo_code_quoted": null, "blocker": "muon tra gop nhung ben em khong ho tro", "decision_maker": "tu_quyet" },
+      "outcome": "tu_choi",
+      "case_labels": ["Q1", "Q4"],
+      "notes": "Khách hỏi nhiều thông tin rồi từ chối vì lý do cụ thể (không hỗ trợ trả góp) — case hữu ích cho phân tích lý do mất đơn ở báo cáo C.6."
+    }]
+  },
+  {
+    "customer_id": "FIL-004",
+    "phone_masked": "0912xxx539",
+    "region": "mien_nam",
+    "persona": "so_sanh_gia",
+    "channels_used": ["hotline"],
+    "case_tags": [],
+    "profile_facts": { "room_area_m2": null, "has_children": false, "has_pets": false, "health_concern": null, "budget_vnd": 1000000 },
+    "calls": [{
+      "call_id": "FIL-004-C1",
+      "channel": "hotline",
+      "modality": "voice",
+      "date": "2026-03-09",
+      "days_since_previous_call": null,
+      "agent_id": "AG-44",
+      "turns": [
+        { "speaker": "agent", "text": "Dạ shop An Gia nghe ạ, chị cần hỗ trợ gì ạ?" },
+        { "speaker": "customer", "text": "Chị hỏi máy đo chất lượng không khí loại nhỏ gọn thôi, tầm 1 triệu đổ lại." },
+        { "speaker": "agent", "text": "Dạ em đề xuất chị mẫu Qingping Air Monitor Lite, giá 990.000 đồng, đo PM2.5, nhiệt độ, độ ẩm, nhỏ gọn ạ." },
+        { "speaker": "customer", "text": "Ok vậy chốt cho chị luôn." },
+        { "speaker": "agent", "text": "Dạ vâng, chị cho em xin địa chỉ giao hàng ạ." },
+        { "speaker": "customer", "text": "70 Võ Văn Tần, Quận 3, TPHCM." },
+        { "speaker": "agent", "text": "Dạ em tạo đơn xong rồi ạ, giao trong 2 ngày." }
+      ],
+      "facts_established": { "product_advised_sku": "MON-QINGPING", "price_quoted_vnd": 990000, "promo_code_quoted": null, "blocker": null, "decision_maker": null },
+      "outcome": "chot_don",
+      "case_labels": ["Q1", "Q4"],
+      "notes": "Lead đơn phiên, chốt nhanh, sản phẩm phụ kiện giá thấp."
+    }]
+  },
+  {
+    "customer_id": "FIL-005",
+    "phone_masked": "0965xxx841",
+    "region": "mien_bac",
+    "persona": "do_du_hoi_nguoi_nha",
+    "channels_used": ["hotline"],
+    "case_tags": [],
+    "profile_facts": { "room_area_m2": 26, "has_children": true, "has_pets": false, "health_concern": null, "budget_vnd": 2500000 },
+    "calls": [{
+      "call_id": "FIL-005-C1",
+      "channel": "hotline",
+      "modality": "voice",
+      "date": "2026-03-10",
+      "days_since_previous_call": null,
+      "agent_id": "AG-45",
+      "turns": [
+        { "speaker": "agent", "text": "Dạ shop An Gia nghe ạ, chị cần tư vấn gì ạ?" },
+        { "speaker": "customer", "text": "Chị cần máy lọc không khí phòng 26m2, có bé nhỏ, tầm 2.5 triệu." },
+        { "speaker": "agent", "text": "Dạ em đề xuất chị mẫu Kangaroo KG150A6, giá 2.190.000 đồng ạ, tuy phủ tối đa 25m2 nên hơi sát với 26m2 nhà mình, chị dùng vẫn ổn ạ." },
+        { "speaker": "customer", "text": "Để chị hỏi chồng thêm chút, cảm ơn em." }
+      ],
+      "facts_established": { "product_advised_sku": "AP-KANGAROO-KG150", "price_quoted_vnd": 2190000, "promo_code_quoted": null, "blocker": "can hoi chong", "decision_maker": "chong" },
+      "outcome": "hen_goi_lai",
+      "case_labels": ["Q1", "Q4"],
+      "notes": "Lead hẹn gọi lại, không có phiên 2 trong dataset."
+    }]
+  },
+  {
+    "customer_id": "FIL-006",
+    "phone_masked": "0938xxx652",
+    "region": "mien_nam",
+    "persona": "da_mua_doi_khieu_nai",
+    "channels_used": ["hotline"],
+    "case_tags": ["tool_action"],
+    "profile_facts": { "room_area_m2": null, "has_children": false, "has_pets": false, "health_concern": null, "budget_vnd": 500000 },
+    "calls": [{
+      "call_id": "FIL-006-C1",
+      "channel": "hotline",
+      "modality": "voice",
+      "date": "2026-03-11",
+      "days_since_previous_call": null,
+      "agent_id": "AG-46",
+      "turns": [
+        { "speaker": "agent", "text": "Dạ shop An Gia nghe ạ, anh cần hỗ trợ gì ạ?" },
+        { "speaker": "customer", "text": "Anh có máy Xiaomi Air Purifier 4 Compact, giờ tới hạn thay lõi lọc, bên em có bán không?" },
+        { "speaker": "agent", "text": "Dạ có ạ, lõi lọc thay thế cho Xiaomi 4/4C giá 450.000 đồng ạ." },
+        { "speaker": "customer", "text": "Ok đặt cho anh 1 cái." },
+        { "speaker": "agent", "text": "Dạ vâng, anh cho em xin địa chỉ giao hàng ạ." },
+        { "speaker": "customer", "text": "44 Lê Văn Việt, Quận 9, TPHCM." },
+        { "speaker": "agent", "text": "Dạ em tạo đơn xong rồi ạ, giao trong 2 ngày." }
+      ],
+      "facts_established": { "product_advised_sku": "FIL-XM-4-HEPA", "price_quoted_vnd": 450000, "promo_code_quoted": null, "blocker": null, "decision_maker": null },
+      "outcome": "chot_don",
+      "case_labels": ["Q1", "Q4"],
+      "notes": "Mua phụ kiện đơn giản."
+    }]
+  },
+  {
+    "customer_id": "FIL-007",
+    "phone_masked": "0926xxx764",
+    "region": "mien_bac",
+    "persona": "so_sanh_gia",
+    "channels_used": ["hotline"],
+    "case_tags": [],
+    "profile_facts": { "room_area_m2": 20, "has_children": false, "has_pets": false, "health_concern": null, "budget_vnd": 2200000 },
+    "calls": [{
+      "call_id": "FIL-007-C1",
+      "channel": "hotline",
+      "modality": "voice",
+      "date": "2026-03-12",
+      "days_since_previous_call": null,
+      "agent_id": "AG-47",
+      "turns": [
+        { "speaker": "agent", "text": "Dạ shop An Gia nghe ạ, chị cần tư vấn gì ạ?" },
+        { "speaker": "customer", "text": "Chị hỏi máy lọc không khí Levoit Core 300 giá nhiêu vậy em?" },
+        { "speaker": "agent", "text": "Dạ giá 2.890.000 đồng ạ, lọc HEPA H13 3 lớp, phủ tới 20m2." },
+        { "speaker": "customer", "text": "Hơi mắc, chị thấy bên khác bán có 2.2 triệu thôi." },
+        { "speaker": "agent", "text": "Dạ bên em cam kết hàng chính hãng, có bảo hành đầy đủ ạ, giá bên khác có thể là hàng xách tay hoặc không rõ nguồn gốc." },
+        { "speaker": "customer", "text": "Thôi để chị mua bên kia cho rẻ, cảm ơn em." }
+      ],
+      "facts_established": { "product_advised_sku": "AP-LEVOIT-CORE300", "price_quoted_vnd": 2890000, "promo_code_quoted": null, "blocker": "gia cao hon doi thu", "decision_maker": "tu_quyet" },
+      "outcome": "tu_choi",
+      "case_labels": ["Q1", "Q4"],
+      "notes": "Từ chối vì giá — case cạnh tranh giá."
+    }]
+  },
+  {
+    "customer_id": "FIL-008",
+    "phone_masked": "0917xxx985",
+    "region": "mien_nam",
+    "persona": "hoi_nhieu_khong_mua",
+    "channels_used": ["hotline"],
+    "case_tags": [],
+    "profile_facts": { "room_area_m2": 49, "has_children": false, "has_pets": false, "health_concern": null, "budget_vnd": 9000000 },
+    "calls": [{
+      "call_id": "FIL-008-C1",
+      "channel": "hotline",
+      "modality": "voice",
+      "date": "2026-03-13",
+      "days_since_previous_call": null,
+      "agent_id": "AG-48",
+      "turns": [
+        { "speaker": "agent", "text": "Dạ shop An Gia nghe ạ, anh cần tư vấn gì ạ?" },
+        { "speaker": "customer", "text": "Anh hỏi mẫu Philips AC2887 xíu, máy này lọc được mùi sơn mới không em?" },
+        { "speaker": "agent", "text": "Dạ mẫu này lọc HEPA NanoProtect, có khả năng khử mùi khá tốt bao gồm mùi sơn ạ, giá 8.990.000 đồng." },
+        { "speaker": "customer", "text": "Vậy còn mùi thuốc lá thì sao?" },
+        { "speaker": "agent", "text": "Dạ cũng khử được mùi thuốc lá ạ, đây là công dụng phổ biến của lọc than hoạt tính tích hợp." },
+        { "speaker": "customer", "text": "Ok để anh tìm hiểu thêm rồi tính, cảm ơn em." }
+      ],
+      "facts_established": { "product_advised_sku": "AP-PHILIPS-AC2887", "price_quoted_vnd": 8990000, "promo_code_quoted": null, "blocker": "dang tim hieu them", "decision_maker": "tu_quyet" },
+      "outcome": "hoi_thong_tin",
+      "case_labels": ["Q1", "Q4"],
+      "notes": "Khách hỏi nhiều thông tin kỹ thuật, chưa có ý định mua rõ ràng."
+    }]
+  },
+  {
+    "customer_id": "FIL-009",
+    "phone_masked": "0904xxx176",
+    "region": "mien_bac",
+    "persona": "do_du_hoi_nguoi_nha",
+    "channels_used": ["hotline"],
+    "case_tags": [],
+    "profile_facts": { "room_area_m2": 14, "has_children": false, "has_pets": false, "health_concern": null, "budget_vnd": 900000 },
+    "calls": [{
+      "call_id": "FIL-009-C1",
+      "channel": "hotline",
+      "modality": "voice",
+      "date": "2026-03-14",
+      "days_since_previous_call": null,
+      "agent_id": "AG-49",
+      "turns": [
+        { "speaker": "agent", "text": "Dạ shop An Gia nghe ạ, em cần tư vấn gì cho mình ạ?" },
+        { "speaker": "customer", "text": "Em hỏi máy tạo ẩm giá rẻ cho phòng trọ nhỏ, 14m2, dưới 1 triệu." },
+        { "speaker": "agent", "text": "Dạ chị đề xuất em mẫu Deerma DEM-F600, dung tích 5L, giá 890.000 đồng ạ." },
+        { "speaker": "customer", "text": "Ok để em hỏi bạn cùng phòng coi có góp tiền mua chung không đã." },
+        { "speaker": "agent", "text": "Dạ vâng em cứ hỏi thêm, cần gì cứ gọi lại nha." }
+      ],
+      "facts_established": { "product_advised_sku": "HM-DEERMA-DEM", "price_quoted_vnd": 890000, "promo_code_quoted": null, "blocker": "can hoi ban cung phong", "decision_maker": "ban_cung_phong" },
+      "outcome": "hen_goi_lai",
+      "case_labels": ["Q1", "Q4"],
+      "notes": "Lead sinh viên, hẹn gọi lại nhưng không có phiên 2."
+    }]
+  },
+  {
+    "customer_id": "FIL-010",
+    "phone_masked": "0959xxx283",
+    "region": "mien_nam",
+    "persona": "so_sanh_gia",
+    "channels_used": ["hotline"],
+    "case_tags": [],
+    "profile_facts": { "room_area_m2": 35, "has_children": false, "has_pets": true, "health_concern": null, "budget_vnd": 5000000 },
+    "calls": [{
+      "call_id": "FIL-010-C1",
+      "channel": "hotline",
+      "modality": "voice",
+      "date": "2026-03-15",
+      "days_since_previous_call": null,
+      "agent_id": "AG-50",
+      "turns": [
+        { "speaker": "agent", "text": "Dạ shop An Gia nghe ạ, chị cần tư vấn gì ạ?" },
+        { "speaker": "customer", "text": "Chị hỏi máy Winix AM90 giá nhiêu vậy em, nhà chị nuôi chó." },
+        { "speaker": "agent", "text": "Dạ giá 6.890.000 đồng ạ, công nghệ PlasmaWave khá hợp nhà nuôi thú cưng." },
+        { "speaker": "customer", "text": "Hơi cao so với ngân sách chị, chị chỉ có 5 triệu thôi, có mẫu nào rẻ hơn tương đương không?" },
+        { "speaker": "agent", "text": "Dạ với 5 triệu thì em đề xuất chị mẫu Karofi KAP-450, giá 5.200.000 đồng, cũng lọc HEPA H13 tốt ạ." },
+        { "speaker": "customer", "text": "Vẫn hơi cao, thôi để chị coi thêm chỗ khác đã." }
+      ],
+      "facts_established": { "product_advised_sku": "AP-KAROFI-KAP450", "price_quoted_vnd": 5200000, "promo_code_quoted": null, "blocker": "vuot ngan sach", "decision_maker": "tu_quyet" },
+      "outcome": "tu_choi",
+      "case_labels": ["Q1", "Q4"],
+      "notes": "Từ chối vì vượt ngân sách dù đã đề xuất mẫu rẻ hơn."
+    }]
+  }
+]

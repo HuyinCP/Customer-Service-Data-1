@@ -1,0 +1,67 @@
+{
+  "customer_id": "CUS-016",
+  "phone_masked": "0921xxx063",
+  "region": "mien_nam",
+  "persona": "da_mua_doi_khieu_nai",
+  "channels_used": ["facebook", "hotline"],
+  "case_tags": ["multi_channel", "tool_action"],
+  "profile_facts": {
+    "room_area_m2": 39,
+    "has_children": false,
+    "has_pets": false,
+    "health_concern": null,
+    "budget_vnd": 7500000
+  },
+  "calls": [
+    {
+      "call_id": "CUS-016-C1",
+      "channel": "facebook",
+      "modality": "text",
+      "date": "2026-02-15",
+      "days_since_previous_call": null,
+      "agent_id": "AG-FB-05",
+      "turns": [
+        { "speaker": "customer", "text": "shop oi may Blueair 211+ minh moi mua thang truoc, gio den bao thay loi sang do, phai thay lien khong" },
+        { "speaker": "agent", "text": "Dạ anh cho em xin số điện thoại để em kiểm tra đơn hàng ạ?" },
+        { "speaker": "customer", "text": "0921xxx063" },
+        { "speaker": "agent", "text": "Dạ em thấy đơn Blueair Blue Pure 211+ của anh, mua ngày 20/1 ạ. Đèn đỏ là báo lõi lọc cần thay, tuy nhiên mới dùng 1 tháng thì hơi sớm, có thể do phòng nhiều bụi hoặc cảm biến nhạy. Anh cứ dùng tiếp, nếu đèn vẫn đỏ liên tục sau khi vệ sinh thì gọi hotline để bên em kiểm tra ạ." },
+        { "speaker": "customer", "text": "oke de coi tiep, k dc thi goi lai" }
+      ],
+      "facts_established": {
+        "product_advised_sku": "AP-BLUEAIR-211",
+        "price_quoted_vnd": 0,
+        "promo_code_quoted": null,
+        "blocker": "den bao thay loi som bat thuong",
+        "decision_maker": null
+      },
+      "outcome": "hoi_thong_tin",
+      "case_labels": ["Q1", "Q4"],
+      "notes": "Kênh Facebook."
+    },
+    {
+      "call_id": "CUS-016-C2",
+      "channel": "hotline",
+      "modality": "voice",
+      "date": "2026-02-20",
+      "days_since_previous_call": 5,
+      "agent_id": "AG-18",
+      "turns": [
+        { "speaker": "agent", "text": "Dạ em chào anh, em xin số điện thoại kiểm tra thông tin ạ?" },
+        { "speaker": "customer", "text": "0921xxx063. Anh hỏi bên Facebook tuần trước về máy Blueair đèn báo lỗi đó, giờ vẫn đỏ liên tục dù đã vệ sinh rồi." },
+        { "speaker": "agent", "text": "Dạ em thấy lịch sử rồi ạ, để tình trạng này bên em sẽ cử kỹ thuật qua kiểm tra tận nhà cho anh, máy vẫn còn trong bảo hành 12 tháng ạ. Anh xếp lịch giúp em được không, ngày nào tiện ạ?" },
+        { "speaker": "customer", "text": "Thứ 7 này anh rảnh, buổi sáng nhé." },
+        { "speaker": "agent", "text": "Dạ em đặt lịch kỹ thuật qua sáng thứ 7 cho anh nhé, sẽ có người liên hệ trước khi tới ạ." }
+      ],
+      "facts_established": {
+        "product_advised_sku": "AP-BLUEAIR-211",
+        "price_quoted_vnd": 0,
+        "promo_code_quoted": null,
+        "blocker": "can ky thuat kiem tra tan nha",
+        "decision_maker": null
+      },
+      "outcome": "khieu_nai",
+      "case_labels": ["Q2a", "Q2b", "Q3a", "Q4"],
+      "notes": "tool_action: schedule.callback (đặt lịch kỹ thuật). must_not_ask: product_advised_sku."
+    }
+  ]
+}

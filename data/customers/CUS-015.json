@@ -1,0 +1,65 @@
+{
+  "customer_id": "CUS-015",
+  "phone_masked": "0945xxx917",
+  "region": "mien_bac",
+  "persona": "so_sanh_gia",
+  "channels_used": ["zalo", "hotline"],
+  "case_tags": ["multi_channel", "session_continuity", "memory_carryover"],
+  "profile_facts": {
+    "room_area_m2": 12,
+    "has_children": false,
+    "has_pets": false,
+    "health_concern": null,
+    "budget_vnd": 1000000
+  },
+  "calls": [
+    {
+      "call_id": "CUS-015-C1",
+      "channel": "zalo",
+      "modality": "text",
+      "date": "2026-03-06",
+      "days_since_previous_call": null,
+      "agent_id": "AG-ZL-07",
+      "turns": [
+        { "speaker": "customer", "text": "e oi may tao am gia re cho phong tro 12m2 co k, sv it tien thoi" },
+        { "speaker": "agent", "text": "Dạ có ạ, bên em có mẫu Deerma DEM-F600, dung tích 5L, giá 890.000 đồng, đang giảm 15% cho đơn đầu tiên còn khoảng 756.500 đồng ạ." },
+        { "speaker": "customer", "text": "oa re v, oke de coi lai tien rồi nhan tin dat sau" }
+      ],
+      "facts_established": {
+        "product_advised_sku": "HM-DEERMA-DEM",
+        "price_quoted_vnd": 756500,
+        "promo_code_quoted": "DEERMA-SALE",
+        "blocker": "can xem lai tai chinh",
+        "decision_maker": "tu_quyet"
+      },
+      "outcome": "hen_goi_lai",
+      "case_labels": ["Q1", "Q4"],
+      "notes": "Kênh Zalo, sinh viên, sản phẩm giá rẻ có khuyến mãi."
+    },
+    {
+      "call_id": "CUS-015-C2",
+      "channel": "hotline",
+      "modality": "voice",
+      "date": "2026-03-07",
+      "days_since_previous_call": 1,
+      "agent_id": "AG-17",
+      "turns": [
+        { "speaker": "agent", "text": "Dạ shop nghe ạ, em xin số điện thoại kiểm tra thông tin ạ?" },
+        { "speaker": "customer", "text": "0945xxx917. Em hỏi bên Zalo về máy tạo ẩm Deerma giảm giá đó, giờ em đặt luôn được không ạ?" },
+        { "speaker": "agent", "text": "Dạ được ạ, Deerma DEM-F600, giá sau giảm 756.500 đồng, khuyến mãi vẫn còn hạn ạ. Em cho anh xin địa chỉ giao hàng nhé?" },
+        { "speaker": "customer", "text": "Phòng trọ 15 Xuân Thủy, Cầu Giấy, Hà Nội ạ." },
+        { "speaker": "agent", "text": "Dạ anh tạo đơn xong rồi, giao trong 2-3 ngày nhé." }
+      ],
+      "facts_established": {
+        "product_advised_sku": "HM-DEERMA-DEM",
+        "price_quoted_vnd": 756500,
+        "promo_code_quoted": "DEERMA-SALE",
+        "blocker": null,
+        "decision_maker": null
+      },
+      "outcome": "chot_don",
+      "case_labels": ["Q2a", "Q2b", "Q3a", "Q4"],
+      "notes": "must_not_ask: product_advised_sku, price_quoted_vnd, promo_code_quoted."
+    }
+  ]
+}
